@@ -32,7 +32,7 @@
 
 ## UX
 
-__Sprint__ site was inspired by an app I use regularyl named __Strava__ see their website here:
+__Sprint__ site was inspired by an app I use everyday named, __Strava__ see their website here:
 https://www.strava.com/.
 
 __Sprint__ website offers a user **(see user stories below)** a visually impactful experience through its application of..
