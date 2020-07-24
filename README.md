@@ -4,7 +4,7 @@
 ### Track your workouts one sprint at a time!
 
 *Keeping fit by running or walking is popular amongst millions of people across the entire globe from your local park to the olympic games.* 
-*An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, heart-rate and factors such as surface& weather. Sprint aims to allow individual of all ages, gender and abilities, to enter their activity and input different variables of set activity such as distance, time and activity difficulty. Sprint logs this information, to the users profile which Sprint stores until the user deletes or updates that particular activity; the user can input as many activity sessions as they like and sprint will log them all.*
+*An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, heart-rate and factors such as surface& weather. Sprint aims to allow individual of all ages, gender and abilities, to enter their activity and input different variables of set activity such as distance, time and activity difficulty.
 
 #### Live website here: - Refresh page if having loading issues
 
