@@ -1,6 +1,6 @@
+# Sprint
 <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/runningbuildmuscle-1586550834.jpg">
 
-# Sprint
 ### Track your workouts one sprint at a time!
 
 *Keeping fit by running or walking is popular amongst millions of people across the entire globe from your local park to the olympic games.* 
@@ -101,58 +101,43 @@ So.....
 
 ## Wire-Frames
 
-### Homepage
+### Welcome& Home page
 
 <details>
-  <summary>Home page header wireframe</summary>
+  <summary>Welcome page</summary>
   <br>
 <div align="center">
-<img src="" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/sprint-home-wire.jpg" target="_blank" rel=""/>
 </div>
   </details>
   
   <details>
-  <summary>Home page body wireframe</summary>
+  <summary>Homepage</summary>
   <br>
 <div align="center">
-<img src="" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/create-or-compare-page.jpg" target="_blank" rel=""/>
 </div>
   </details>
   
-  <details>
-  <summary>Home page footer wireframe</summary>
-  <br>
-  <div align="center">
-    <img src=""
-         </div>
-    </details>
-  
-  ### Results page
+  ### Create and Explore page
   
    <details>
-  <summary>Results page header</summary>
+  <summary>Create page</summary>
   <br>
   <div align="center">
-    <img src=""
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/create-activity-page.jpg"
          </div>
     </details>
     
    <details>
-  <summary>Results page body</summary>
+  <summary>Explore page</summary>
   <br>
   <div align="center">
     <img src=""
          </div>
     </details>
     
-  <details>
-  <summary>Results page footer</summary>
-  <br>
-  <div align="center">
-    <img src=""
-         </div>
-    </details>
-    
+
 ## Features
 
 ### Navigation feature
