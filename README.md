@@ -63,25 +63,25 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
 ### User Stories
 -----
 
-*"As a local businessman...."*
+*"As a local park runner I would like to log my run times and compare with my previous run times as this shows me where my fitness is at."*
 
   - Solution: ....
 
 ---
 
-*"My name is Lucy...."*
+*"My name is Lucy, I would like the site to be appealing and easy to use as I find alot of activity sites to be boring."*
 
   - Solution: ....
 
 ---
 
-*"Hey, my name is Lebron...."*
+*"Hey, my name is Lebron, a professional basketball player, I want a site that allows me to input my running activity distance, heart rate and activity difficulty as this keeps a record of what I have done."*
 
   - Solution: ....
 
 ---
 
-*"Good afternoon...."*
+*"Good afternoon, I run in local area regulary and I would like the site the site to have a maps feature so once I input my run, I can see mine and other runners activities in the same area."*
 
   - Solution: ....
   
