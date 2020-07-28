@@ -125,7 +125,7 @@ So.....
   <summary>Create page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/create-activity-page.jpg"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/create-activity.jpg"
          </div>
     </details>
     
