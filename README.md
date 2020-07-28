@@ -1,5 +1,5 @@
 # Sprint
-<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/runningbuildmuscle-1586550834.jpg">
+<img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/readme/banner.jpg">
 
 ### Track your workouts one sprint at a time!
 
