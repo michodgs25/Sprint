@@ -119,6 +119,8 @@ So.....
 </div>
   </details>
   
+  
+  
   ### Create and Explore page
   
    <details>
@@ -128,12 +130,24 @@ So.....
     <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/create-activity.jpg"
          </div>
     </details>
-    
-   <details>
-  <summary>Explore page</summary>
+  
+  ### Explore page
+  
+     <details>
+  <summary>Create page</summary>
   <br>
   <div align="center">
-    <img src=""
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/create-activity.jpg"
+         </div>
+    </details>
+  
+  ### About Sprint page
+    
+   <details>
+  <summary>About Sprint page</summary>
+  <br>
+  <div align="center">
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/about-sprint.jpg"
          </div>
     </details>
     
