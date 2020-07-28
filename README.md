@@ -133,7 +133,7 @@ So.....
   
   ### Explore page
   
-     <details>
+   <details>
   <summary>Create page</summary>
   <br>
   <div align="center">
