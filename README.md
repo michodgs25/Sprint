@@ -134,7 +134,7 @@ So.....
   ### Explore page
   
    <details>
-  <summary>Create page</summary>
+  <summary>Explore page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/explore-page.jpg"
