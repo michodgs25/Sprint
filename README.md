@@ -3,7 +3,8 @@
 ### Track your workouts one sprint at a time!
 
 *Keeping fit by running or walking is popular amongst millions of people across the entire globe from your local park to the olympic games.* 
-*An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, heart-rate and factors such as surface& weather.* *Sprint aims to allow individual of all ages, gender and abilities, to enter their activity and input different variables of set activity such as distance, time and activity difficulty.*
+*An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, heart-rate and factors such as surface& weather.* *Sprint aims to allow individual of all ages, gender and abilities, to track their running and walking activities.*
+<br>
 <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/readme/banner.jpg">
 
 #### Live website here: - Refresh page if having loading issues
