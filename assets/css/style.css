@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 0 1.25em;
 }
@@ -30,6 +31,7 @@ body {
 
 .welcome-image p {
     font-size: 1.25em;
+    line-height: 1em;
 }
 
 .welcome-image .button {
@@ -39,4 +41,10 @@ body {
     border: rgb(52, 198, 235) 0.0625em solid;
     padding: 0.625em 1.25em;
     border-radius: 0.625em;
+    margin-top: 1.25em;
+}
+
+.welcome-image .button:hover{
+    background: rgb(52, 198, 235);
+    color: rgb(93, 66, 245);
 }
