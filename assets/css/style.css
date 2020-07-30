@@ -48,3 +48,13 @@ body {
     background: rgb(52, 198, 235);
     color: rgb(93, 66, 245);
 }
+
+ /*navigation bar*/
+  i {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.nav-link {
+    font-size: calc(1rem + 0.1vw);
+}
