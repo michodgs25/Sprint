@@ -4,6 +4,7 @@
 
 *Keeping fit by running or walking is popular amongst millions of people across the entire globe from your local park to the olympic games.* 
 *An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, heart-rate and factors such as surface& weather.* *Sprint aims to allow individual of all ages, gender and abilities, to track their running and walking activities.*
+
 <br>
 <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/readme/banner.jpg">
 
@@ -30,6 +31,11 @@
  * [Acknowledgements](#Acknowledgements)
  * [External-Media](#External-Media)
 -----
+
+## Project purpose
+
+The purpose of this project is to provide runners& walkers a website where they can log and track their run, walking activities. Also compare with other user activities via user posts onto an user feed and the user can visit other profiles; this promotes competiveness between users to go further and faster.
+
 
 ## UX
 
