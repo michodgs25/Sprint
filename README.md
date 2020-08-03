@@ -128,7 +128,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   
   ### Create activity page
   
-   <details>
+  <details>
   <summary>Create page</summary>
   <br>
   <div align="center">
@@ -138,7 +138,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   
   ### Mobile create activity page
   
-     <details>
+  <details>
   <summary>Mobile Create page</summary>
   <br>
   <div align="center">
@@ -148,7 +148,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   
   ### Explore page
   
-   <details>
+  <details>
   <summary>Explore page</summary>
   <br>
   <div align="center">
@@ -158,7 +158,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   
   ### Mobile Explore page
   
-     <details>
+  <details>
   <summary>Mobile Explore page</summary>
   <br>
   <div align="center">
@@ -169,7 +169,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   
   ### About Sprint page
     
-   <details>
+  <details>
   <summary>About Sprint page</summary>
   <br>
   <div align="center">
@@ -179,7 +179,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   
   ### Mobile about Sprint page
   
-     <details>
+  <details>
   <summary>About Sprint page</summary>
   <br>
   <div align="center">
