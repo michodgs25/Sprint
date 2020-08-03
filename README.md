@@ -72,39 +72,19 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
 
 *"As a local park runner I would like to log my run times and compare with my previous run times as this shows me where my fitness is at."*
 
-  - Solution: ....
-
 ---
 
 *"My name is Lucy, I would like the site to be appealing and easy to use as I find alot of activity sites to be boring."*
-
-  - Solution: ....
 
 ---
 
 *"Hey, my name is Lebron, a professional basketball player, I want a site that allows me to input my running activity distance, heart rate and activity difficulty as this keeps a record of what I have done."*
 
-  - Solution: ....
-
 ---
 
 *"Good afternoon, I run in local area regulary and I would like the site the site to have a maps feature so once I input my run, I can see mine and other runners activities in the same area."*
-
-  - Solution: ....
   
   <br>
-
-## Strategy 
-
-* Firstly I had to establish target audience....
-
-* 
-
-## Scope
-
-The next problem to solve was that there was already a great app called: 
-https://www.strava.com/
-So.....
 
 ## Wire-Frames
 
@@ -114,7 +94,7 @@ So.....
   <summary>Welcome page</summary>
   <br>
 <div align="center">
-<img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/sprint-home-wire.jpg" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/sprint-home-wire.jpg" target="_blank" rel=""/>
 </div>
   </details>
   
@@ -122,19 +102,47 @@ So.....
   <summary>Homepage</summary>
   <br>
 <div align="center">
-<img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/create-or-compare-page.jpg" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/create-or-compare-page.jpg" target="_blank" rel=""/>
+</div>
+  </details>
+  
+### Mobile welcome& Homepage
+
+<details>
+  <summary>Mobile Welcome page</summary>
+  <br>
+<div align="center">
+<img src="" target="_blank" rel=""/>
+</div>
+  </details>
+  
+  <details>
+  <summary>Mobile Homepage</summary>
+  <br>
+<div align="center">
+<img src="" target="_blank" rel=""/>
 </div>
   </details>
   
   
   
-  ### Create and Explore page
+  ### Create activity page
   
    <details>
   <summary>Create page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/create-activity.jpg"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/create-activity.jpg"
+         </div>
+    </details>
+  
+  ### Mobile create activity page
+  
+     <details>
+  <summary>Mobile Create page</summary>
+  <br>
+  <div align="center">
+    <img src=""
          </div>
     </details>
   
@@ -144,9 +152,20 @@ So.....
   <summary>Explore page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/explore-page.jpg"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/explore-page.jpg"
          </div>
     </details>
+  
+  ### Mobile Explore page
+  
+     <details>
+  <summary>Mobile Explore page</summary>
+  <br>
+  <div align="center">
+    <img src=""
+         </div>
+    </details>
+  
   
   ### About Sprint page
     
@@ -154,7 +173,17 @@ So.....
   <summary>About Sprint page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/wire-frame/about-sprint.jpg"
+    <img src="https://github.com/michodgs24/Sprint/tree/master/assets/wire-frame/desktop"
+         </div>
+    </details>
+  
+  ### Mobile about Sprint page
+  
+     <details>
+  <summary>About Sprint page</summary>
+  <br>
+  <div align="center">
+    <img src=""
          </div>
     </details>
     
@@ -293,7 +322,7 @@ So.....
 
 ## Technologies
 
-* Html, Css and Javascript language
+* Html, Css, Javascript, Python language
 
 * Balslamiq - https://balsamiq.com/
 
@@ -342,7 +371,6 @@ Also opened site on Samsung S10 mobile device and explored all the features.
 ### Testing mobile friendliness - iii.
 *Applied three different verified automated online testing tools to ensure website is ready for mobile:*
 
-1.
 ### Google developer tool lighthouse:
    - Opened Google developer tools on-site, find lighthouse on navigation bar(next to security) and click generate report.
 
@@ -358,7 +386,6 @@ Also opened site on Samsung S10 mobile device and explored all the features.
 
 ----
 
-2.
  ### Google mobile friendly test:
    - Entered website link as indicated into enter bar on homepage, an automated testing tool to verify if site is equipped for mobile devices follow link below to see the results:
 
@@ -375,7 +402,7 @@ Also opened site on Samsung S10 mobile device and explored all the features.
  #### Google mobile friendliness results discussed here -
  
  ----
-3.
+
 ### mobiReady mobile test:
   - Enter website link as indicated into enter bar on homepage, press enter and the site automates the website to whether it will be mobile ready.
     
