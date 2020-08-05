@@ -30,11 +30,11 @@
  * [issues-and-bugs](#issues-and-bugs)
  * [Acknowledgements](#Acknowledgements)
  * [External-Media](#External-Media)
------
+
 
 ## Project purpose
 
-The purpose of this project is to provide runners& walkers a website where they can log and track their run, walking activities. Also compare with other user activities via user posts onto an user feed and the user can visit other profiles; this promotes competiveness between users to go further and faster.
+The purpose of this project is a personal activity log for my runs; as I am passionate about running and want to keep a daily log of set activities to track my times, distance& activity difficulty. 
 
 
 ## UX
@@ -42,15 +42,14 @@ The purpose of this project is to provide runners& walkers a website where they 
 __Sprint__ site was inspired by an app I use everyday named, __Strava__ see their website here:
 https://www.strava.com/.
 
-__Sprint__ website offers a user **(see user stories below)** a visually impactful experience through its application of..
+__Sprint__ website aims: **(Also see user stories below and project purpose above)**.
 
-* A primary design goal of this website is to be easy for athletes to log their activity data.
+* A primary design goal of this website is to be easy to log activities.
 
-* The site should be appealing to view, using imagery and 
+* The site should be appealing to view, using imagery and bright colors.
 
-* Input forms to be intuitive, if user has previously entered the same information, for example Name, the text box should provide a clickable drop option for user name to click the box rather than type out his/her name.
+* Input forms to be intuitive, if user has previously entered the same information, those details will already be filled in for example: name, last name, gender and postcode.
 
-* 
 
 #### Main Fonts used in this project
 
@@ -68,6 +67,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   </details>
 
 ### User Stories
+
 -----
 
 *"As a local park runner I would like to log my run times and compare with my previous run times as this shows me where my fitness is at."*
@@ -78,11 +78,11 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
 
 ---
 
-*"Hey, my name is Lebron, a professional basketball player, I want a site that allows me to input my running activity distance, heart rate and activity difficulty as this keeps a record of what I have done."*
+*"Hey, my name is Lebron, a professional basketball player, I want a site that allows me to input my running activity distance and activity difficulty as this keeps a record of what I have done."*
 
 ---
 
-*"Good afternoon, I run in local area regulary and I would like the site the site to have a maps feature so once I input my run, I can see mine and other runners activities in the same area."*
+*"Good afternoon, I run in my local area every other day and would like share my activities with my friends via social media."*
   
   <br>
 
@@ -112,7 +112,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   <summary>Mobile Welcome page</summary>
   <br>
 <div align="center">
-<img src="" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-home.jpg" target="_blank" rel=""/>
 </div>
   </details>
   
@@ -120,7 +120,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   <summary>Mobile Homepage</summary>
   <br>
 <div align="center">
-<img src="" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-create-compare.jpg" target="_blank" rel=""/>
 </div>
   </details>
   
@@ -142,7 +142,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   <summary>Mobile Create page</summary>
   <br>
   <div align="center">
-    <img src=""
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-create-page.jpg"
          </div>
     </details>
   
@@ -162,7 +162,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   <summary>Mobile Explore page</summary>
   <br>
   <div align="center">
-    <img src=""
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-explore.jpg"
          </div>
     </details>
   
@@ -173,7 +173,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   <summary>About Sprint page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/tree/master/assets/wire-frame/desktop"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/about-sprint.jpg"
          </div>
     </details>
   
@@ -183,7 +183,7 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   <summary>About Sprint page</summary>
   <br>
   <div align="center">
-    <img src=""
+    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-about.jpg"
          </div>
     </details>
     
@@ -192,13 +192,15 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
 
 ### Navigation feature
 
-* *The navigation bar.....*
+* *The navigation bar, which will be used on the "About sprint page", "create page", "explore page".*
 
-* **
+* *The Navigation bar will follow user scroll down the page, increase ease of use.*
 
-* **
+* *The navigation bar feature will have a home icon and sprint icon.*
 
-* **
+* *The navigation bar on explore page, will have a create icon and a search bar.*
+
+* *The navigation bar on create page, will have an explore icon.*
 
 <details>
   <summary>Navigation</summary>
@@ -210,11 +212,11 @@ __Sprint__ website offers a user **(see user stories below)** a visually impactf
   </details>
   
   #### Navigation Summary: 
-   - *This feature was inspired by user stories....*
+   - *This feature was inspired by user story "Lucy" who asked for the site to be easy to navigate.*
    
    ----
 
-### ..... feature
+### Create or explore page cards feature
 
 * **
 
