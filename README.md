@@ -267,6 +267,36 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   </div>
   </details>
   
+   #### Feature Summary:
+   - *...*
+   
+   ----
+   
+   ### Explore activities feature
+
+* *The explore activities feature, has the latest logged activity at the top and the first activity at the bottom.*
+
+* *This feature has a search bar on the navigation bar, user can search through all the logged activities.*
+
+* *Clicking the image on each post will transfer the user to create page where user can update or delete the activity.*
+
+* *Each activity log will have the activity title, image, description and difficulty.*
+
+* *This feature footer has the social media links and sprint icon. User learn more about sprint and share sprint to social media.*
+
+<details>
+  <summary>The explore activities page</summary>
+<div align="center">
+<img src="" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
+  
+   #### Feature Summary:
+   - *...*
+   
+   ----
+  
   
   ### Navigation feature
 
@@ -292,26 +322,9 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   #### feature Summary:
    - **
    
-   ----
+----
 
-### .....feature
-
-* **
-
-* **
-
-* **
-
-  <details>
-  <summary>......</summary>
-  <br>
-  <div align="center">
-    <img src="" target="_blank" rel=""/>
-  <img src="" target="_blank" rel=""/>
-</div>
-    </details>
-    
-   #### Explore tab Summary:
+#### Explore tab Summary:
    - **
    
    ----
