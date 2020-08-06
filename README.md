@@ -34,7 +34,7 @@
 
 ## Project purpose
 
-The purpose of this project is a personal activity log for my runs; as I am passionate about running and want to keep a daily log of set activities to track my times, distance& activity difficulty. 
+The purpose of this project is to be used as a personal activity log for my runs; because I am passionate about running and want to keep a daily log of set activities to track my times, distance& activity difficulty. 
 
 
 ## UX
@@ -44,7 +44,7 @@ https://www.strava.com/.
 
 __Sprint__ website aims: **(Also see user stories below and project purpose above)**.
 
-* A primary design goal of this website is to be easy to log activities.
+* To be easy to log activities.
 
 * The site should be appealing to view, using imagery and bright colors.
 
@@ -87,6 +87,7 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
   <br>
 
 ## Wire-Frames
+The main difference between desktop and mobile is breakpoints, which adapts features to fit various screen sizes.
 
 ### Welcome& Home page
 
@@ -190,7 +191,84 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 
 ## Features
 
-### Navigation feature
+### Welcome page
+
+* *Welcome page, has a full sized background-image.*
+
+* *The sprint icon is at the top of the page, user can click the icon and it will transport to about sprint page.*
+
+* *Below the site logo/icon is the title, provides a brief sentence on what Sprint is about.*
+
+* *Center of the image is a button titled "Run on in!", this transports user to create or explore home page.*
+
+* *Bottom of the image is social media icons, user can share Sprint to their feed.*
+
+<details>
+  <summary>Welcome page</summary>
+  <br>
+<div align="center">
+<img src="" target="_blank" rel=""/>
+<img src="" target="_blank" rel=""/>
+  </div>
+  </details>
+  
+  #### Navigation Summary: 
+   - *This feature was inspired by user story...*
+   
+   ----
+
+### Home& Create or explore cards features
+
+* *Adapted from the bootstrap library, the cards are a creative way to provide the user the two available options: Create or Explore.*
+
+* *Both cards have an image with the tag: "Create activity" and "Explore activities" and when image is clicked takes the user to the respective page.*
+
+* *The Create activity card takes the user to the create page where user can log a new activity.*
+
+* *The Explore activities card takes the user to the explore page which displays all the previously logged activities by the user.
+
+* *In addition the explore activities card has a search bar, the user can type for example: 10k run and press enter, this will transport to the explore activities page and display all 10k runs that have been logged.
+
+<details>
+  <summary>Create or Explore page</summary>
+<div align="center">
+<img src="" target="_blank" rel=""/>
+  </div>
+  </details>
+  
+  #### Feature Summary:
+   - *This feature was inspired by user stories, a local runner and Lucy who wanted to compare lastest run to previous activities and the site to be appealing.*
+   
+   ----
+
+### Create activity feature
+
+* *The create activity page primary purpose is for user to log their latest activity.*
+
+* *The first ever log that the user creates, they will have to type all personal details such first name unless browser they are using has already stored this information. Once first log is created, the personal details will already be there when the user goes to create a new activity.*
+
+* *Create feature allows the user to import a picture for each particular activity, by clicking upload file button bottom left of image. Alternaltively if user does not choose an image, Sprint will use a default image. The image is part of the logged activity on the explore page.*
+
+* *The title of the activity is very important as this helps locate the particular activity in database when user types in search bar on explore card or page.*
+
+* *The description of the activity is purely optional, this allows the user to talk about the experience of doing this activity.*
+
+* *The create page feature provides a activity difficulty slider, which the user can choose between: easy, light, moderate, hard and very hard*
+
+*User can alse update or delete this log, with edit& delete buttons below save.*
+
+* *The create page has a social media footer in which user can share activity.*
+
+<details>
+  <summary>The create activity page</summary>
+<div align="center">
+<img src="" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
+  
+  
+  ### Navigation feature
 
 * *The navigation bar, which will be used on the "About sprint page", "create page", "explore page".*
 
@@ -208,49 +286,6 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 <div align="center">
 <img src="" target="_blank" rel=""/>
 <img src="" target="_blank" rel=""/>
-  </div>
-  </details>
-  
-  #### Navigation Summary: 
-   - *This feature was inspired by user story "Lucy" who asked for the site to be easy to navigate.*
-   
-   ----
-
-### Create or explore page cards feature
-
-* **
-
-* **
-
-* **
-
-<details>
-  <summary>Slideshow</summary>
-<div align="center">
-<img src="" target="_blank" rel=""/>
-  </div>
-  </details>
-  
-  #### Feature Summary:
-   - **
-   
-   ----
-
-### .....feature
-
-* *
-
-* **
-
-* **
-
-* **
-
-<details>
-  <summary>Somerset Maps</summary>
-<div align="center">
-<img src="" 
-     target="_blank" rel=""/>
   </div>
   </details>
   
