@@ -3,7 +3,9 @@
 ### Track your workouts one sprint at a time!
 
 *Keeping fit by running or walking is popular amongst millions of people across the entire globe from your local park to the olympic games.* 
-*An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, heart-rate and factors such as surface& weather.* *Sprint aims to allow individual of all ages, gender and abilities, to track their running and walking activities.*
+*An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, and factors such as surface& weather.* 
+
+*Sprint aims to allow individual of all ages, gender and abilities, to track their running and walking activities.*
 
 <br>
 <img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/readme/banner.jpg">
@@ -18,8 +20,7 @@
 
 * [UX](#UX)
 * [User-Stories](#User-Stories)
- * [Strategy](#Strategy)
- * [Scope](#Scope)
+ * [Project purpose](#Project-purpose)
 * [Wire-Frames](#Wire-Frames)
  * [Features](#Features)
  * [Technologies](#Technologies)
@@ -39,7 +40,7 @@ The purpose of this project is to be used as a personal activity log for my runs
 
 ## UX
 
-__Sprint__ site was inspired by an app I use everyday named, __Strava__ see their website here:
+__Sprint__ site was inspired by an app I use everyday named __Strava__, see their website here:
 https://www.strava.com/.
 
 __Sprint__ website aims: **(Also see user stories below and project purpose above)**.
@@ -49,6 +50,10 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 * The site should be appealing to view, using imagery and bright colors.
 
 * Input forms to be intuitive, if user has previously entered the same information, those details will already be filled in for example: name, last name, gender and postcode.
+
+* User can search specific logged activities.
+
+* Users can share their activies via social media.
 
 
 #### Main Fonts used in this project
@@ -82,7 +87,7 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 
 ---
 
-*"Good afternoon, I run in my local area every other day and would like share my activities with my friends via social media."*
+*"Good afternoon, I compete in my local park run every weekend, and would like to share my runs with my friends via social media."*
   
   <br>
 
@@ -125,7 +130,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 </div>
   </details>
   
-  
+  -------------------------------------
   
   ### Create activity page
   
@@ -147,6 +152,8 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
          </div>
     </details>
   
+   -------------------------------------
+  
   ### Explore page
   
   <details>
@@ -167,6 +174,8 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
          </div>
     </details>
   
+  
+   -------------------------------------
   
   ### About Sprint page
     
@@ -212,8 +221,9 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   </div>
   </details>
   
-  #### Navigation Summary: 
-   - *This feature was inspired by user story...*
+  #### Welcome page Summary: 
+   - *This feature was inspired by user stories, to be appealing and landing page designs via Google Images.*
+   
    
    ----
 
@@ -236,7 +246,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   </div>
   </details>
   
-  #### Feature Summary:
+  #### Home page Summary:
    - *This feature was inspired by user stories, a local runner and Lucy who wanted to compare lastest run to previous activities and the site to be appealing.*
    
    ----
@@ -267,7 +277,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   </div>
   </details>
   
-   #### Feature Summary:
+   #### Create activity Summary:
    - *...*
    
    ----
@@ -278,8 +288,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 
 * *This feature has a search bar on the navigation bar, user can search through all the logged activities.*
 
-* *Clicking the image on each post will transfer the user to create page where user can update or delete the activity.*
-
+* *Clicking the image on each post will transfer the user to create page where user can update or delete the activity.
 * *Each activity log will have the activity title, image, description and difficulty.*
 
 * *This feature footer has the social media links and sprint icon. User learn more about sprint and share sprint to social media.*
@@ -292,7 +301,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   </div>
   </details>
   
-   #### Feature Summary:
+   #### Explore activities Summary:
    - *...*
    
    ----
@@ -314,6 +323,11 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
      target="_blank" rel=""/>
   </div>
   </details>
+  
+  #### About Sprint summary 
+  - *...*
+  
+  ----
    
 ## Features left to implement
    - Summary *"With future iterations of the website, the primary aims are to.....*
