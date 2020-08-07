@@ -296,74 +296,24 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
    - *...*
    
    ----
-  
-  
-  ### Navigation feature
-
-* *The navigation bar, which will be used on the "About sprint page", "create page", "explore page".*
-
-* *The Navigation bar will follow user scroll down the page, increase ease of use.*
-
-* *The navigation bar feature will have a home icon and sprint icon.*
-
-* *The navigation bar on explore page, will have a create icon and a search bar.*
-
-* *The navigation bar on create page, will have an explore icon.*
-
-<details>
-  <summary>Navigation</summary>
-  <br>
+   
+   ### About Sprint feature
+   
+ * *The about Sprint feature informs the user about Sprint's purpose and why the website was created.*
+ 
+ * *The feature will have three images with captions: "What is Sprint", "Why have Sprint", and "Sprint's future".*
+ 
+ * *When user hovers over each image, a text box slides out to the side and displays a description. Once user moves cursor to the next image the text slides back inside the image.*
+ 
+ * *Footer of this feature has the sprint icon and the social media icons where user can share their Sprint experience.*
+ 
+ <details>
+  <summary>About Sprint page</summary>
 <div align="center">
-<img src="" target="_blank" rel=""/>
-<img src="" target="_blank" rel=""/>
+<img src="" 
+     target="_blank" rel=""/>
   </div>
   </details>
-  
-  #### feature Summary:
-   - **
-   
-----
-
-#### Explore tab Summary:
-   - **
-   
-   ----
-
-### .....feature
-
-* **
-
-* ** 
-
-<details>
-  <summary>Scroll tab</summary>
-  <br>
-  <div align="center">
-    <img src="" target="_blank" rel=""/>
-         </div>
- </details>
-  
-  #### feature Summary:
-   - ** 
-   
-   ----
-  
-### Footer feature
-  
-  * **
-  
-  * **  
-  
-  <details>
-  <summary>Footer section</summary>
-  <br>
-  <div align="center">
-    <img src="" target="_blank" rel=""/>
-  </div>
-  </details>
-  
- #### Footer Summary:
-   - **
    
 ## Features left to implement
    - Summary *"With future iterations of the website, the primary aims are to.....*
@@ -373,6 +323,8 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 ## Technologies
 
 * Html, Css, Javascript, Python language
+
+* MongoDB - https://www.mongodb.com/
 
 * Balslamiq - https://balsamiq.com/
 
