@@ -66,8 +66,6 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 <img src="" target="_blank" rel=""/>
 <img src="" target="_blank" rel=""/>
 <img src="" target="_blank" rel=""/>
-<img src="" target="_blank" rel=""/>
-<img src="" target="_blank" rel=""/>
   </div>
   </details>
 
