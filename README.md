@@ -53,7 +53,7 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 
 * User can search specific logged activities.
 
-* Users can share their activies via social media.
+* Users can share their activities via social media.
 
 
 #### Main Fonts used in this project
@@ -255,7 +255,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 
 * *The first ever log that the user creates, they will have to type all personal details such first name unless browser they are using has already stored this information. Once first log is created, the personal details will already be there when the user goes to create a new activity.*
 
-* *Create feature allows the user to import a picture for each particular activity, by clicking upload file button bottom left of image. Alternaltively if user does not choose an image, Sprint will use a default image. The image is part of the logged activity on the explore page.*
+* *Create feature allows the user to import a picture for each particular activity, by clicking upload file button bottom left of image. This accesses users files on the computer and user can choose an appropriate file type such as Jpeg or Png. Alternaltively if user does not choose an image, Sprint will use a default image. The image is part of the logged activity on the explore page.*
 
 * *The title of the activity is very important as this helps locate the particular activity in database when user types in search bar on explore card or page.*
 
