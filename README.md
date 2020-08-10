@@ -233,9 +233,9 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 
 * *The Create activity card takes the user to the create page where user can log a new activity.*
 
-* *The Explore activities card takes the user to the explore page which displays all the previously logged activities by the user.
+* *The Explore activities card takes the user to the explore page which displays all the previously logged activities by the user.*
 
-* *In addition the explore activities card has a search bar, the user can type for example: 10k run and press enter, this will transport to the explore activities page and display all 10k runs that have been logged.
+* *In addition the explore activities card has a search bar, the user can type for example: 10k run and press enter, this will transport to the explore activities page and display all 10k runs that have been logged.*
 
 <details>
   <summary>Create or Explore page</summary>
@@ -276,7 +276,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   </details>
   
    #### Create activity Summary:
-   - *...*
+   - *Create activity page, a crucial part of this site, as this allows the user to create an activity log.*
    
    ----
    
@@ -286,7 +286,8 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 
 * *This feature has a search bar on the navigation bar, user can search through all the logged activities.*
 
-* *Clicking the image on each post will transfer the user to create page where user can update or delete the activity.
+* *Clicking the image on each post will transfer the user to create page where user can update or delete the activity.*
+
 * *Each activity log will have the activity title, image, description and difficulty.*
 
 * *This feature footer has the social media links and sprint icon. User learn more about sprint and share sprint to social media.*
@@ -300,7 +301,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   </details>
   
    #### Explore activities Summary:
-   - *...*
+   - *Explore activities page is very positive feature of this site as this increases user interaction by exploring through their own activity logs.*
    
    ----
    
@@ -323,18 +324,19 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   </details>
   
   #### About Sprint summary 
-  - *...*
+  - *This feature is a positive addition to the site as this allows the user to learn more about Sprint.*
   
   ----
    
 ## Features left to implement
-   - Summary *"With future iterations of the website, the primary aims are to.....*
- 
- #### Read full article here - issue article
+   - Summary *"This site starts as a personal tool and as improvements are made and features added to become a public tool."*
+   
+   * __See full article here: https://github.com/michodgs24/Sprint/issues/1#issue-675980810__ 
+
 
 ## Technologies
 
-* Html, Css, Javascript, Python language
+* Html, Css, Javascript, Python languages
 
 * MongoDB - https://www.mongodb.com/
 
@@ -343,8 +345,6 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 * JQuery library - https://jquery.com/        
 
 * W3.CSS - https://www.w3schools.com/
-
-* Google Maps - https://developers.google.com/maps/documentation/javascript/examples
 
 * JS hint - https://jshint.com/
 
