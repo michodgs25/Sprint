@@ -1,15 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:&family=Oswald:wght@300&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    margin: 0;
-    font-size: 1.0625em;
     color: rgb(52, 198, 235);
-    background-color: rgb(255, 187, 0);
     line-height: 1em;
 }
 
@@ -26,28 +18,29 @@ body {
     padding: 0 1.25em;
 }
 
-.welcome-image h1 {
-    font-size: 3.125em;
+.home-logo {
+    font-size: 4em;
+    border-radius: 1em;
 }
 
 .welcome-image p {
-    font-size: 1.25em;
-    line-height: 1em;
+    padding: 5em;
 }
 
+/*welcome page button*/
 .welcome-image .button {
     font-size: 1.125em;
     text-decoration: none;
-    color: rgb(52, 198, 235);
+    color: rgb(245, 182, 66);
     border: rgb(52, 198, 235) 0.0625em solid;
     padding: 0.625em 1.25em;
     border-radius: 0.625em;
-    margin-top: 1.25em;
+    margin-top: 2em;
 }
 
 .welcome-image .button:hover{
-    background: rgb(52, 198, 235);
-    color: rgb(93, 66, 245);
+    background: rgb(245, 182, 66);
+    color: rgb(52, 198, 235);
 }
 
  /*navigation bar*/
@@ -60,20 +53,22 @@ body {
     font-size: calc(1em + 0.1vw);
 }
 
+/*footer/icons section*/
 .footer {
     text-align: center;
     height: 20em;
 }
 
 .footer img {
-    height: 3em;
+    height: 4em;
+    border-radius: 1em;
 }
 
 .footer-header {
     padding-top: 5rem;
 }
 
-a {
+i {
     text-decoration: none;
 }
 
@@ -81,4 +76,21 @@ a {
     list-style-type: none;
     text-align: center;
     display: inline;
+}
+
+.footer li a {
+    text-decoration: none;
+    font-size: 4em;
+}
+
+.facebook li a {
+    color: rgb(75, 66, 245);
+}
+
+.twitter li a {
+    color: rgb(66, 194, 245);
+}
+
+.fab fa-instagram a {
+    color: rgb(239, 66, 245);
 }
