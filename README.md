@@ -49,7 +49,7 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 
 * The site should be appealing to view, using imagery and bright colors.
 
-* Input forms to be intuitive, if user has previously entered the same information, those details will already be filled in for example: name, last name, gender and postcode.
+* User can log specific variables of each activity such as the weather or surface.
 
 * User can search specific logged activities.
 
@@ -253,17 +253,13 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 
 * *The create activity page primary purpose is for user to log their latest activity.*
 
-* *The first ever log that the user creates, they will have to type all personal details such first name unless browser they are using has already stored this information. Once first log is created, the personal details will already be there when the user goes to create a new activity.*
+* *The user will input personal details such as name& last for every activity log.*
 
-* *Create feature allows the user to import a picture for each particular activity, by clicking upload file button bottom left of image. This accesses users files on the computer and user can choose an appropriate file type such as Jpeg or Png. Alternaltively if user does not choose an image, Sprint will use a default image. The image is part of the logged activity on the explore page.*
-
-* *The title of the activity is very important as this helps locate the particular activity in database when user types in search bar on explore card or page.*
+* *The title of the activity is very important as this helps locate the particular activity in database when user types in search bar on explore card or explore page.*
 
 * *The description of the activity is purely optional, this allows the user to talk about the experience of doing this activity.*
 
 * *The create page feature provides a activity difficulty slider, which the user can choose between: easy, light, moderate, hard and very hard*
-
-*User can alse update or delete this log, with edit& delete buttons below save.*
 
 * *The create page has a social media footer in which user can share activity.*
 
@@ -360,124 +356,9 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 
 ## Testing
 
-### Testing site on different browsers - i.
-Shared the link on google, internet explorer and yahoo to ensure the site looks and works as it should on different browers. 
-
-### Testing device on various screen sizes - ii. 
-Opened Google developer tools and toggled the site between various devices, that include:
-
-* iphone X
-* Moto G4
-* Pixel 2
-* Pixel 2 XL
-* iphone 5/SE
-* iphone 6/7/8 & plus
-* ipad and ipad pro
-
-Also opened site on Samsung S10 mobile device and explored all the features.
-
-
-#### Summary: 
-**
-
-## Site performance testing
-
-### Testing mobile friendliness - iii.
-*Applied three different verified automated online testing tools to ensure website is ready for mobile:*
-
-### Google developer tool lighthouse:
-   - Opened Google developer tools on-site, find lighthouse on navigation bar(next to security) and click generate report.
-
-<details>
-  <summary>Lighthouse Results</summary>
-  <br>
-  <div align="center">
-    <img src=""
-         </div>
- </details>
-  
-   - Summary: *"The lighthouse tool provided a good insight into the website mobile performance and assisted the development process......"*
-
-----
-
- ### Google mobile friendly test:
-   - Entered website link as indicated into enter bar on homepage, an automated testing tool to verify if site is equipped for mobile devices follow link below to see the results:
-
-   <details>
-  <summary>Google mobile test</summary>
-  <br>
-  <div align="center">
-<img src=" target="_blank" rel=""/>
-         </div>
- </details>
- 
-  - Summary: *"This tool has...."*
- 
- #### Google mobile friendliness results discussed here -
- 
- ----
-
-### mobiReady mobile test:
-  - Enter website link as indicated into enter bar on homepage, press enter and the site automates the website to whether it will be mobile ready.
-    
-  <details>
-  <summary>mobiReady</summary>
-  <br>
-  <div align="center">
- <img src="" target="_blank" rel=""/>
- <img src="" target="_blank" rel=""/>
-         </div>
- </details>
-
-   - Summary: *"Overall this tool proved useful as it highlighted....."*
-  
-#### mobiReady results discussed here - 
-
-*Automated testing provided great value to shedding light on issues within the site as human error is very prevalent in the development process.
-
-----
-
-## Functional testing 
-To ensure each feature works as intended, I manually tested each section from navigation bar to the footer icon links.
-
-   - Summary:
-   *""*
-   
- #### Read full manual walk-through of each feature and how is should work here: 
- .......
- 
- ----
-
-## Code validity
-
-### Testing Code validity - iiii.
-Tested html and css code formatting with https://validator.w3.org/ - done by copying& pasting the code via direct input into the site text box. 
-
-Tested the JavaScript code with https://jshint.com/ - done by copying& pasting the code via direct imput into the site text-area. 
-
-#### - Summary:
-*No errors were found in either tests, ensuring code is error free.*
-
----- 
-
-### Testing website on mobile - iiiii
-Copied site link:
-
-#### - Summary:
-*All features....*
-
-#### See mobile test footage here: 
-......
-......
-
-----
-
-### Slack feedback 
-
 Summary: *""*
 
-
-#### Read full article here: 
+__See testing documentation here:.......__
 
 ## Version Control
 This sites version control is through github and using gitpod IDE, once completed a piece of work, I would type into the terminal:
