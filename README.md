@@ -358,7 +358,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 
 Summary: *""*
 
-__See testing documentation here:.......__
+__See testing documentation here: https://github.com/michodgs24/Sprint/blob/master/test.md__
 
 ## Version Control
 This sites version control is through github and using gitpod IDE, once completed a piece of work, I would type into the terminal:
