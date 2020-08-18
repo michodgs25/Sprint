@@ -381,8 +381,8 @@ This sites version control is through github and using gitpod IDE, once complete
 
 * For this project I chose to deploy via my github and followed these instructions:
 
-   *  <details>
-  <summary>About Sprint page</summary>
+<details>
+  <summary>deploy heroku</summary>
 <div align="center">
 <img src="./assets/images/readme/heroku-connect.jpg" 
      target="_blank" rel=""/>
