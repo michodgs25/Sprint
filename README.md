@@ -373,11 +373,21 @@ This sites version control is through github and using gitpod IDE, once complete
  - *This pushes the file to the github project repository.*
 
 ## Deployment
-* This site is hosted on Heroku
+* This site is hosted via Heroku
 
-* .....
+* Firstly clicking "new" on landing page, giving it the name sprint-flask and chose Europe as the edge server for faster delivery.
 
-* .....
+* Heroku transports to the deploy page, which provides two options on how to deploy site, either through heroku git CLI or github.
+
+* For this project I chose to deploy via my github and followed these instructions:
+
+   *  <details>
+  <summary>About Sprint page</summary>
+<div align="center">
+<img src="./assets/images/readme/heroku-connect.jpg" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
 
 * To run locally, you can visit the project page(master branch):
 
