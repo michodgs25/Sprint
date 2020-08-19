@@ -13,9 +13,13 @@
     <title>Create</title>
 </head>
 <body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="0">
+    {% for activity in activities}
+         {{activity.activity_name}}
+         {{activity.activity_description}}
+         {{activity.activity_date}}
+    {% endfor %}
 
 	<!--Navigation bar-->
-
 <nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-light fixed-top bg-light pb-3">
 <a class="navbar-brand " target="_self" href="#"></a>
 <h2 class="logo"></h2>
