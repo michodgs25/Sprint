@@ -31,11 +31,11 @@ def add_record():
     gender = input("Enter Gender > ")
     age = input("Enter age > ")
     activity = input("Choose activity > ")
-    describe_activity = input("Describe activity > ")
+    describe = input("Describe activity > ")
     difficulty = input("Activity difficulty > ")
 
     new_doc = {"first": first.lower(), "last": last.lower(), "gender": gender.lower(),
-               "age": age.lower(), "activity": activity.lower(), "describe_activity": describe_activity.lower() }
+               "age": age.lower(), "activity": activity.lower(), "describe": describe_activity.lower(), "difficulty": activity_difficulty.lower(), }
 
 
 def main_loop():
