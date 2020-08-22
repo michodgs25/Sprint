@@ -13,6 +13,16 @@
     <title>Create</title>
 </head>
 <body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="0">
+{% for activities in activities %}
+    {{ activities.activities_name }}<br>
+    {{ activities.activities_last_name }}<br>
+    {{ activities.activities_gender }}<br>
+    {{ activities.activities_age }}<br>
+    {{ activities.activities_activity }}<br>
+    {{ activities.activities_name_your_activity }}<br>
+    {{ activities.activities_describe_activity }}<br>
+    {{ activities.activities_activity_difficulty }}<br>
+{% endfor %}
 	<!--Navigation bar-->
 <nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-light fixed-top bg-light pb-3">
 <a class="navbar-brand " target="_self" href="#"></a>
