@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:&family=Oswald:wght@300&display=swap');
 
 body {
+    background-color: red;
     color: rgb(52, 198, 235);
     line-height: 1em;
 }
