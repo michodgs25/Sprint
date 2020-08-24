@@ -3,7 +3,7 @@ import os
 if os.path.exists("env.py"):
   import env
 
-MONGODB_URI = os.environ.get("MONGODB_URI")
+MONGO_URI = os.environ.get("MONGO_URI")
 # DBS_NAME = os.environ.get("third milestone project")
 DBS_NAME = "third_milestone_project"
 COLLECTION_NAME = "activities"
@@ -17,7 +17,7 @@ def mongo_connect(url):
     except pymongo.errors.ConnectionFailure as e:
         print("Could not connect to MongoDB: %s") % e
         
-conn = mongo_connect(MONGODB_URI)
+conn = mongo_connect(MONGO_URI)
 # call database and access collection
 coll = conn[DBS_NAME][COLLECTION_NAME]
 
