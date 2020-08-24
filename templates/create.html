@@ -1,65 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-        <!--Font awesome, social media icons-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!--style html elements& animations-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!--bootstrap cdn-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Create</title>
-</head>
-<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="0">
-{% for activities in activities %}
+{% extends "base.html" %}
+{% block content %}
+
+ <h2>Im extending the base template</h2>
+  {% for activity in activities %}
     {{ activities.activities_name }}<br>
     {{ activities.activities_last_name }}<br>
     {{ activities.activities_gender }}<br>
     {{ activities.activities_age }}<br>
-    {{ activities.activities_activity }}<br>
+    {{ activities.activities_choose_activity }}<br>
     {{ activities.activities_name_your_activity }}<br>
     {{ activities.activities_describe_activity }}<br>
     {{ activities.activities_activity_difficulty }}<br>
-{% endfor %}
-	<!--Navigation bar-->
-<nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-light fixed-top bg-light pb-3">
-<a class="navbar-brand " target="_self" href="#"></a>
-<h2 class="logo"></h2>
-<a class="navbar-brand " target="_self" href="#"></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-   aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse mt-2" id="navbarResponsive">
-   <ul class="navbar-nav ml-auto skew">
-      <li class="nav-item">
-         <a class="nav-link " href="templates/home-create-compare.html">Home</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" href="templates/explore.html">Explore</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" href="templates/create.html">Sprint</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" href="#">Search bar</a>
-      </li>
-   </ul>
-</div>
-</nav>
-<footer class="container">
-			<ul class="footer">
-				<li><a href="about.html" rel="noopener"><img src="./assets/images/logo/logo.jpg"></a></li>
-				<li class="facebook"><a href="https://en-gb.facebook.com/login/" target="_blank"
-						rel="noopener"><i class="fab fa-facebook-square"></i></a></li>
-				<li class="twitter"><a href="https://twitter.com/" target="_blank"
-						rel="noopener"><i class="fab fa-twitter-square"></i></a></li>
-				<li class="instagram"><a href="https://www.instagram.com/" target="_blank"
-						rel="noopener"><i class="fab fa-instagram"></i></a>
-				</li>
-			</ul>
-    </footer>
-</body>
-</html>
+  {% endfor %}
+
+  {% endblock %}
