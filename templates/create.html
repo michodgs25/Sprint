@@ -2,15 +2,16 @@
 {% block content %}
 
  
-  {% for activities in activities %}
-    {{ activities.activities_name }}<br>
-    {{ activities.activities_last_name }}<br>
-    {{ activities.activities_gender }}<br>
-    {{ activities.activities_age }}<br>
-    {{ activities.activities_choose_activity }}<br>
-    {{ activities.activities_name_your_activity }}<br>
-    {{ activities.activities_describe_activity }}<br>
-    {{ activities.activities_activity_difficulty }}<br>
+  {% for task in tasks %}
+      {{ task.task_name }}<br>
+      {{ task.task_surname }}<br>
+      {{ task.task_gender }}<br>
+      {{ task.task_age }}<br>
+      {{ task.task_activity_one }}<br>
+      {{ task.task_title }}<br>
+      {{ task.task_description }}<br>
+      {{ task.task_difficulty }}<br>
+      {{ task.task_date }}<br>
   {% endfor %}
 
   {% endblock %}
