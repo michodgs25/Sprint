@@ -8,7 +8,7 @@
 *Sprint aims to provide a user the ability to log their walking or run activities with ease.*
 
 <br>
-<img src="https://github.com/michodgs24/Sprint/blob/master/assets/images/readme/banner.jpg">
+<img src="https://github.com/michodgs24/Sprint/blob/master/static/images/readme/banner.jpg">
 
 #### Live website here: - Refresh page if having loading issues
 
@@ -98,7 +98,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>Welcome page</summary>
   <br>
 <div align="center">
-<img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/sprint-home-wire.png" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/sprint-home-wire.png" target="_blank" rel=""/>
 </div>
   </details>
   
@@ -106,7 +106,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>Homepage</summary>
   <br>
 <div align="center">
-<img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/create-or-compare-page.png" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/create-or-compare-page.png" target="_blank" rel=""/>
 </div>
   </details>
   
@@ -116,7 +116,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>Mobile Welcome page</summary>
   <br>
 <div align="center">
-<img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-home.png" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-home.png" target="_blank" rel=""/>
 </div>
   </details>
   
@@ -124,7 +124,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>Mobile Homepage</summary>
   <br>
 <div align="center">
-<img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-create-compare.png" target="_blank" rel=""/>
+<img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-create-compare.png" target="_blank" rel=""/>
 </div>
   </details>
   
@@ -136,7 +136,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>Create page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/create-activity.png"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/create-activity.png"
          </div>
     </details>
   
@@ -146,7 +146,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>Mobile Create page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-create-page.png"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-create-page.png"
          </div>
     </details>
   
@@ -158,7 +158,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>Explore page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/explore-page.png"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/explore-page.png"
          </div>
     </details>
   
@@ -168,7 +168,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>Mobile Explore page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-explore.png"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
          </div>
     </details>
   
@@ -181,7 +181,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>About Sprint page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/desktop/about-sprint.png"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/about-sprint.png"
          </div>
     </details>
   
@@ -191,7 +191,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   <summary>About Sprint mobile page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/assets/wire-frame/mobile/mobile-about.png"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-about.png"
          </div>
     </details>
     
