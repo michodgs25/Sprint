@@ -19,10 +19,10 @@
   <!--fixed navbar-->
     <nav class="nav-extended text-shadow #01579b light-blue darken-4">
       <div class="nav-wrapper">
-        <i class="fas fa-home" href="home-create-compare.html"></i>
+        <a><i class="fas fa-home" href="{{ url_for('get_create_compare') }}"></i></a>
         <h6>Home</h6>
         <ul class="right hide-on-med-and-down">
-        <li><a href="explore.html">Explore Sprints</a></li>
+        <li><a href="{{ url_for('get_tasks') }}">Explore Sprints</a></li>
         <li><a href="about.html"><img class="nav-logo" src="./static/images/logo/logo.jpg"></a></li>
         </ul>
       </div>

@@ -24,6 +24,21 @@ def get_tasks():
     return render_template("explore.html", tasks=tasks)
 
 
+@app.route("/get_create_compare")
+def get_create_compare():
+    return render_template("home-create-compare.html")
+
+
+@app.route("/get_about")
+def get_about():
+    return render_template("about.html")
+
+
+@app.route("/get_create", methods=["GET", "POST"])
+def get_create():
+    return render_template("create.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
