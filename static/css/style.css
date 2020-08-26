@@ -56,6 +56,10 @@ body {
     text-shadow: 0.125em 0.125em 0.125em rgb(0, 0, 0, 0.5);
 }
 
+.nav-logo {
+    font-size: 1em;
+}
+
 /*footer/icons section*/
 .footer {
     text-align: center;
