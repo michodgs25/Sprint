@@ -48,6 +48,10 @@ nav {
     line-height: 5em;
 }
 
+img {
+    font-size: 2em;
+}
+
 .text-shadow{
     text-shadow: 0.125em 0.125em 0.125em rgb(0, 0, 0, 0.5);
 }
