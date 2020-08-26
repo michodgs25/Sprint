@@ -42,22 +42,14 @@ body {
     color: rgb(52, 198, 235);
 }
 
- /*navigation bar
-  i {
-    display: inline-block;
-    margin-right: 1em;
-}
+ /*navigation bar*/
 
-.nav-link {
-    font-size: calc(1em + 0.1vw);
-}*/
+nav {
+    line-height: 5em;
+}
 
 .text-shadow{
     text-shadow: 0.125em 0.125em 0.125em rgb(0, 0, 0, 0.5);
-}
-
-.nav-logo {
-    font-size: 1em;
 }
 
 /*footer/icons section*/
