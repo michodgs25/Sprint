@@ -1,42 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-        <!--Font awesome, social media icons-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!--style html elements& animations-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!--Bootstrap cdn-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Sprint</title>
-</head>
-<body>
-<div class="card" style="width: 18rem;">
-  <img src="./assets/images/home/create-card.jpg" class="card-img-top" alt="Runner in the dunes"><a href="templates/create.html"></a>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+{% block content %}
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card small">
+        <div class="card-image">
+          <img src="static/images/home/create-card.jpg">
+          <span class="card-title">Create</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ url_for('get_create') }}">Create a Sprint</a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<br>
-<div class="card" style="width: 18rem;">
-  <img src="./assets/images/home/explore-card.jpg" class="card-img-top" alt="Group of runners in the woods"><a href="templates/explore.html"></a>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <br>
+    <div class="row">
+    <div class="col s12 m7">
+      <div class="card small">
+        <div class="card-image">
+          <img src="static/images/home/explore-card.jpg">
+          <span class="card-title">Explore</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ url_for('get_tasks') }}">Explore Sprints</a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<footer class="container">
-			<ul class="footer">
-				<li><a href="about.html" rel="noopener"><img src="./assets/images/logo/logo.jpg"></a></li>
-				<li class="facebook"><a href="https://en-gb.facebook.com/login/" target="_blank"
-						rel="noopener"><i class="fab fa-facebook-square"></i></a></li>
-				<li class="twitter"><a href="https://twitter.com/" target="_blank"
-						rel="noopener"><i class="fab fa-twitter-square"></i></a></li>
-				<li class="instagram"><a href="https://www.instagram.com/" target="_blank"
-						rel="noopener"><i class="fab fa-instagram"></i></a>
-				</li>
-			</ul>
-    </footer>
-</body>
-</html>
+{% endblock %}

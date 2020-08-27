@@ -1,11 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create page</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<h1>Fill in your details</h1>
+<!--input first name-->
+<div class="row">
+	<form class="col s12" method="POST" action="{{ url_for('get_create')}}">
+			<div class="input-field col s6">
+				<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+				<input id="username" name="username" type="text" class="validate">
+				<label class="active" for="username">First Name</label>
+			</div>
+	</form>
+</div>
+    <!--give last name-->
+    <div class="row">
+	<form class="col s12">
+            <div class="input-field col s6">
+				<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+				<input id="surname" name="surname" type="text" class="validate">
+				<label class="active" for="surname">Last Name</label>
+			</div>
+	</form>
+</div>
+<br>
+<!--input your gender-->
+<div class="input-field col s12">
+	<select>
+      <option value="" disabled selected>Choose activity</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+      <option value="3">Prefer not to say</option>
+    </select>
+	<label>Gender</label>
+</div>
+<br>
+<!--input your age-->
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+				<input id="age" name="age" type="text" class="validate">
+				<label class="active" for="age">Age</label>
+			</div>
+		</div>
+</form>
+<!--choose specific activity-->
+<div class="input-field col s12">
+	<select>
+      <option value="" disabled selected>Choose activity</option>
+      <option value="1">Run</option>
+      <option value="2">Walk</option>
+      <option value="3">Run and Walk</option>
+    </select>
+	<label>Choose activity</label>
+</div>
+<br>
+<!--name your activity-->
+<h2 class="center-align">Name your activity<h2>
+<div class="row">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+				<input id="activity-name" name="activity-name" type="text" class="validate">
+				<label class="active" for="activity-name">Activity name</label>
+			</div>
+		</div>
+            </form>
+		<br>
+        <!--describe the activity-->
+		<h2 class="center-align">Describe<h2>
+				<div class="row">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s12">
+								<textarea id="textarea2" class="materialize-textarea"></textarea>
+								<label for="textarea2">Describe your activity</label>
+							</div>
+						</div>
+					</form>
+				</div>
+                <!--choose activity difficulty-->
+                <div id="slider"></div>
+                <!--save activity-->
+                <div class="row">
+                <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
+                Save <i class="fas fa-sign-in-alt"></i>
+                </button>
+
+				{% endblock %}
