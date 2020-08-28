@@ -4,87 +4,97 @@
 <!--input first name-->
 <div class="row">
 	<form class="col s12" method="POST" action="{{ url_for('get_create')}}">
-			<div class="input-field col s6">
-				<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
-				<input id="username" name="username" type="text" class="validate">
-				<label class="active" for="username">First Name</label>
-			</div>
+		<div class="input-field col s6">
+			<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+			<input id="username" name="username" type="text" class="validate">
+			<label class="active" for="username">Name</label>
+		</div>
 	</form>
 </div>
-    <!--give last name-->
-    <div class="row">
+<!--give last name-->
+<div class="row">
 	<form class="col s12">
-            <div class="input-field col s6">
-				<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
-				<input id="surname" name="surname" type="text" class="validate">
-				<label class="active" for="surname">Last Name</label>
-			</div>
+		<div class="input-field col s6">
+			<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+			<input id="surname" name="surname" type="text" class="validate">
+			<label class="active" for="surname">Surname</label>
+		</div>
 	</form>
 </div>
 <br>
 <!--input your gender-->
-<div class="input-field col s12">
-	<select>
-      <option value="" disabled selected>Choose activity</option>
-      <option value="1">Male</option>
-      <option value="2">Female</option>
-      <option value="3">Prefer not to say</option>
-    </select>
-	<label>Gender</label>
-</div>
+<label>Gender</label>
+<select class="browser-default">
+    <option value="0">Please Choose:</option>
+    <option value="1">Male</option>
+    <option value="2">Female</option>
+    <option value="3">Prefer not to say</option>
+  </select>
 <br>
 <!--input your age-->
-	<form class="col s12">
-		<div class="row">
-			<div class="input-field col s6">
-				<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
-				<input id="age" name="age" type="text" class="validate">
-				<label class="active" for="age">Age</label>
-			</div>
+<form class="col s12">
+	<div class="row">
+		<div class="input-field col s6">
+			<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+			<input id="age" name="age" type="text" class="validate">
+			<label class="active" for="age">Age</label>
 		</div>
+	</div>
 </form>
 <!--choose specific activity-->
-<div class="input-field col s12">
-	<select>
-      <option value="" disabled selected>Choose activity</option>
-      <option value="1">Run</option>
-      <option value="2">Walk</option>
-      <option value="3">Run and Walk</option>
-    </select>
-	<label>Choose activity</label>
-</div>
+<label>Choose your activity</label>
+<select class="browser-default">
+    <option value="0">Please choose:</option>
+    <option value="1">Run</option>
+    <option value="2">Walk</option>
+    <option value="3">Run and Walk</option>
+  </select>
 <br>
 <!--name your activity-->
 <h2 class="center-align">Name your activity<h2>
-<div class="row">
-	<form class="col s12">
 		<div class="row">
-			<div class="input-field col s6">
-				<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
-				<input id="activity-name" name="activity-name" type="text" class="validate">
-				<label class="active" for="activity-name">Activity name</label>
-			</div>
-		</div>
-            </form>
-		<br>
-        <!--describe the activity-->
-		<h2 class="center-align">Describe<h2>
+			<form class="col s12">
 				<div class="row">
-					<form class="col s12">
-						<div class="row">
-							<div class="input-field col s12">
-								<textarea id="textarea2" class="materialize-textarea"></textarea>
-								<label for="textarea2">Describe your activity</label>
-							</div>
-						</div>
-					</form>
+					<div class="input-field col s6">
+						<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+						<input id="activity-name" name="activity-name" type="text" class="validate">
+						<label class="active" for="activity-name">Activity name</label>
+					</div>
 				</div>
-                <!--choose activity difficulty-->
-                <div id="slider"></div>
-                <!--save activity-->
-                <div class="row">
-                <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
+			</form>
+			<br>
+			<!--describe the activity-->
+			<h2 class="center-align">Describe<h2>
+					<div class="row">
+						<form class="col s12">
+							<div class="row">
+								<div class="input-field col s12">
+									<textarea id="textarea2" class="materialize-textarea"></textarea>
+									<label for="textarea2">Describe your activity</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!--choose activity difficulty -  work in progress-->
+					<div id="slider"></div>
+					<br>
+                    <label>Activity Difficulty</label>
+                    <select class="browser-default">
+                    <option value="0">Please choose:</option>
+                    <option value="1">Light</option>
+                    <option value="2">Easy</option>
+                    <option value="3">Moderate</option>
+                    <option value="4">Hard</option>
+                    <option value="5">Very Hard</option>
+                    </select>
+                    <br>
+                    <!--Date of activity-->
+                      <input type="text" class="datepicker">
+					<!--save activity-->
+                    <br>
+					<div class="row">
+						<button type="submit" class="col s12 btn-large light-green darken-4 text-shadow">
                 Save <i class="fas fa-sign-in-alt"></i>
                 </button>
 
-				{% endblock %}
+						{% endblock %}

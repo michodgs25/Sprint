@@ -54,7 +54,7 @@ body {
 
  /*navigation bar*/
 nav {
-    line-height: 1em;
+    line-height: 0.5em;
     padding-bottom: 10em;
 }
 
@@ -68,7 +68,7 @@ nav {
 
 /*difficulty slider*/
 #slider { 
-    margin: 10px; 
+    margin: 1em; 
 }
 
 /*footer/icons section
