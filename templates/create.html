@@ -13,7 +13,7 @@
 </div>
 <!--give last name-->
 <div class="row">
-	<form class="col s12">
+	<form class="col s12" method="POST" action="{{ url_for('get_create')}}">
 		<div class="input-field col s6">
 			<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
 			<input id="surname" name="surname" type="text" class="validate">
@@ -23,7 +23,7 @@
 </div>
 <br>
 <!--input your gender-->
-<label>Gender</label>
+<label method="POST" action="{{ url_for('get_create')}}">Gender</label>
 <select class="browser-default">
     <option value="0">Please Choose:</option>
     <option value="1">Male</option>
@@ -32,7 +32,7 @@
   </select>
 <br>
 <!--input your age-->
-<form class="col s12">
+<form class="col s12" method="POST" action="{{ url_for('get_create')}}">
 	<div class="row">
 		<div class="input-field col s6">
 			<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
@@ -42,7 +42,7 @@
 	</div>
 </form>
 <!--choose specific activity-->
-<label>Choose your activity</label>
+<label method="POST" action="{{ url_for('get_create')}}">Choose your activity</label>
 <select class="browser-default">
     <option value="0">Please choose:</option>
     <option value="1">Run</option>
@@ -53,7 +53,7 @@
 <!--name your activity-->
 <h2 class="center-align">Name your activity<h2>
 		<div class="row">
-			<form class="col s12">
+			<form class="col s12" method="POST" action="{{ url_for('get_create')}}">
 				<div class="row">
 					<div class="input-field col s6">
 						<i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
@@ -66,7 +66,7 @@
 			<!--describe the activity-->
 			<h2 class="center-align">Describe<h2>
 					<div class="row">
-						<form class="col s12">
+						<form class="col s12" method="POST" action="{{ url_for('get_create')}}">
 							<div class="row">
 								<div class="input-field col s12">
 									<textarea id="textarea2" class="materialize-textarea"></textarea>
@@ -78,7 +78,7 @@
 					<!--choose activity difficulty -  work in progress-->
 					<div id="slider"></div>
 					<br>
-                    <label>Activity Difficulty</label>
+                    <label method="POST" action="{{ url_for('get_create')}}">Activity Difficulty</label>
                     <select class="browser-default">
                     <option value="0">Please choose:</option>
                     <option value="1">Light</option>
@@ -89,10 +89,10 @@
                     </select>
                     <br>
                     <!--Date of activity-->
-                      <input type="text" class="datepicker">
+                      <input type="text" class="datepicker" method="POST" action="{{ url_for('get_create')}}">
 					<!--save activity-->
                     <br>
-					<div class="row">
+					<div class="row" method="POST" action="{{ url_for('get_create')}}">
 						<button type="submit" class="col s12 btn-large light-green darken-4 text-shadow">
                 Save <i class="fas fa-sign-in-alt"></i>
                 </button>
