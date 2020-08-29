@@ -7,11 +7,30 @@
     $('#textarea1', '#textarea2').val('New Text');
     M.textareaAutoResize($('#textarea1', '#textarea2'));
     
-    //call date-picker
-    $('.datepicker').datepicker();
+    //create sprint text form function
+    M.updateTextFields();
+    
+    //call slider
+    $( "slider" ).slider();
+  });
+  
+  //jQuery method for select boxes no longer a materialize library dependency, applied custom javascript
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+
+   var instance = M.FormSelect.getInstance(elem);
+
+    
+   
+   // jQuery is no longer a dependency, all the methods are called on the plugin instance. materialize suggest using custom javascript:
+   var instance = M.Datepicker.getInstance(elem);
+       //call date-picker
+    $('.datepicker').datepicker(format,'mmm dd, yyyy');
     
     // open date picker
-    instance.open();
+    instance.open(defaultDate, 'null');
     
     //close date picker
     instance.close();
@@ -30,18 +49,3 @@
     
     //Date to show on the datepicker
     instance.gotoDate(new Date());
-    
-    //create sprint text form function
-    M.updateTextFields();
-    
-    //call slider
-    $( "slider" ).slider();
-  });
-  
-  //jQuery method for select boxes no longer a materialize library dependency, applied custom javascript
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-  });
-
-   var instance = M.FormSelect.getInstance(elem);
