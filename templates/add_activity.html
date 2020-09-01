@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+<form class="col s12">
+   <div class="row">
+      <div class="input-field col s6">
+         <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+         <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field col s6">
+         <input id="last_name" type="text" class="validate">
+         <label for="last_name">Last Name</label>
+      </div>
+   </div>
+   <div class="row">
+   <!--input your gender-->
+   <div class="row">
+      <div class="input-field col s12">
+         <label method="POST" action="{{ url_for('add_activity')}}">Gender</label>
+         <select class="browser-default">
+            <option value="0">Please Choose:</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Prefer not to say</option>
+         </select>
+      </div>
+   </div>
+   <div class="row">
+      <div class="input-field col s6">
+         <input id="age" type="age" class="validate">
+         <label for="age">Age</label>
+      </div>
+   </div>
+   <!--choose specific activity-->
+   <div class="row">
+      <div class="input-field col s12">
+         <label method="POST" action="{{ url_for('add_activity')}}">Choose your activity</label>
+         <select class="browser-default">
+            <option value="0">Please choose:</option>
+            <option value="1">Run</option>
+            <option value="2">Walk</option>
+            <option value="3">Run and Walk</option>
+         </select>
+      </div>
+   </div>
+   <div class="row">
+<form class="col s6" method="POST" action="{{ url_for('add_activity')}}">
+   <div class="row">
+      <div class="input-field col s6">
+         <i class="fas fa user-plus prefix light-blue-text text-darken-4"></i>
+         <input id="activity-name" name="activity-name" type="text" class="validate">
+         <label class="active" for="activity-name">Activity name</label>
+      </div>
+   </div>
+   <br>
+   <div class="row">
+      <div class="input-field col s12">
+         <input id="email" type="email" class="validate">
+         <label for="email">Email</label>
+      </div>
+   </div>
+   <div class="row">
+   <div class="input-field col s12">
+   <select class="browser-default">
+      <option value="0">Please choose:</option>
+      <option value="1">Run</option>
+      <option value="2">Walk</option>
+      <option value="3">Run and Walk</option>
+   </select>
+   <h2 class="center-align">
+   Describe
+   <h2>
+   <div class="row">
+      <div class="input-field col s12">
+         <textarea id="textarea2" class="materialize-textarea"></textarea>
+         <label for="textarea2">Describe your activity</label>
+      </div>
+   </div>
+   <div class="row">
+      <div class="input-field col s12">
+         <label method="POST" action="{{ url_for('add_activity')}}">Activity Difficulty</label>
+         <select class="browser-default">
+            <option value="0">Please choose:</option>
+            <option value="1">Light</option>
+            <option value="2">Easy</option>
+            <option value="3">Moderate</option>
+            <option value="4">Hard</option>
+            <option value="5">Very Hard</option>
+         </select>
+      </div>
+   </div>
+   <br>
+   <!--Date of activity-->
+   <div class="col s6" method="POST" action="{{ url_for('add_activity')}}">
+      <div class="row">
+         <input type="text" class="datepicker" method="POST" action="{{ url_for('get_create')}}">
+         <br>
+      </div>
+   </div>
+   <!--save activity-->
+   <br>
+   <div class="col s6" method="POST" action="{{ url_for('add_activity')}}">
+   <div class="row">
+      <div class="row" method="POST" action="{{ url_for('add_activity')}}">
+         <button type="submit" class="col s12 btn-large light-green darken-4 text-shadow">
+         Save <i class="fas fa-sign-in-alt"></i>
+         </button>
+      </div>
+   </div>
+</form>
+{% endblock %}
