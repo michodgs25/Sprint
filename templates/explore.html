@@ -15,6 +15,7 @@
   {% endfor %} -->
 
 <ul class="collapsible">
+<br>
 {% for task in tasks %} : {{ task.date }}
 	<li>
 		<div class="collapsible-header white-text light-blue darken-4 text-shadow">
@@ -22,8 +23,9 @@
 			<strong>{{ task.title }}</strong>
 		</div>
 		<div class="collapsible-body">
-			<strong>{{ task.activity_one}}</strong>
-            <p>{{ task.description }}</p>
+			<strong>Activity type: {{ task.activity_one}}</strong>
+            <p>Tell us more about your activity: {{ task.description }}</p>
+            <h8>Activity difficulty:</h8><p>{{ task.difficulty }}</p>
 		</div>
 	</li>
     {% endfor %}

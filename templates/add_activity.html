@@ -3,7 +3,7 @@
 <form class="col s12">
    <div class="row">
       <div class="input-field col s6">
-         <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+         <input id="first_name" type="text" class="validate">
          <label for="first_name">First Name</label>
       </div>
       <div class="input-field col s6">
@@ -15,7 +15,8 @@
    <!--input your gender-->
    <div class="row">
       <div class="input-field col s12">
-         <label method="POST" action="{{ url_for('add_activity')}}">Gender</label>
+      <h6>What is your gender</h6>
+         <label method="POST" action="{{ url_for('add_activity')}}"></label>
          <select class="browser-default">
             <option value="0">Please Choose:</option>
             <option value="1">Male</option>
@@ -25,15 +26,16 @@
       </div>
    </div>
    <div class="row">
-      <div class="input-field col s6">
+      <div class="input-field col s12">
+      <h6>What is your age</h6>
          <input id="age" type="age" class="validate">
-         <label for="age">Age</label>
+         <label for="age"></label>
       </div>
    </div>
    <!--choose specific activity-->
    <div class="row">
       <div class="input-field col s12">
-         <label method="POST" action="{{ url_for('add_activity')}}">Choose your activity</label>
+         <label method="POST" action="{{ url_for('add_activity')}}"></label>
          <select class="browser-default">
             <option value="0">Please choose:</option>
             <option value="1">Run</option>
@@ -53,22 +55,16 @@
    </div>
    <br>
    <div class="row">
-      <div class="input-field col s12">
-         <input id="email" type="email" class="validate">
-         <label for="email">Email</label>
-      </div>
-   </div>
-   <div class="row">
    <div class="input-field col s12">
+   <h6>Which activity</h6>
    <select class="browser-default">
       <option value="0">Please choose:</option>
       <option value="1">Run</option>
       <option value="2">Walk</option>
       <option value="3">Run and Walk</option>
    </select>
-   <h2 class="center-align">
-   Describe
-   <h2>
+   </div>
+   </div>
    <div class="row">
       <div class="input-field col s12">
          <textarea id="textarea2" class="materialize-textarea"></textarea>
@@ -77,7 +73,8 @@
    </div>
    <div class="row">
       <div class="input-field col s12">
-         <label method="POST" action="{{ url_for('add_activity')}}">Activity Difficulty</label>
+      <h6>Activity Difficulty</h6>
+         <label method="POST" action="{{ url_for('add_activity')}}"></label>
          <select class="browser-default">
             <option value="0">Please choose:</option>
             <option value="1">Light</option>
@@ -98,9 +95,8 @@
    </div>
    <!--save activity-->
    <br>
-   <div class="col s6" method="POST" action="{{ url_for('add_activity')}}">
+   <div class="col s12" method="POST" action="{{ url_for('add_activity')}}">
    <div class="row">
-      <div class="row" method="POST" action="{{ url_for('add_activity')}}">
          <button type="submit" class="col s12 btn-large light-green darken-4 text-shadow">
          Save <i class="fas fa-sign-in-alt"></i>
          </button>
