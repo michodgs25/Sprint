@@ -53,11 +53,6 @@ body {
 }
 
  /*navigation bar*/
-nav {
-    line-height: 0.5em;
-    padding-bottom: 10em;
-}
-
 .nav-logo img li {
     font-size: 1em;
 }

@@ -24,7 +24,7 @@
 
     
    
-   // jQuery is no longer a dependency, all the methods are called on the plugin instance. materialize suggest using custom javascript:
+   // create instance of datepicker
    var instance = M.Datepicker.getInstance(elem);
        //call date-picker
     $('.datepicker').datepicker(format,'mmm dd, yyyy');
