@@ -12,6 +12,9 @@
     
     //call slider
     $( "slider" ).slider();
+
+    //call form select
+    $('select').formSelect();
     
     //call datepicker
     $(".datepicker").datepicker({

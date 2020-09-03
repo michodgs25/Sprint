@@ -2,7 +2,7 @@
 {% block content %}
 <br>
 <div class="row card-panel grey lighten-5">
-<form class="col s12" method="POST" action="">
+<form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
    <div class="row">
    <div class="input-field col s12">
       <input id="task_name" name="task_name" type="text" class="validate" required>
@@ -37,8 +37,8 @@
    <!--choose specific activity-->
    <div class="row">
    <div class="input-field col s12">
-      <input id="task_activity_one" name="task_activity_one" required>
-      <label for="task_activity_one">Which activity</label>
+      <input id="task_activity" name="task_activity" required>
+      <label for="task_activity">Which activity</label>
       <select class="browser-default">
          <option value="0">Please choose:</option>
          <option value="1">Run</option>
@@ -78,7 +78,7 @@
    </div>
    </div>
    <br>
-   <!--Date of activity-->
+   <!--Date of activity calendar-->
    <div class="row" id="matfix">
    <div class="input-field col s12">
       <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
@@ -86,10 +86,12 @@
       <label for="task_date">Date</label>
    </div>
    </div>
-   <!--save activity-->
+   <!--save activity button-->
    <br>
-   <button type="submit" class="col s12 btn-large light-green darken-4 text-shadow">
-   Save <i class="fas fa-sign-in-alt"></i>
+   <div class="row"></div>
+   <div class="col s12 center-align"></div>
+   <button type="submit" class="btn large light-green darken-1 text-shadow">
+   Save activity <i class="fas fa-plus-square left"></i>
    </button>
 </form>
 </div>
