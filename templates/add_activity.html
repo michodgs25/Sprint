@@ -5,20 +5,20 @@
 <form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
    <div class="row">
    <div class="input-field col s12">
-      <input id="task_name" name="task_name" type="text" class="validate" required>
-      <label for="task_name">First Name</label>
+      <input id="name" name="name" type="text" class="validate" required>
+      <label for="name">First Name</label>
    </div>
    </div>
    <div class="row">
       <div class="input-field col s12">
-         <input id="task_surname" name="task_surname" type="text" class="validate" required>
-         <label for="task_surname">Last Name</label>
+         <input id="surname" name="surname" type="text" class="validate" required>
+         <label for="surname">Last Name</label>
       </div>
    </div>
    <div class="row">
       <div class="input-field col s12">
-         <input id="task_gender" name="task_gender" required>
-         <label for="task_gender">Gender</label>
+         <input id="gender" name="gender" required>
+         <label for="gender">Gender</label>
          <select class="browser-default">
             <option value="0">Please Choose:</option>
             <option value="1">Male</option>
@@ -30,15 +30,15 @@
       <!--provide your age-->
       <div class="row">
          <div class="input-field col s12">
-            <label for="task_age">Age</label>
-            <input id="task_age" name="task_name" type="task_age" class="validate" required>
+            <label for="age">Age</label>
+            <input id="age" name="task_name" type="age" class="validate" required>
          </div>
       </div>
    <!--choose specific activity-->
    <div class="row">
    <div class="input-field col s12">
-      <input id="task_activity" name="task_activity" required>
-      <label for="task_activity">Which activity</label>
+      <input id="activity" name="activity" required>
+      <label for="activity">Which activity</label>
       <select class="browser-default">
          <option value="0">Please choose:</option>
          <option value="1">Run</option>
@@ -50,23 +50,23 @@
    <br>
    <div class="row">
    <div class="input-field col s12">
-      <textarea id="task_title" name="task_title" 
-         class="task_title" required></textarea>
-      <label for="task_title">Name Activity</label>
+      <textarea id="title" name="task_title" 
+         class="title" required></textarea>
+      <label for="title">Name Activity</label>
    </div>
    </div>
    <br>
    <div class="row">
    <div class="input-field col s12">
-      <textarea id="task_description" name="task_description" class="task_description" required></textarea>
-      <label for="task_description">Describe your activity</label>
+      <textarea id="task_description" name="description" class="description" required></textarea>
+      <label for="description">Describe your activity</label>
    </div>
    </div>
    <br>
    <div class="row">
    <div class="input-field col s12">
-      <input id="task_difficulty" name="task_difficulty" required>
-      <label for="task_difficulty">How hard was this activity?</label>
+      <input id="difficulty" name="difficulty" required>
+      <label for="difficulty">How hard was this activity?</label>
       <select class="browser-default">
          <option value="0">Please choose:</option>
          <option value="1">Light</option>
@@ -82,8 +82,8 @@
    <div class="row" id="matfix">
    <div class="input-field col s12">
       <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-      <input id="task_date" name="task_date" type="text" class="datepicker validate" required>
-      <label for="task_date">Date</label>
+      <input id="date" name="date" type="text" class="datepicker validate" required>
+      <label for="date">Date</label>
    </div>
    </div>
    <!--save activity button-->
