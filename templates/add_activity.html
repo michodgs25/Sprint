@@ -1,23 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 <br>
-<form class="col s12">
+<div class="row card-panel grey lighten-5">
+<form class="col s12" method="POST" action="">
    <div class="row">
-      <div class="input-field col s6">
-         <input id="task_name" name="task_name" type="text" class="validate">
-         <label for="task_name">First Name</label>
-      </div>
-      <div class="input-field col s6">
-         <input id="task_surname" name="task_surname" type="text" class="validate">
+   <div class="input-field col s12">
+      <input id="task_name" name="task_name" type="text" class="validate" required>
+      <label for="task_name">First Name</label>
+   </div>
+   </div>
+   <div class="row">
+      <div class="input-field col s12">
+         <input id="task_surname" name="task_surname" type="text" class="validate" required>
          <label for="task_surname">Last Name</label>
       </div>
    </div>
-   <!--input your gender-->
    <div class="row">
       <div class="input-field col s12">
-      <h6>What is your gender</h6>
-      <input id="task_gender" name="task_gender">
-         <label for="task_gender" method="POST" action="{{ url_for('add_activity')}}"></label>
+         <input id="task_gender" name="task_gender" required>
+         <label for="task_gender">Gender</label>
          <select class="browser-default">
             <option value="0">Please Choose:</option>
             <option value="1">Male</option>
@@ -26,72 +27,70 @@
          </select>
       </div>
    </div>
-   <div class="row">
-      <div class="input-field col s12">
-      <h6>What is your age</h6>
-         <input id="task_age" name="task_name" type="task_age" class="validate">
-         <label for="task_age"></label>
+      <!--provide your age-->
+      <div class="row">
+         <div class="input-field col s12">
+            <label for="task_age">Age</label>
+            <input id="task_age" name="task_name" type="task_age" class="validate" required>
+         </div>
       </div>
-   </div>
    <!--choose specific activity-->
    <div class="row">
-      <div class="input-field col s12">
-      <input id="task_activity_one" name="task_activity_one">
-         <label for="task_activity_one" method="POST" action="{{ url_for('add_activity')}}"></label>
-         <select class="browser-default">
-            <option value="0">Please choose:</option>
-            <option value="1">Run</option>
-            <option value="2">Walk</option>
-            <option value="3">Run and Walk</option>
-         </select>
-      </div>
+   <div class="input-field col s12">
+      <input id="task_activity_one" name="task_activity_one" required>
+      <label for="task_activity_one">Which activity</label>
+      <select class="browser-default">
+         <option value="0">Please choose:</option>
+         <option value="1">Run</option>
+         <option value="2">Walk</option>
+         <option value="3">Run and walk</option>
+      </select>
    </div>
-      <div class="row">
-      <div class="input-field col s12">
-         <textarea id="task_title" name="task_title" class="materialize-textarea"></textarea>
-         <label for="task_title">Name Activity</label>
-      </div>
    </div>
    <br>
    <div class="row">
-      <div class="input-field col s12">
-         <textarea id="task_description" name="task_description" class="materialize-textarea"></textarea>
-         <label for="task_description">Describe your activity</label>
-      </div>
+   <div class="input-field col s12">
+      <textarea id="task_title" name="task_title" 
+         class="task_title" required></textarea>
+      <label for="task_title">Name Activity</label>
+   </div>
    </div>
    <br>
    <div class="row">
-      <div class="input-field col s12">
-      <h6>Activity Difficulty</h6>
-      <input id="task_difficulty" name="task_difficulty">
-         <label for="task_difficulty" method="POST" action="{{ url_for('add_activity')}}"></label>
-         <select class="browser-default">
-            <option value="0">Please choose:</option>
-            <option value="1">Light</option>
-            <option value="2">Easy</option>
-            <option value="3">Moderate</option>
-            <option value="4">Hard</option>
-            <option value="5">Very Hard</option>
-         </select>
-      </div>
+   <div class="input-field col s12">
+      <textarea id="task_description" name="task_description" class="task_description" required></textarea>
+      <label for="task_description">Describe your activity</label>
+   </div>
+   </div>
+   <br>
+   <div class="row">
+   <div class="input-field col s12">
+      <input id="task_difficulty" name="task_difficulty" required>
+      <label for="task_difficulty">How hard was this activity?</label>
+      <select class="browser-default">
+         <option value="0">Please choose:</option>
+         <option value="1">Light</option>
+         <option value="2">Easy</option>
+         <option value="3">Moderate</option>
+         <option value="4">Hard</option>
+         <option value="5">Very Hard</option>
+      </select>
+   </div>
    </div>
    <br>
    <!--Date of activity-->
-   <div class="col s6" method="POST" action="{{ url_for('add_activity')}}">
-      <div class="row">
-         <input name="task_date" type="text" class="datepicker" method="POST" action="{{ url_for('get_create')}}">
-         <label for="task_date"></label>
-         <br>
-      </div>
+   <div class="row" id="matfix">
+   <div class="input-field col s12">
+      <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+      <input id="task_date" name="task_date" type="text" class="datepicker validate" required>
+      <label for="task_date">Date</label>
+   </div>
    </div>
    <!--save activity-->
    <br>
-   <div class="col s12" method="POST" action="{{ url_for('add_activity')}}">
-   <div class="row">
-         <button type="submit" class="col s12 btn-large light-green darken-4 text-shadow">
-         Save <i class="fas fa-sign-in-alt"></i>
-         </button>
-      </div>
-   </div>
+   <button type="submit" class="col s12 btn-large light-green darken-4 text-shadow">
+   Save <i class="fas fa-sign-in-alt"></i>
+   </button>
 </form>
+</div>
 {% endblock %}

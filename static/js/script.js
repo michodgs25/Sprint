@@ -12,6 +12,16 @@
     
     //call slider
     $( "slider" ).slider();
+    
+    //call datepicker
+    $(".datepicker").datepicker({
+        format: "dd mmmm, yyyy",
+        yearRange: 3,
+        showClearBtn: true,
+        i18n: {
+            done: "Select"
+        }
+    });
   });
   
   //jQuery method for select boxes no longer a materialize library dependency, applied custom javascript
@@ -22,30 +32,6 @@
 
    var instance = M.FormSelect.getInstance(elem);
 
-    
-   
-   // create instance of datepicker
-   var instance = M.Datepicker.getInstance(elem);
-       //call date-picker
-    $('.datepicker').datepicker(format,'mmm dd, yyyy');
-    
-    // open date picker
-    instance.open(defaultDate, 'null');
-    
-    //close date picker
-    instance.close();
-    
-    //get date instance
-    instance.toString();
-    
-    //destroy date
-    instance.destroy();
-    
-    //get instance of string date
-    instance.toString();
-    
-    //set new date
-    instance.setDate(new Date());
-    
-    //Date to show on the datepicker
-    instance.gotoDate(new Date());
+   document.getElementById("matfix").addEventListener("click", function(e) {
+	e.stopPropagation();
+});
