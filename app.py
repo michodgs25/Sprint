@@ -43,22 +43,23 @@ def get_create():
 def add_activity():
     if request.method == "POST":
         task = {
-            "task_name": request.form.get("task_name"),
-            "task_surname": request.form.get("task_surname"),
-            "task_gender": request.form.getlist("task_gender"),
-            "task_age": request.form.get("task_age"),
-            "task_activity": request.form.getlist("task_activity"),
-            "task_title": request.form.get("task_title"),
-            "task_description": request.form.getlist("task_description"),
-            "task_difficulty": request.form.getlist("task_difficulty"),
-            "task_date": request.form.get("task_date")
-            }
-    mongo.db.tasks.insert_one(task)
-    flash("Activity Successfully added")
-    return redirect(url_for("get_tasks"))
-
-    return render_template("add_activity.html")
-
+               "task_name": request.form.get("task_name"),
+               "task_surname": request.form.get("task_surname"),
+               "task_gender": request.form.getlist("task_gender"),
+               "task_age": request.form.get("task_age"),
+               "task_activity": request.form.getlist("task_activity"),
+               "task_title": request.form.get("task_title"),
+               "task_description": request.form.getlist("task_description"),
+               "task_difficulty": request.form.getlist("task_difficulty"),
+               "task_date": request.form.get("task_date")
+        }
+        mongo.db.tasks.insert_one(task)
+        flash("Activity Successfully added")
+        return redirect(url_for("get_tasks"))
+        
+    activities = mongo.db.activities.find().sort("activities_name", 1)
+    return render_template("add_activity.html", activities=activities)
+                
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
