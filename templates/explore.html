@@ -3,16 +3,16 @@
 
 <ul class="collapsible">
 <br>
-{% for task in tasks %} : {{ date }}
+{% for task in tasks %}
 	<li>
 		<div class="collapsible-header white-text light-blue darken-4 text-shadow">
 			<i class="fas fa-caret-down"></i>
-			<strong>{{ title }}</strong>
+			<strong>{{ task.title }}: {{ task.date }}</strong>
 		</div>
 		<div class="collapsible-body">
 			<strong>Activity type: {{ task.activity }}</strong>
-            <p>Tell us more about your activity: {{ description }}</p>
-            <h8>Activity difficulty:</h8><p>{{ difficulty }}</p>
+            <p>{{ task.description }}</p>
+            <h8>Difficulty:</h8><p>{{ task.difficulty }}</p>
 		</div>
 	</li>
     {% endfor %}
