@@ -2,97 +2,90 @@
 {% block content %}
 <br>
 <div class="row card-panel grey lighten-5">
-<form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
-   <div class="row">
-   <div class="input-field col s12">
-      <input id="task_name" name="task_name" type="text" class="validate" required>
-      <label for="task_name">First Name</label>
-   </div>
-   </div>
-   <div class="row">
-      <div class="input-field col s12">
-         <input id="task_surname" name="task_surname" type="text" class="validate" required>
-         <label for="task_surname">Last Name</label>
-      </div>
-   </div>
-   <div class="row">
-      <div class="input-field col s12">
-         <input id="task_gender" name="task_gender" required>
-         <label for="gender">Gender</label>
-         <select class="browser-default">
-            <option value="0">Please Choose:</option>
-            <option value="1">Male</option>
-            <option value="2">Female</option>
-            <option value="3">Prefer not to say</option>
-         </select>
-      </div>
-   </div>
-      <!--provide your age-->
-      <div class="row">
-         <div class="input-field col s12">
-            <label for="task_age">Age</label>
-            <input id="task_age" name="task_age" type="age" class="validate" required>
-         </div>
-      </div>
-   <!--choose specific activity-->
-   <div class="row">
-   <div class="input-field col s12">
-      <input id="task_activity" name="task_activity" required>
-      <label for="task_activity">Which activity</label>
-      <select class="browser-default">
-         <option value="0">Please choose:</option>
-         <option value="1">Run</option>
-         <option value="2">Walk</option>
-         <option value="3">Run and walk</option>
-      </select>
-   </div>
-   </div>
-   <br>
-   <div class="row">
-   <div class="input-field col s12">
-      <textarea id="task_title" name="task_title" 
-         class="task_title" required></textarea>
-      <label for="task_title">Name Activity</label>
-   </div>
-   </div>
-   <br>
-   <div class="row">
-   <div class="input-field col s12">
-      <textarea id="task_description" name="task_description" class="task_description" required></textarea>
-      <label for="task_description">Describe your activity</label>
-   </div>
-   </div>
-   <br>
-   <div class="row">
-   <div class="input-field col s12">
-      <input id="task_difficulty" name="task_difficulty" required>
-      <label for="task_difficulty">How hard was this activity?</label>
-      <select class="browser-default">
-         <option value="0">Please choose:</option>
-         <option value="1">Light</option>
-         <option value="2">Easy</option>
-         <option value="3">Moderate</option>
-         <option value="4">Hard</option>
-         <option value="5">Very Hard</option>
-      </select>
-   </div>
-   </div>
-   <br>
-   <!--Date of activity calendar-->
-   <div class="row" id="matfix">
-   <div class="input-field col s12">
-      <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-      <input id="date" name="date" type="text" class="datepicker validate" required>
-      <label for="date">Date</label>
-   </div>
-   </div>
-   <!--save activity button-->
-   <br>
-   <div class="row"></div>
-   <div class="col s12 center-align"></div>
-   <button type="submit" class="btn large light-green darken-1 text-shadow">
-   Save activity <i class="fas fa-plus-square left"></i>
-   </button>
-</form>
+	<form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="task_name" name="task_name" type="text" class="validate" required>
+				<label for="task_name">First Name</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="task_surname" name="task_surname" type="text" class="validate" required>
+				<label for="task_surname">Last Name</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<select id="task_gender" name="task_gender" required>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+				<label for="task_gender">Select gender</label>
+			</div>
+		</div>
+		<br>
+		<!--Provide user age-->
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="task_age" name="task_age" type="text" class="validate" required>
+				<label for="task_age">Age</label>
+			</div>
+			<!--choose specific activity-->
+			<div class="input-field col s12">
+				<select id="task_activity" name="task_activity" required>
+                    <option value="" disabled selected>Please select:</option>
+                    <option value="Run">Run</option>
+                    <option value="Walk">Walk</option>
+                    <option value="Run and Walk">Run and walk</option>
+                </select>
+				<label for="task_activity">Select activity</label>
+			</div>
+		</div>
+		<!--provide activity title-->
+		<div class="row">
+			<div class="input-field col s12">
+				<textarea id="task_title" name="task_title" class="task_title" required></textarea>
+				<label for="task_title">Name Activity</label>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="input-field col s12">
+				<textarea id="task_description" name="task_description" class="task_description" required></textarea>
+				<label for="task_description">Describe your activity</label>
+			</div>
+		</div>
+		<br>
+		<div class="input-field col s12">
+			<select id="task_difficulty" name="task_difficulty" required>
+                <option value="" disabled selected>Please select:</option>
+                <option value="Light">Light</option>
+                <option value="Easy">Easy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Hard">Hard</option>
+                <option value="Very Hard">Very Hard</option>
+            </select>
+			<label for="task_difficulty">Select difficulty</label>
+		</div>
+		<br>
+		<!--Date of activity calendar-->
+		<div class="row" id="matfix">
+			<div class="input-field col s12">
+				<i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+				<input id="task_date" name="task_date" type="text" class="datepicker validate" required>
+				<label for="date">Date</label>
+			</div>
+		</div>
+		<!--save activity button-->
+		<br>
+		<div class="row"></div>
+		<div class="col s12 center-align"></div>
+		<button type="submit" class="btn large light-green darken-1 text-shadow">
+            Save activity <i class="fas fa-plus-square left"></i>
+        </button>
+	</form>
 </div>
 {% endblock %}
