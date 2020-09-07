@@ -3,6 +3,9 @@
     //collapsible navigation
     $('.collapsible').collapsible();
 
+    //nav follows user scroll
+    $('body').scrollspy({ target: '#navbar-scrollspy' })
+
     // trigger an autoresize for textarea 1& 2
 if ($('#textarea1').length > 0) {
     $('#textarea1').val('New Text');
