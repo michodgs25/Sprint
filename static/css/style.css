@@ -5,7 +5,7 @@ body {
      position: relative;
 }
 
-  body {
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -54,17 +54,15 @@ body {
 }
 
  /*navigation bar*/
-.nav-logo img li {
-    font-size: 1em;
+.topnav {
+    overflow: hidden;
+    line-height: 3em;
 }
 
-.text-shadow{
-    text-shadow: 0.125em 0.125em 0.125em rgb(0, 0, 0, 0.5);
-}
-
-/*difficulty slider*/
-#slider { 
-    margin: 1em; 
+/*highlight active page*/
+.topnav a.active {
+  background-color: rgb(245, 182, 66);
+  color: rgb(52, 198, 235);
 }
 
 /*footer/icons section
