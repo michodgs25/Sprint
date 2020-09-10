@@ -1,21 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 
-<ul class="collapsible">
-<br>
 {% for task in tasks %}
-	<li>
-		<div class="collapsible-header white-text light-blue darken-4 text-shadow">
-			<i class="fas fa-caret-down"></i>
+    <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          	<i class="fas fa-caret-down"></i>
 			<strong>{{ task.task_title }}: {{ task.task_date }}</strong>
-		</div>
-		<div class="collapsible-body">
-			<strong>Activity type: {{ task.task_activity }}</strong>
-            <p>{{ task.task_description }}</p>
-            <h8>Difficulty:</h8><p>{{ task.task_difficulty }}</p>
-		</div>
-	</li>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+      <strong>Activity type: {{ task.task_activity }}</strong>
+      <p>{{ task.task_description }}</p>
+      <h8>Difficulty:</h8><p>{{ task.task_difficulty }}</p>
+      </div>
+    </div>
+  </div>
     {% endfor %}
-</ul>
 
 {% endblock %}

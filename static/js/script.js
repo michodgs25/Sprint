@@ -1,7 +1,7 @@
  //call document function
   $(document).ready(function(){
-      //collapsible navigation
-      $('.collapsible').collapsible();
+      //call accordian 
+      $('.collapse').collapse()
    
     // trigger an autoresize for textarea 1& 2
 if ($('#textarea1').length > 0) {
@@ -20,14 +20,10 @@ if ($('#textarea2').length > 0) {
     $('select').formSelect();
     
     //call datepicker
-    $(".datepicker").datepicker({
-        format: "dd mmmm, yyyy",
-        yearRange: 3,
-        showClearBtn: true,
-        i18n: {
-            done: "Select"
-        }
-    });
+    $('.datepicker').datepicker({
+    format: 'mm/dd/yyyy',
+    startDate: '-3d'
+});
       
     //jQuery method for select boxes no longer a materialize library dependency, applied custom javascript
     var elems = document.querySelectorAll('select');

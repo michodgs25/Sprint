@@ -2,64 +2,84 @@
 {% block content %}
 <br>
 <h2>Enter your details</h2>
-<form method="POST" action="{{ url_for('add_activity') }}">
+<form  class="needs-validation" method="POST" action="{{ url_for('add_activity') }}">
    <!--Input your first name-->
    <div class="form-group">
+   <div class="col">
       <label for="task_name">First Name</label>
-      <input name="task_name" id="task_first_name" type="text" class="form-control" placeholder="Enter First Name">
+      <input name="task_name" id="validationCustom01" type="text" class="form-control" placeholder="Enter First Name" required>
+   </div>
    </div>
    <!--Input your surname-->
    <div class="form-group">
+   <div class="col">
       <label for="task_surname">Last Name</label>
-      <input name="task_surname" id="task_last_name" type="text" class="form-control" placeholder="Enter Surname">
+      <input name="task_surname" id="validationCustom02" type="text" class="form-control" placeholder="Enter Surname" required>
    </div>
+   </div>
+   <br>
    <!--Select your gender-->
+   <div class="form-group">
+   <div class="col">
    <div class="input-group mb-3">
       <div class="input-group-prepend">
-         <label class="input-group-text" for="inputGroupSelect01">Options</label>
+         <label class="input-group-text" for="inputGroupSelect01">Gender</label>
       </div>
-      <select name="task_gender" for="task_age" class="custom-select" id="inputGroupSelect01">
+      <select name="task_gender" for="task_age" class="custom-select" id="inputGroupSelect01" required>
          <option selected>Choose:</option>
          <option value="Male">Male</option>
          <option value="Female">Female</option>
          <option value="Prefer not to say">Prefer not to say</option>
       </select>
    </div>
-   </div>
+ </div>
+</div>
    <!--Input your age-->
-   <div class="form-row">
+<div class="form-group">
+   <div class="col">
+      <label for="task_age">Age</label>
+      <input name="task_age" id="validationCustom03" type="text" class="form-control" placeholder="Enter Age" required>
+   </div>
+   </div>
+   <br>
+    <!--Select your activity-->
+<div class="form-group">
       <div class="col">
-         <input type="text" name="task_age" for="task_age" id="task_your_age" class="form-control" placeholder="Age">
-      </div>
-      <!--Select your activity-->
       <div class="input-group mb-3">
          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect02">Options</label>
+            <label class="input-group-text" for="inputGroupSelect02">Activity</label>
          </div>
-         <select name="task_activity" for="task_activity" class="custom-select" id="inputGroupSelect02">
+         <select name="task_activity" for="task_activity" class="custom-select" id="inputGroupSelect02" required>
             <option selected>Choose:</option>
             <option value="Run">Run</option>
             <option value="Walk">Walk</option>
             <option value="Run and Walk">Run and Walk</option>
          </select>
       </div>
-   </div>
+      </div>
+      </div>
    <!--Input activity name-->
    <div class="form-group">
+   <div class="col">
       <label for="task_title">Activity Name</label>
-      <input name="task_title" id="task_activity_title" type="text" class="form-control" placeholder="Enter Activity Name">
+      <input name="task_title" id="task_activity_title" type="text" class="form-control" placeholder="Enter Activity Name" required>
+   </div>
    </div>
    <!--Enter activity description-->
    <div class="form-group">
+   <div class="col">
       <label for="task_description">Describe Activity</label>
-      <textarea name="task_description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <textarea name="task_description" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+   </div>
    </div>
    <!--Select activity difficulty-->
+   <div class="form-group">
+   <div class="col">
    <div class="input-group mb-3">
       <div class="input-group-prepend">
-         <label class="input-group-text" for="inputGroupSelect03">Options</label>
+         <label class="input-group-text" for="inputGroupSelect03">Difficulty</label>
       </div>
-      <select name="task_difficulty" for="task_difficulty" class="custom-select" id="inputGroupSelect03">
+      <select name="task_difficulty" for="task_difficulty" class="custom-select" id="inputGroupSelect03" required>
          <option selected>Choose:</option>
          <option value="Light">Light</option>
          <option value="Easy">Easy</option>
@@ -69,6 +89,18 @@
       </select>
    </div>
    </div>
-   <button type="submit" class="btn btn-primary">Sign in</button>
+   </div>
+<br>
+   <!--Date of activity calendar-->
+<div class="input-group input-daterange">
+    <input type="text" class="form-control" value="10-09-2020">
+</div>
+<br>
+<div class="form-group">
+  <div class="col">
+   <button type="submit" class="btn btn-primary">Save Activity<i class="fas fa-plus-square left"></i>
+   </button>
+  </div>
+</div>
 </form>
 {% endblock %}
