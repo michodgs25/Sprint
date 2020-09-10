@@ -69,6 +69,73 @@ nav {
     border-right: none;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.home {
+    flex: 1;
+    font-size: 1.875em;
+    font-weight: 500;
+}
+
+nav ul div {
+    padding: 0 1.5625em;
+    display: inline-flex;
+}
+
+nav ul div.items a {
+    text-decoration: none;
+    font-size: 1.125em;
+    padding: 0 0.75em;
+}
+
+nav ul div.items a:hover {
+    color: rgb(52, 198, 235);
+}
+
+nav ul .search-icon {
+     height: 2.5em;
+     width: 15em;
+     display: flex;
+     background: rgb(52, 198, 235);
+     border-radius: 0.3125em;
+}
+
+nav ul .search-icon input {
+    height: 100%;
+    width: 12.5em;
+    border: none;
+    outline: none;
+    padding: 0 0.625em;
+    color: rgb(187, 187, 185);
+    font-size: 1em;
+    border-radius: 0.3125em 0 0 0.3125em;
+}
+
+nav ul .search-icon .icon {
+    height: 100%;
+    width: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    border: 0.0625em solid rgb(245, 182, 66);
+    border-radius: 0  0.3125em  0.3125em 0;
+    cursor: pointer;
+}
+
+nav ul .search-icon .icon:hover {
+    background: rgb(52, 198, 235);
+}
+
+nav ul .search-icon .icon span {
+    color: rgb(187, 187, 185);
+    font-size: 1.125em;
+}
+
 /*footer/icons section
 .footer {
     text-align: center;

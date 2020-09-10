@@ -2,91 +2,73 @@
 {% block content %}
 <br>
 <h2>Enter your details</h2>
-<div class="row card-panel grey lighten-5">
-	<form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
-		<div class="row">
-			<div class="input-field col s12">
-				<input id="task_name" name="task_name" type="text" class="validate" required>
-				<label for="task_name">First Name</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="input-field col s12">
-				<input id="task_surname" name="task_surname" type="text" class="validate" required>
-				<label for="task_surname">Last Name</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="input-field col s12">
-				<select id="task_gender" name="task_gender" required>
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Prefer not to say">Prefer not to say</option>
-                </select>
-				<label for="task_gender">Select gender</label>
-			</div>
-		</div>
-		<br>
-		<!--Provide user age-->
-		<div class="row">
-			<div class="input-field col s6">
-				<input id="task_age" name="task_age" type="text" class="validate" required>
-				<label for="task_age">Age</label>
-			</div>
-			<!--choose specific activity-->
-			<div class="input-field col s12">
-				<select id="task_activity" name="task_activity" required>
-                    <option value="" disabled selected>Please select:</option>
-                    <option value="Run">Run</option>
-                    <option value="Walk">Walk</option>
-                    <option value="Run and Walk">Run and walk</option>
-                </select>
-				<label for="task_activity">Select activity</label>
-			</div>
-		</div>
-		<!--provide activity title-->
-		<div class="row">
-			<div class="input-field col s12">
-				<textarea id="task_title" name="task_title" class="task_title" required></textarea>
-				<label for="task_title">Name Activity</label>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="input-field col s12">
-				<textarea id="task_description" name="task_description" class="task_description" required></textarea>
-				<label for="task_description">Describe your activity</label>
-			</div>
-		</div>
-		<br>
-		<div class="input-field col s12">
-			<select id="task_difficulty" name="task_difficulty" required>
-                <option value="" disabled selected>Please select:</option>
-                <option value="Light">Light</option>
-                <option value="Easy">Easy</option>
-                <option value="Moderate">Moderate</option>
-                <option value="Hard">Hard</option>
-                <option value="Very Hard">Very Hard</option>
-            </select>
-			<label for="task_difficulty">Select difficulty</label>
-		</div>
-		<br>
-		<!--Date of activity calendar-->
-		<div class="row" id="matfix">
-			<div class="input-field col s12">
-				<i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-				<input id="task_date" name="task_date" type="text" class="datepicker validate" required>
-				<label for="date">Date</label>
-			</div>
-		</div>
-		<!--save activity button-->
-		<br>
-		<div class="row"></div>
-		<div class="col s12 center-align"></div>
-		<button type="submit" class="btn large light-green darken-1 text-shadow">
-            Save activity <i class="fas fa-plus-square left"></i>
-        </button>
-	</form>
-</div>
+<form method="POST" action="{{ url_for('add_activity') }}">
+   <!--Input your first name-->
+   <div class="form-group">
+      <label for="task_name">First Name</label>
+      <input name="task_name" id="task_first_name" type="text" class="form-control" placeholder="Enter First Name">
+   </div>
+   <!--Input your surname-->
+   <div class="form-group">
+      <label for="task_surname">Last Name</label>
+      <input name="task_surname" id="task_last_name" type="text" class="form-control" placeholder="Enter Surname">
+   </div>
+   <!--Select your gender-->
+   <div class="input-group mb-3">
+      <div class="input-group-prepend">
+         <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select name="task_gender" for="task_age" class="custom-select" id="inputGroupSelect01">
+         <option selected>Choose:</option>
+         <option value="Male">Male</option>
+         <option value="Female">Female</option>
+         <option value="Prefer not to say">Prefer not to say</option>
+      </select>
+   </div>
+   </div>
+   <!--Input your age-->
+   <div class="form-row">
+      <div class="col">
+         <input type="text" name="task_age" for="task_age" id="task_your_age" class="form-control" placeholder="Age">
+      </div>
+      <!--Select your activity-->
+      <div class="input-group mb-3">
+         <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect02">Options</label>
+         </div>
+         <select name="task_activity" for="task_activity" class="custom-select" id="inputGroupSelect02">
+            <option selected>Choose:</option>
+            <option value="Run">Run</option>
+            <option value="Walk">Walk</option>
+            <option value="Run and Walk">Run and Walk</option>
+         </select>
+      </div>
+   </div>
+   <!--Input activity name-->
+   <div class="form-group">
+      <label for="task_title">Activity Name</label>
+      <input name="task_title" id="task_activity_title" type="text" class="form-control" placeholder="Enter Activity Name">
+   </div>
+   <!--Enter activity description-->
+   <div class="form-group">
+      <label for="task_description">Describe Activity</label>
+      <textarea name="task_description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+   </div>
+   <!--Select activity difficulty-->
+   <div class="input-group mb-3">
+      <div class="input-group-prepend">
+         <label class="input-group-text" for="inputGroupSelect03">Options</label>
+      </div>
+      <select name="task_difficulty" for="task_difficulty" class="custom-select" id="inputGroupSelect03">
+         <option selected>Choose:</option>
+         <option value="Light">Light</option>
+         <option value="Easy">Easy</option>
+         <option value="Moderate">Moderate</option>
+         <option value="Hard">Hard</option>
+         <option value="Very Hard">Very Hard</option>
+      </select>
+   </div>
+   </div>
+   <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
 {% endblock %}
