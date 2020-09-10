@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:&family=Oswald:wght@300&display=swap');
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(245, 182, 66);
+}
+
+.welcome-image body {
     color: rgb(52, 198, 235);
      position: relative;
 }
 
-body {
+.welcome-image body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -53,16 +60,13 @@ body {
     color: rgb(52, 198, 235);
 }
 
- /*navigation bar*/
-.topnav {
-    overflow: hidden;
-    line-height: 3em;
-}
-
-/*highlight active page*/
-.topnav a.active {
-  background-color: rgb(245, 182, 66);
-  color: rgb(52, 198, 235);
+/*nav-bar section*/
+nav {
+    background: rgb(245, 182, 66);
+    padding: 0.625em 2.5em 0.625em 4.375em;
+    border: 0.0625em solid rgb(245, 182, 66);
+    border-left: none;
+    border-right: none;
 }
 
 /*footer/icons section
