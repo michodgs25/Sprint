@@ -136,6 +136,12 @@ nav ul .search-icon .icon span {
     font-size: 1.125em;
 }
 
+/*Create sprint title*/
+h2 .create-title {
+    text-align: center;
+    justify-content: center;
+}
+
 /*footer/icons section
 .footer {
     text-align: center;

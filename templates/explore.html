@@ -2,17 +2,18 @@
 {% block content %}
 
 {% for task in tasks %}
-    <div class="accordion" id="accordionExample">
+
+<div class="accordion" id="accordionExample">
   <div class="card">
-    <div class="card-header" id="headingOne">
+    <div class="card-header" id="headingThree">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          	<i class="fas fa-caret-down"></i>
+        <button class="btn btn-link btn-block text-left" collapsed type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <i class="fas fa-caret-down"></i>
 			<strong>{{ task.task_title }}: {{ task.task_date }}</strong>
         </button>
       </h2>
     </div>
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
       <strong>Activity type: {{ task.task_activity }}</strong>
       <p>{{ task.task_description }}</p>

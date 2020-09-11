@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 <br>
-<h2>Enter your details</h2>
+<h2 class="create-title">Enter your details</h2>
 <form  class="needs-validation" method="POST" action="{{ url_for('add_activity') }}">
    <!--Input your first name-->
    <div class="form-group">
    <div class="col">
-      <label for="task_name">First Name</label>
-      <input name="task_name" id="validationCustom01" type="text" class="form-control" placeholder="Enter First Name" required>
+      <label>First Name</label>
+      <input name="task_name" for="task_name" id="validationCustom01" type="text" class="form-control" placeholder="Enter First Name" required>
    </div>
    </div>
    <!--Input your surname-->
    <div class="form-group">
    <div class="col">
-      <label for="task_surname">Last Name</label>
-      <input name="task_surname" id="validationCustom02" type="text" class="form-control" placeholder="Enter Surname" required>
+      <label>Last Name</label>
+      <input name="task_surname" for="task_surname" id="validationCustom02" type="text" class="form-control" placeholder="Enter Surname" required>
    </div>
    </div>
    <br>
@@ -25,7 +25,7 @@
       <div class="input-group-prepend">
          <label class="input-group-text" for="inputGroupSelect01">Gender</label>
       </div>
-      <select name="task_gender" for="task_age" class="custom-select" id="inputGroupSelect01" required>
+      <select name="task_gender" for="task_gender" class="custom-select" id="inputGroupSelect01" required>
          <option selected>Choose:</option>
          <option value="Male">Male</option>
          <option value="Female">Female</option>
@@ -37,8 +37,8 @@
    <!--Input your age-->
 <div class="form-group">
    <div class="col">
-      <label for="task_age">Age</label>
-      <input name="task_age" id="validationCustom03" type="text" class="form-control" placeholder="Enter Age" required>
+      <label>Age</label>
+      <input name="task_age" for="task_age" id="validationCustom03" type="text" class="form-control" placeholder="Enter Age" required>
    </div>
    </div>
    <br>
@@ -61,8 +61,8 @@
    <!--Input activity name-->
    <div class="form-group">
    <div class="col">
-      <label for="task_title">Activity Name</label>
-      <input name="task_title" id="task_activity_title" type="text" class="form-control" placeholder="Enter Activity Name" required>
+      <label>Activity Name</label>
+      <input name="task_title" for="task_title" id="task_activity_title" type="text" class="form-control" placeholder="Enter Activity Name" required>
    </div>
    </div>
    <!--Enter activity description-->
@@ -93,7 +93,7 @@
 <br>
    <!--Date of activity calendar-->
 <div class="input-group input-daterange">
-    <input type="text" class="form-control" value="10-09-2020">
+    <input name="task_date" id="task_date" type="text" class="form-control" value="10-09-2020">
 </div>
 <br>
 <div class="form-group">
