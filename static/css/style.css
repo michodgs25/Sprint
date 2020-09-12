@@ -67,6 +67,7 @@ nav {
     border: 0.0625em solid rgb(245, 182, 66);
     border-left: none;
     border-right: none;
+    padding-bottom: 1em;
 }
 
 nav ul {
@@ -137,7 +138,7 @@ nav ul .search-icon .icon span {
 }
 
 /*Create sprint title*/
-h2 .create-title {
+.create-title h2 {
     text-align: center;
     justify-content: center;
 }

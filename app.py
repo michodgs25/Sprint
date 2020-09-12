@@ -34,11 +34,6 @@ def get_about():
     return render_template("about.html")
 
 
-@app.route("/get_create", methods=["GET", "POST"])
-def get_create():
-    return render_template("create.html")
-
-
 @app.route("/add_activity", methods=["GET", "POST"])
 def add_activity():
     if request.method == "POST":
