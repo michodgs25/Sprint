@@ -15,22 +15,20 @@
     <title>Sprint</title>
 </head>
 <body>
+<div class="navbar-fixed">
 <nav>
   <ul>
-  <div>
     <li class="home" href="{{ url_for('get_create_compare') }}"><i class="fas fa-home"></i></li>
-  </div>
-    <div class="items">
     <li><a href="{{ url_for('get_tasks') }}">Explore Sprints</a></li>
     <li><a href="{{ url_for('add_activity') }}">Create Sprint</a></li>
     <li><a href="{{ url_for('get_about') }}">About Sprint</a></li>
-    </div>
     <li class="search-icon">
         <input type="search" placeholder="Search Sprints:">
         <span class="fas fa-search"></span>
     </li>
   </ul>
 </nav>
+</div>
 
     {% block content %}
     {% endblock %}
