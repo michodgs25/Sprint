@@ -1,16 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% for task in tasks %}
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <strong class="display-4">Activity type: {{ task.task_activity }}</strong>
-     <p class="lead">
+ <ul class="collapsible">
+ {% for task in tasks %}
+    <li>
+      <div class="collapsible-header"><i class="fas fa-caret-down"></i>
+      {{ task.task_date }}
+      <br>
+      {{ task.task_title }}
+      </div>
+      <div class="collapsible-body">
+      <span>
       {{ task.task_description }}
       Difficulty: {{ task.task_difficulty }}
-      </p>
-  </div>
-</div>
+      </span>
+      </div>
+    </li>
     {% endfor %}
+ </ul>
 
 {% endblock %}
