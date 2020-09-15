@@ -143,6 +143,16 @@ nav ul .search-icon .icon span {
     justify-content: center;
 }
 
+/*explore sprints page
+.btn-small {
+    margin: 0.3125em;
+}
+
+.collapsible-header .col {
+    margin: 0.3125em;
+    line-height: 2.625em;
+}
+
 /*footer/icons section
 .footer {
     text-align: center;
