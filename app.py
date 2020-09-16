@@ -52,15 +52,15 @@ def add_activity():
         flash("Activity Successfully added")
         return redirect(url_for("get_tasks"))
         
-    activities = mongo.db.activities.find().sort("activities_name", 1)
-    return render_template("add_activity.html", activities=activities)
+    tasks = mongo.db.tasks.find().sort("task_name", 1)
+    return render_template("add_activity.html", task=task)
                 
 
 @app.route("/edit_task/<task_id>", methods=["GET", "POST"])
 def edit_task(task_id):
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-    activities = mongo.db.activities.find().sort("activities_name", 1)
-    return render_template("edit_activity.html", task=task, activities=activities)
+    tasks = mongo.db.tasks.find().sort("task_name", 1)
+    return render_template("edit_activity.html", task=task)
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

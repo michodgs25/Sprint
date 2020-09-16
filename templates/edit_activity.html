@@ -3,122 +3,78 @@
 <br>
 <h2 class="center-align">Edit Details below</h2>
 <div class="row card-panel grey lighten-5">
-    <form class="col s12" method="POST" action="{{ url_for('edit_task', task_id=task._id) }}">
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="task_name" name="task_name" type="text" 
-                value="{{ task.task_name }}" class="validate" 
-                       minlength="1" maxlength="25" required>
-                <label for="task_name">First Name</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="task_surname" name="task_surname" type="text" 
-                value="task.task_surname" class="validate" 
-                       minlength="1" maxlength="25" required>
-                <label for="task_surname">Last Name</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <select id="task_gender" name="task_gender" required>
-                    <option value="" disabled selected>Choose your option</option>
-                    {% for activities in activities %}
-                       {% if task.task_ %}
-                    <option value="{{ task.task_gender }}" selected>Male</option>
-                    {% elif %}
-                    <option value="{{ task.task_gender }}">Female</option>
-                    {{%  else %}}
-                    <option value="{{ task.task_gender }}">Prefer not to say</option>
-                    {% endif %}
-                {% endfor %}
-                </select>
-                <label for="task_gender">Select gender</label>
-            </div>
-        </div>
-        <br>
-        <!--Provide user age-->
-        <div class="row">
-            <div class="input-field col s6">
-                <input id="task_age" name="task_age" type="text" class="validate" 
-                       value="{{ task.task_age }}" required>
-                <label for="task_age">Age</label>
-            </div>
-            <!--choose specific activity-->
-            <div class="input-field col s12">
-                <select id="task_activity" name="task_activity" required>
-                    <option value="" disabled selected>Please select:</option>
-                    {% for activities in activities %}
-                       {% if task.task_activity %}
-                    <option value="{{ task.task_activity }}" selected>Run</option>
-                    {% elif %}
-                    <option value="{{ task.task_activity }}">Walk</option>
-                    {{%  else %}}
-                    <option value="{{ task.task_activity }}">Run and walk</option>
-                    {{% endif %}}
-                    {{% endfor %}}
-                </select>
-                <label for="task_activity">Select activity</label>
-            </div>
-        </div>
-        <!--provide activity title-->
-        <div class="row">
-            <div class="input-field col s12">
-                <textarea id="task_title" name="task_title" class="task_title" 
-                          minlength="5" maxlength="20" required>
-                          {{ task.task_title }}
-                          </textarea>
-                <label for="task_title">Name Activity</label>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="input-field col s12">
-                <textarea id="task_description" name="task_description" class="task_description"
-                          minlength="5" maxlength="100" required>
-                          {{ task.task_description }}
-                          </textarea>
-                <label for="description">Describe your activity</label>
-            </div>
-        </div>
-        <br>
-        <div class="input-field col s12">
-            <select id="task_difficulty" name="task_difficulty" required>
-                <option value="" disabled selected>Please select:</option>
-                    {% for activities in activities %}
-                       {% if task.task_activity %}
-                <option value="{{ task.task_difficulty }}">Light</option>
-                {% elif %}
-                <option value="{{ task.task_difficulty }}">Easy</option>
-                {% elif %}
-                <option value="{{ task.task_difficulty }}">Moderate</option>
-                {% elif %}
-                <option value="{{ task.task_difficulty }}" selected>Hard</option>
-                {% else %}
-                <option value="{{ task.task_difficulty }}">Very Hard</option>
-                {% endif %}
-                {{% endfor %}}
+   <form class="col s12" method="POST" action="{{ url_for('edit_task', task_id=task._id) }}">
+         <!--choose specific activity-->
+         <div class="row">
+         <div class="input-field col s12">
+            <select id="task_activity" name="task_activity" required>
+               <option value="" disabled selected>Please select:</option>
+               {% for activities in activities %}
+               {% if task.task_activity %}
+               <option value="Run" selected>Run</option>
+               <option value="Walk">Walk</option>
+               <option value="Run and Walk">Run and walk</option>
+               {% endif %}
+               {% endfor %}
             </select>
-            <label for="task_difficulty">Select difficulty</label>
-        </div>
-        <br>
-        <!--Date of activity calendar-->
-        <div class="row" id="matfix">
-            <div class="input-field col s12">
-                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                <input id="task_date" name="task_date" type="text" class="datepicker validate" required>
-                <label for="task_date">Date</label>
-            </div>
-        </div>
-        <!--save activity button-->
-        <br>
-        <div class="row"></div>
-        <div class="col s12 center-align"></div>
-        <button type="submit" class="btn large light-green darken-1 text-shadow">
-            Edit activity <i class="fas fa-edit-square left"></i>
-        </button>
-    </form>
+            <label for="task_activity">Select activity</label>
+         </div>
+      </div>
+      <!--provide activity title-->
+      <div class="row">
+         <div class="input-field col s12">
+            <textarea id="task_title" name="task_title" class="task_title" 
+               minlength="5" maxlength="20" required>
+            {{ task.task_title }}
+            </textarea>
+            <label for="task_title">Name Activity</label>
+         </div>
+      </div>
+      <br>
+      <div class="row">
+         <div class="input-field col s12">
+            <textarea id="task_description" name="task_description" class="task_description"
+               minlength="5" maxlength="100" required>
+            {{ task.task_description }}
+            </textarea>
+            <label for="description">Describe your activity</label>
+         </div>
+      </div>
+      <br>
+      <div class="input-field col s12">
+         <select id="task_difficulty" name="task_difficulty" required>
+            <option value="" disabled selected>Please select:</option>
+            {% for activities in activities %}
+            {% if task.task_activity %}
+            <option value="{{ task.task_difficulty }}">Light</option>
+            <option value="task.task_difficulty">Easy</option>
+            <option value="task.task_difficulty">Moderate</option>
+            <option value="task.task_difficulty" selected>Hard</option>
+            <option value="task.task_difficulty">Very Hard</option>
+            {% endif %}
+            {% endfor %}
+         </select>
+         <label for="task_difficulty">Select difficulty</label>
+      </div>
+      <br>
+      <!--Date of activity calendar-->
+      <div class="row" id="matfix">
+         <div class="input-field col s12">
+            <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+            <textarea id="task_date" name="task_date" type="text" class="datepicker validate" required>
+            {{ task.task_date }}
+            </textarea>
+            <label for="task_date">Date</label>
+         </div>
+      </div>
+      <!--save activity button-->
+      <br>
+      <div class="row"></div>
+      <div class="col s12 center-align"></div>
+      <button type="submit" class="btn large light-green darken-1 text-shadow">
+      Done <i class="fas fa-edit-square left"></i>
+      </button>
+   </form>
 </div>
 
 {% endblock %}
