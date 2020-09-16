@@ -9,13 +9,9 @@
          <div class="input-field col s12">
             <select id="task_activity" name="task_activity" required>
                <option value="" disabled selected>Please select:</option>
-               {% for activities in activities %}
-               {% if task.task_activity %}
                <option value="Run" selected>Run</option>
                <option value="Walk">Walk</option>
                <option value="Run and Walk">Run and walk</option>
-               {% endif %}
-               {% endfor %}
             </select>
             <label for="task_activity">Select activity</label>
          </div>
@@ -44,15 +40,11 @@
       <div class="input-field col s12">
          <select id="task_difficulty" name="task_difficulty" required>
             <option value="" disabled selected>Please select:</option>
-            {% for activities in activities %}
-            {% if task.task_activity %}
             <option value="{{ task.task_difficulty }}">Light</option>
             <option value="task.task_difficulty">Easy</option>
             <option value="task.task_difficulty">Moderate</option>
             <option value="task.task_difficulty" selected>Hard</option>
             <option value="task.task_difficulty">Very Hard</option>
-            {% endif %}
-            {% endfor %}
          </select>
          <label for="task_difficulty">Select difficulty</label>
       </div>

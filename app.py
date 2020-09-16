@@ -53,13 +53,13 @@ def add_activity():
         return redirect(url_for("get_tasks"))
         
     tasks = mongo.db.tasks.find().sort("task_name", 1)
-    return render_template("add_activity.html", task=task)
+    return render_template("add_activity.html")
                 
 
 @app.route("/edit_task/<task_id>", methods=["GET", "POST"])
 def edit_task(task_id):
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-    tasks = mongo.db.tasks.find().sort("task_name", 1)
+    task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("edit_activity.html", task=task)
 
 if __name__ == "__main__":
