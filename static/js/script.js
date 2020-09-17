@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    
+    
+    //call side-nav
+    $('.sidenav').sidenav();
+
     //Trigger accordian collapse
     $('.collapsible').collapsible();
     

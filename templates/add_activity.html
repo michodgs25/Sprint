@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <br>
-<h2 class="center-align">Enter Details below</h2>
+<h2 class="center-align">Create Sprint</h2>
 <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
         <div class="row">
@@ -29,13 +29,14 @@
                 <label for="task_gender">Select gender</label>
             </div>
         </div>
-        <br>
         <!--Provide user age-->
         <div class="row">
             <div class="input-field col s6">
                 <input id="task_age" name="task_age" type="text" class="validate" required>
                 <label for="task_age">Age</label>
             </div>
+            <br>
+            <br>
             <!--choose specific activity-->
             <div class="input-field col s12">
                 <select id="task_activity" name="task_activity" required>
@@ -47,6 +48,7 @@
                 <label for="task_activity">Select activity</label>
             </div>
         </div>
+        <br>
         <!--provide activity title-->
         <div class="row">
             <div class="input-field col s12">

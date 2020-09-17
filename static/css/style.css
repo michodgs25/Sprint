@@ -113,7 +113,7 @@ nav ul .search-icon input {
     border: none;
     outline: none;
     padding: 0 0.625em;
-    color: rgb(187, 187, 185);
+    color: rgb(245, 182, 66);
     font-size: 1em;
     border-radius: 0.3125em 0 0 0.3125em;
 }
@@ -133,7 +133,7 @@ nav ul .search-icon .icon:hover {
 }
 
 nav ul .search-icon .icon span {
-    color: rgb(187, 187, 185);
+    color: rgb(245, 182, 66);
     font-size: 1.125em;
 }
 
@@ -151,46 +151,4 @@ nav ul .search-icon .icon span {
 .collapsible-header .col span {
     margin: 0.3125em;
     line-height: 2.625em;
-}
-
-/*footer/icons section
-.footer {
-    text-align: center;
-    height: 20em;
-}
-
-.footer img {
-    height: 4em;
-    border-radius: 1em;
-}
-
-.footer-header {
-    padding-top: 5rem;
-}
-
-i {
-    text-decoration: none;
-}
-
-.footer li {
-    list-style-type: none;
-    text-align: center;
-    display: inline;
-}
-
-.footer li a {
-    text-decoration: none;
-    font-size: 4em;
-}
-
-.facebook li a {
-    color: rgb(75, 66, 245);
-}
-
-.twitter li a {
-    color: rgb(66, 194, 245);
-}
-
-.fab fa-instagram a {
-    color: rgb(239, 66, 245);
 }
