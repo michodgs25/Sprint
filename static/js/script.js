@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    
-    
     //call side-nav
     $('.sidenav').sidenav();
 
