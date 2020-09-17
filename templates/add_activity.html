@@ -8,7 +8,7 @@
             <div class="input-field col s12">
                 <input id="task_name" name="task_name" type="text" class="validate"  
                        minlength="1" maxlength="25" required>
-                <label for="name">First Name</label>
+                <label for="task_name">First Name</label>
             </div>
         </div>
         <div class="row">
@@ -50,8 +50,9 @@
         <!--provide activity title-->
         <div class="row">
             <div class="input-field col s12">
-                <textarea id="task_title" name="task_title" class="task_title" minlength="5" maxlength="20" required></textarea>
-                <label for="task_title">Name Activity</label>
+                <input id="task_title" name="task_title" type="text" class="validate"  
+                       minlength="5" maxlength="25" required>
+                <label for="task_title">Activity Name</label>
             </div>
         </div>
         <br>
@@ -88,7 +89,7 @@
         <div class="row"></div>
         <div class="col s12 center-align"></div>
         <button type="submit" class="btn large light-green darken-1 text-shadow">
-            Save activity <i class="fas fa-plus-square left"></i>
+            Save activity <i class="fas fa-plus-square right"></i>
         </button>
     </form>
 </div>

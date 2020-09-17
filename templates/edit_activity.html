@@ -3,7 +3,7 @@
 <br>
 <h2 class="center-align">Edit Details below</h2>
 <div class="row card-panel grey lighten-5">
-   <form class="col s12" method="POST" action="{{ url_for('edit_task', task_id=task._id) }}">
+   <form class="col s12" method="POST" action="{{ url_for('edit_activity', task_id=task._id) }}">
          <!--choose specific activity-->
          <div class="row">
          <div class="input-field col s12">
@@ -19,9 +19,8 @@
       <!--provide activity title-->
       <div class="row">
          <div class="input-field col s12">
-            <textarea id="task_title" name="task_title" class="task_title" 
-               minlength="5" maxlength="20" required>
-            {{ task.task_title }}
+            <textarea id="task_title" name="task_title" class="validate" 
+            value="{{ task.task_title }}" minlength="5" maxlength="20" required>
             </textarea>
             <label for="task_title">Name Activity</label>
          </div>
@@ -29,11 +28,11 @@
       <br>
       <div class="row">
          <div class="input-field col s12">
-            <textarea id="task_description" name="task_description" class="task_description"
-               minlength="5" maxlength="100" required>
-            {{ task.task_description }}
-            </textarea>
-            <label for="description">Describe your activity</label>
+            <textarea id="task_description" name="task_description" 
+            class="materialize-textarea" value="{{task.task_description}}" 
+             minlength="5" maxlength="100" required>
+        </textarea>
+           <label for="task_description">Describe your activity</label>
          </div>
       </div>
       <br>
@@ -41,10 +40,10 @@
          <select id="task_difficulty" name="task_difficulty" required>
             <option value="" disabled selected>Please select:</option>
             <option value="{{ task.task_difficulty }}">Light</option>
-            <option value="task.task_difficulty">Easy</option>
-            <option value="task.task_difficulty">Moderate</option>
-            <option value="task.task_difficulty" selected>Hard</option>
-            <option value="task.task_difficulty">Very Hard</option>
+            <option value="{{ task.task_difficulty }}">Easy</option>
+            <option value="{{ task.task_difficulty }}">Moderate</option>
+            <option value="{{ task.task_difficulty }}" selected>Hard</option>
+            <option value="{{ task.task_difficulty }}">Very Hard</option>
          </select>
          <label for="task_difficulty">Select difficulty</label>
       </div>
@@ -53,9 +52,7 @@
       <div class="row" id="matfix">
          <div class="input-field col s12">
             <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-            <textarea id="task_date" name="task_date" type="text" class="datepicker validate" required>
-            {{ task.task_date }}
-            </textarea>
+            <textarea id="task_date" name="task_date" type="text" class="datepicker validate" required>{{ task.task_date }}</textarea>
             <label for="task_date">Date</label>
          </div>
       </div>
@@ -64,7 +61,7 @@
       <div class="row"></div>
       <div class="col s12 center-align"></div>
       <button type="submit" class="btn large light-green darken-1 text-shadow">
-      Done <i class="fas fa-edit-square left"></i>
+      Edit <i class="fas fa-edit right"></i>
       </button>
    </form>
 </div>

@@ -14,8 +14,8 @@
          {{ task.task_description }}
          Difficulty: {{ task.task_difficulty }}
          <br>
-         <a href="" class="btn-small green accent-4">Save</a>
-         <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-small orange lighten-3">Edit</a>
+         <a href="{{ url_for('edit_activity', task_id=task._id) }}" class="btn-small orange darken-2">Edit</a>
+         <a href="" class="btn-small red accent-4">Delete</a>
          </span>
       </div>
    </li>

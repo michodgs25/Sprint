@@ -53,14 +53,32 @@ def add_activity():
         return redirect(url_for("get_tasks"))
         
     tasks = mongo.db.tasks.find().sort("task_name", 1)
-    return render_template("add_activity.html")
+    return render_template("add_activity.html", tasks=tasks)
                 
 
-@app.route("/edit_task/<task_id>", methods=["GET", "POST"])
+@app.route("/edit_activity/<task_id>", methods=["GET", "POST"])
 def edit_task(task_id):
-    task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-    task = mongo.db.tasks.find().sort("task_name", 1)
-    return render_template("edit_activity.html", task=task)
+    
+        submit = {
+               "task_name": request.form.get("task_name"),
+               "task_surname": request.form.get("task_surname"),
+               "task_gender": request.form.getlist("task_gender"),
+               "task_age": request.form.get("task_age"),
+               "task_activity": request.form.getlist("task_activity"),
+               "task_title": request.form.get("task_title"),
+               "task_description": request.form.getlist("task_description"),
+               "task_difficulty": request.form.getlist("task_difficulty"),
+               "task_date": request.form.get("task_date")
+        }
+        
+        mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
+        flash("Activity Successfully Updated")
+        return redirect(url_for('get_tasks'))
+        
+        task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
+        task = mongo.db.tasks.find().sort("task_name", 1)
+        return render_template("edit_activity.html", tasks=tasks)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
