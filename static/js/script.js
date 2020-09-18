@@ -1,6 +1,12 @@
 $(document).ready(function(){
+    //Automatically initialize all materialize components
+    M.AutoInit();
+    
     //call side-nav
     $('.sidenav').sidenav();
+
+    //trigger feature discovery on explore page
+    $('.tap-target').tapTarget();
 
     //Trigger accordian collapse
     $('.collapsible').collapsible();

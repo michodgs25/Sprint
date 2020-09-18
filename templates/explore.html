@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
+  <!-- Element Showed -->
+  <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">click</i></a>
+
+  <!-- Tap Target Structure -->
+  <div class="tap-target" data-target="button">
+    <div class="tap-target-content">
+      <h5>Hey there! Search through your Sprints using the search bar at the top of the page</h5>
+      <p>Happy Sprinting!</p>
+    </div>
+  </div>
 <ul class="collapsible">
    {% for task in tasks %}
    <li>
