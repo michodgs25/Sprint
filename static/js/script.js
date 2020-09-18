@@ -31,6 +31,9 @@ $(document).ready(function(){
             
     //Trigger select box options
     $('select').formSelect();
+
+    //alert box, asks user whether they want to delete post
+    $('.alert').alert()
             
     //call datepicker
     $('.datepicker').datepicker({
@@ -42,7 +45,3 @@ $(document).ready(function(){
         }
     });
 });
-
-//alert box, asks user whether they want to delete post
-function myFunction() {
-  alert("I am an alert box!");
