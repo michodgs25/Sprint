@@ -5,6 +5,10 @@ $(document).ready(function(){
     //call side-nav
     $('.sidenav').sidenav();
 
+    /*tool tip, inform user to use search bar 
+    to help find specific sprints*/
+    $('.tooltipped').tooltip();
+
     //trigger feature discovery on explore page
     $('.tap-target').tapTarget();
 
@@ -38,3 +42,7 @@ $(document).ready(function(){
         }
     });
 });
+
+//alert box, asks user whether they want to delete post
+function myFunction() {
+  alert("I am an alert box!");

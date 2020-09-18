@@ -15,33 +15,38 @@
     <title>Sprint</title>
 </head>
 <body>
+<header>
 <div class="navbar-fixed">
-<nav>
+<nav class="nav-extended">
 <div class="nav-wrapper">
-  <ul>
+<a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+  <ul class="right hide-on-med-and-down">
     <li><a href="{{ url_for('get_create_compare') }}">Home</a></li>
     <li><a href="{{ url_for('get_tasks') }}">Explore Sprints</a></li>
     <li><a href="{{ url_for('add_activity') }}">Create Sprint</a></li>
     <li><a href="{{ url_for('get_about') }}">About Sprint</a></li>
     <li class="search-icon">
-        <input type="search" placeholder="Search Sprints:">
-        <span class="fas fa-search"></span>
+        <input type="search" placeholder="Search:">
+        <span class="fas fa-search"></span><a class="btn tooltipped btn-extra-small green darken-2 center-align" 
+                    data-position="bottom" data-tooltip="Search your sprints here">Hover
+        </a>
     </li>
   </ul>
 </div>
-<!--mobile sidenav-->
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="{{ url_for('get_create_compare') }}">Home</a></li>
-    <li><a href="{{ url_for('get_tasks') }}">Components</a></li>
-    <li><a href="{{ url_for('add_activity') }}">Javascript</a></li>
-    <li><a href="{{ url_for('get_about') }}">Mobile</a></li>
-    <li class="search-icon">
-        <input type="search" placeholder="Search Sprints:">
-        <span class="fas fa-search"></span>
-    </li>
-  </ul>
 </nav>
 </div>
+<!--mobile sidenav-->
+  <ul class="sidenav light-blue darken-1" id="mobile-demo">
+    <li><a href="{{ url_for('get_create_compare') }}">Home</a></li>
+    <li><a href="{{ url_for('get_tasks') }}">Explore Sprint</a></li>
+    <li><a href="{{ url_for('add_activity') }}">Create Sprint</a></li>
+    <li><a href="{{ url_for('get_about') }}">About Sprint</a></li>
+    <li class="search-icon">
+        <input type="search" placeholder="Search Sprints here:">
+        <span class="fas fa-search"></span>
+    </li>
+  </ul>
+  </header>
 
 
 
