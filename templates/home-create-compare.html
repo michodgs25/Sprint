@@ -1,27 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row row-cols-1 row-cols-md-2">
-  <div class="col mb-4">
-    <div class="card">
-    <div class="card-image">
-      <img src="static/images/home/create-card.jpg" class="card-img-top" alt="Runner in the dunes">
-      <div class="card-body">
-        <h5 class="card-title">Create A Sprint</h5>
-        <a href="#!"><button>Go</button></a>
+<br>
+<!--Create sprint card-->
+<div class="container">
+  <div class="row">
+    <div class="col s6">
+      <div class="card small">
+        <div class="card-image">
+          <img src="static/images/home/create-card.jpg">
+          <span class="card-title">Create A Sprint</span>
+        </div>
+        <div class="card-action">
+          <a href="{{ url_for('add_activity') }}" class="btn-large green darken-1 text-shadow">Create Sprint</a>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
+</div>
+<!--Explore Sprint card-->
+<div class="container">
+  <div class="row">
+    <div class="col s6">
+    <div class="card small">
     <div class="card-image">
-      <img src="static/images/home/explore-card.jpg" class="card-img-top" alt="Runners exploring">
-      <div class="card-body">
-        <h5 class="card-title">Explore Your Sprints</h5>
-        <a href="#!"><button>Go</button></a>
-      </div>
+        <img src="static/images/home/explore-card.jpg">
+          <span class="card-title">Explore Your Sprints</span>
+           </div>
+        <div class="card-action">
+    <a href="{{ url_for('get_tasks') }}" class="btn-large green darken-1 text-shadow">Explore Sprints</a>
     </div>
-    </div>
+</div>
   </div>
+</div>
 </div>
 {% endblock %}
