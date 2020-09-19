@@ -138,18 +138,18 @@ nav ul .search-icon .icon span {
 }
 
 /*homepage section*/
-.cards {
-    padding-top: 2em;
-}
-
 .card-image {
     width: 5em;
 }
 
-/*Create sprint title*/
+/*Create sprint section*/
 .create-title h2 {
     text-align: center;
     justify-content: center;
+}
+
+label {
+    color: rgb(245, 182, 66);
 }
 
 /*explore sprints page*/
