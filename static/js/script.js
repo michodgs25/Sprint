@@ -2,7 +2,7 @@ $(document).ready(function(){
     //Automatically initialize all materialize components
     M.AutoInit();
     
-    //call side-nav
+    //call side-nav, in mobile
     $('.sidenav').sidenav();
 
     /*tool tip, inform user to use search bar 
@@ -32,10 +32,17 @@ $(document).ready(function(){
     //Trigger select box options
     $('select').formSelect();
 
-    //alert box, asks user whether they want to delete post
-    $('.alert').alert()
-            
-    //call datepicker
+    //dialog box, asks user whether they want to delete post
+    $( "#dialog-message" ).dialog({
+      modal: true,
+      buttons: {
+        Ok: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+
+    //call datepicker, user can select date
     $('.datepicker').datepicker({
         format: "dd, mmmm, yyyy",
         yearRange: 3,
