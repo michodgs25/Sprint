@@ -52,3 +52,9 @@ $(document).ready(function(){
         }
     });
 });
+
+//check nav elements, hide search bar element if on create page
+// and hide navigation bar and footer if on homepage
+document.addEventListener('DOMContentLoaded', (event) => {
+  //the event occurred
+})
