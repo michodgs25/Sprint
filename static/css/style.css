@@ -108,7 +108,6 @@ nav ul .search-icon {
      height: 2.5em;
      width: 15em;
      display: flex;
-     background: rgb(255, 255, 255);
      border-radius: 0.3125em;
 }
 
@@ -144,7 +143,7 @@ nav ul .search-icon .icon span {
 
 /*homepage section*/
 .card-image {
-    width: 5em;
+    width: 10em;
 }
 
 /*Create sprint section*/

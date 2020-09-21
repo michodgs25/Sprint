@@ -24,15 +24,11 @@
                      <li><a href="{{ url_for('get_create_compare') }}">Home</a></li>
                      <li><a href="{{ url_for('get_tasks') }}">Explore Sprints</a></li>
                      <li><a href="{{ url_for('add_activity') }}">Create Sprint</a></li>
-                     <li>
                         <form>
-                           <div class="input-field">
-                              <input type="search" placeholder="Search:" 
-                                 class="btn tooltipped btn-extra-small green darken-2 center-align" 
-                                 data-position="bottom" data-tooltip="Search your sprints here">
-                           </div>
+                           <input type="search" id="searchsprint" placeholder="Search:" 
+                              class="btn tooltipped btn-extra-small green darken-2 center-align" 
+                              data-position="bottom" data-tooltip="Search your sprints here" required>
                         </form>
-                     </li>
                   </ul>
                </div>
             </nav>
@@ -44,8 +40,7 @@
             <li><a href="{{ url_for('add_activity') }}">Create Sprint</a></li>
             <li class="search-icon">
                <form>
-                  <input type="search" placeholder="Search Sprints here:">
-                  <span class="fas fa-search"></span>
+                  <input type="search" id="searchsprints" placeholder="Search Sprints here:" required>
                </form>
             </li>
          </ul>
