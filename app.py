@@ -28,6 +28,18 @@ def get_tasks():
 # render explore sprints template and store tasks data
     return render_template("explore.html", tasks=tasks)
 
+
+# create route for searching database with
+# the search bar
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    tasks = list(mongo.db.tasks.find({"$text": {"$search": query}}))
+    # render explore sprints template and search tasks
+    return render_template("explore.html", tasks=tasks)
+
+
+
 # create app route
 @app.route("/get_create_compare")
 def get_create_compare():
@@ -39,6 +51,7 @@ def get_create_compare():
 def get_about():
 # render template, tells user about the website
     return render_template("about.html")
+
 
 # create app route, call methods with arguments
 # which saves data to database and
@@ -69,6 +82,7 @@ def add_activity():
     task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("add_activity.html", task=task)
                 
+
 # create app route, call task id from database
 # call get and post method, when user modifies data
 # python will update the post in both database and explore page
@@ -96,6 +110,7 @@ def edit_activity(task_id):
     task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("edit_activity.html", task=task)
 
+
 # create app route, call task id from database collection
 @app.route("/delete_activity/<task_id>")
 def delete_activity(task_id):   
@@ -104,6 +119,7 @@ def delete_activity(task_id):
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})
     flash("Task Removed")
     return redirect(url_for("get_tasks"))
+
 
 # tell python to host page on this server
 # call ip address, set in firstly MongoDB and
