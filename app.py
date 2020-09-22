@@ -35,9 +35,8 @@ def get_tasks():
 def search():
     query = request.form.get("query")
     tasks = list(mongo.db.tasks.find({"$text": {"$search": query}}))
-    # render explore sprints template and search tasks
+    # render explore page template and search results
     return render_template("explore.html", tasks=tasks)
-
 
 
 # create app route

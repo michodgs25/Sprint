@@ -14,6 +14,10 @@ $(document).ready(function(){
 
     //Trigger accordian collapse
     $('.collapsible').collapsible();
+
+    //sidenav select and collapse functions
+    $('select').material_select();
+    $(".button-collapse").sideNav();
     
     //trigger an autoresize for textarea 1& 2
     if ($('#textarea1').length > 0) {
@@ -44,7 +48,7 @@ $(document).ready(function(){
 
     //call datepicker, user can select date
     $('.datepicker').datepicker({
-        format: "dd, mmmm, yyyy",
+        format: "dd, mmmm yyyy",
         yearRange: 3,
         showClearBtn: true,
         i18n: {
@@ -57,4 +61,8 @@ $(document).ready(function(){
 // and hide navigation bar and footer if on homepage
 document.addEventListener('DOMContentLoaded', (event) => {
   //the event occurred
+  document.querySelector('.navbar').style.display = "none";
+  } else {
+    document.querySelector('.navbar').style.display = "block";
+  }
 })
