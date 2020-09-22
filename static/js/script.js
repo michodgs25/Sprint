@@ -5,10 +5,6 @@ $(document).ready(function(){
     //call side-nav, in mobile
     $('.sidenav').sidenav();
 
-    /*tool tip, inform user to use search bar 
-    to help find specific sprints*/
-    $('.tooltipped').tooltip();
-
     //trigger feature discovery on explore page
     $('.tap-target').tapTarget();
 
@@ -56,13 +52,3 @@ $(document).ready(function(){
         }
     });
 });
-
-//check nav elements, hide search bar element if on create page
-// and hide navigation bar and footer if on homepage
-document.addEventListener('DOMContentLoaded', (event) => {
-  //the event occurred
-  document.querySelector('.navbar').style.display = "none";
-  } else {
-    document.querySelector('.navbar').style.display = "block";
-  }
-})

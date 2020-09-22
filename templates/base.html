@@ -31,7 +31,6 @@
                            <div class="input-field">
                               <input type="text" name="query" id="query" required>
                               <label class="label-icon" for="query"><i class=""></i></label>
-                              <i class="fas fa-times-circle">Close</i>
                            </div>
                            <div class="s12 m4">
                               <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
@@ -47,14 +46,7 @@
             <li><a href="{{ url_for('get_create_compare') }}">Home</a></li>
             <li><a href="{{ url_for('get_tasks') }}">Explore Sprints</a></li>
             <li><a href="{{ url_for('add_activity') }}">Create Sprint</a></li>
-            <form action="{{ url_for('search') }}" method="post">
-            <div row valign-wrapper>
-            <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-            <div class="input-field">
-               <input type="text" name="query" id="query" required>
-            </div>
-            <br>
-               <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
+            <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
         </ul>
       </header>
       {% block content %}
