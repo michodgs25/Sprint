@@ -54,7 +54,7 @@ $(document).ready(function(){
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.path == 'create_event') {
+  if (window.location.path == 'templates/home.html') {
     document.querySelector('.navbar').style.display = "none";
   } else {
     document.querySelector('.navbar').style.display = "block";
