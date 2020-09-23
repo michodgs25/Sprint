@@ -54,9 +54,17 @@ $(document).ready(function(){
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.path == 'templates/home.html') {
-    document.querySelector('.navbar').style.display = "none";
+  if (window.location.pathname == '/get_home') {
+    document.querySelector('.navbar-fixed').style.display = "none";
   } else {
-    document.querySelector('.navbar').style.display = "block";
+    document.querySelector('.navbar-fixed').style.display = "block";
+  }
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/get_home') {
+    document.querySelector('.page-footer').style.display = "none";
+  } else {
+    document.querySelector('.page-footer').style.display = "block";
   }
 });
