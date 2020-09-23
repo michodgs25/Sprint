@@ -40,16 +40,10 @@ def search():
 
 
 # create app route
-@app.route("/get_create_compare")
-def get_create_compare():
-# render template, this the homepage
-    return render_template("home-create-compare.html")
-
-
-@app.route("/get_about")
-def get_about():
-# render template, tells user about the website
-    return render_template("about.html")
+@app.route("/get_home")
+def get_home():
+# render home template
+    return render_template("home.html")
 
 
 # create app route, call methods with arguments
