@@ -10,11 +10,16 @@
          <br>
          {{ task.task_title }}
       </div>
-      <div class="collapsible-body">
+      <div class="collapsible-body row card-panel light-grey darken-1">
          <span>
-            {{ task.task_description }}
-            Difficulty: {{ task.task_difficulty }}
+         <h5>Activity description:</h5>
+            <strong>{{ task.task_description }}</strong>
             <br>
+            <h5>Activity difficulty:</h5>
+            <strong>{{ task.task_difficulty }}</strong>
+            <br>
+            <br>
+            <hr>
             <div>
                <a href="{{ url_for('edit_activity', task_id=task._id) }}" class="btn-small orange darken-2">
                Edit Activity</a>

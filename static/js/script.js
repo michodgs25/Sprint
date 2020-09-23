@@ -52,3 +52,11 @@ $(document).ready(function(){
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.path == 'create_event') {
+    document.querySelector('.navbar').style.display = "none";
+  } else {
+    document.querySelector('.navbar').style.display = "block";
+  }
+});
