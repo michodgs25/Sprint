@@ -90,9 +90,9 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
   <br>
 
 ## Wire-Frames
-The main difference between desktop and mobile is breakpoints, which adapts features to fit various screen sizes.
+There are two primary differences between desktop and mobile, which are breakpoints, which adapts features to fit various screen sizes and the implementation of a side-nav for mobile only.
 
-### Welcome& Home page
+### Welcome page Desk-top
 
 <details>
   <summary>Welcome page</summary>
@@ -102,15 +102,7 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 </div>
   </details>
   
-  <details>
-  <summary>Homepage</summary>
-  <br>
-<div align="center">
-<img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/create-or-compare-page.png" target="_blank" rel=""/>
-</div>
-  </details>
-  
-### Mobile welcome& Homepage
+### Mobile welcome page mobile
 
 <details>
   <summary>Mobile Welcome page</summary>
@@ -120,13 +112,17 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
 </div>
   </details>
   
+### Homepage for desktop and mobile
+  
   <details>
-  <summary>Mobile Homepage</summary>
+  <summary>Homepage</summary>
   <br>
 <div align="center">
 <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-create-compare.png" target="_blank" rel=""/>
 </div>
   </details>
+  
+  *Breakpoints applied to resize cards for mobile screens.*
   
   -------------------------------------
   
