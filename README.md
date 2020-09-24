@@ -170,6 +170,29 @@ There are two primary differences between desktop and mobile, which are breakpoi
   
   
    -------------------------------------
+   
+   ### Edit page desk-top
+   
+     <details>
+  <summary>Mobile Explore page</summary>
+  <br>
+  <div align="center">
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
+         </div>
+    </details>
+
+
+   ### Edit page mobile
+   
+     <details>
+  <summary>Mobile Explore page</summary>
+  <br>
+  <div align="center">
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
+         </div>
+    </details>
+
+-------------------------
 
 ## Features
 
@@ -182,8 +205,6 @@ There are two primary differences between desktop and mobile, which are breakpoi
 * *Below the site logo/icon is the title, provides a brief sentence on what Sprint is about.*
 
 * *Center of the image is a button titled "Run on in!", this transports user to create or explore home page.*
-
-* *Bottom of the image is social media icons, user can share Sprint to their feed.*
 
 <details>
   <summary>Welcome page</summary>
@@ -202,15 +223,13 @@ There are two primary differences between desktop and mobile, which are breakpoi
 
 ### Home& Create or explore cards features
 
-* *Adapted from the bootstrap library, the cards are a creative way to provide the user the two available options: Create or Explore.*
+* *Adapted from the materialize library, the cards are a creative way to provide the user the two available options: Create or Explore.*
 
-* *Both cards have an image with the tag: "Create activity" and "Explore activities" and when image is clicked takes the user to the respective page.*
+* *Both cards have an image with a button tag: "Create activity" and "Explore activities" and when button is clicked takes the user to the respective page, which either the Create or explore.*
 
 * *The Create activity card takes the user to the create page where user can log a new activity.*
 
 * *The Explore activities card takes the user to the explore page which displays all the previously logged activities by the user.*
-
-* *In addition the explore activities card has a search bar, the user can type for example: 10k run and press enter, this will transport to the explore activities page and display all 10k runs that have been logged.*
 
 <details>
   <summary>Create or Explore page</summary>
@@ -232,9 +251,9 @@ There are two primary differences between desktop and mobile, which are breakpoi
 
 * *The title of the activity is very important as this helps locate the particular activity in database when user types in search bar on explore card or explore page.*
 
-* *The description of the activity is purely optional, this allows the user to talk about the experience of doing this activity.*
+* *The description of the activity, allows the user to talk about the experience of doing this activity.*
 
-* *The create page feature provides a activity difficulty slider, which the user can choose between: easy, light, moderate, hard and very hard*
+* *The create page feature provides a activity difficulty select box, which the user can choose between: easy, light, moderate, hard and very hard*
 
 * *The create page has a social media footer in which user can share activity.*
 
@@ -253,13 +272,15 @@ There are two primary differences between desktop and mobile, which are breakpoi
    
    ### Explore activities feature
 
-* *The explore activities feature, has the latest logged activity at the top and the first activity at the bottom.*
+* *The explore activities feature, has all the logged sprints on one page.*
 
-* *This feature has a search bar on the navigation bar, user can search through all the logged activities.*
+* *Each log is an accordian initially displaying just the date and title, the user can click on post and an addition box drops down which displays activity description, difficulty of activity and a edit delete post buttons.*
 
-* *Clicking the image on each post will transfer the user to create page where user can update or delete the activity.*
+* *This feature has a search bar on the navigation bar, user can search through all the logged activities, nav-bar also follows user scroll.*
 
-* *Each activity log will have the activity title, image, description and difficulty.*
+* *Clicking the edit button opens up a version of the create page where user can update title, description, difficulty and the date of activity.*
+
+* *Clicking the delete button will remove post.
 
 * *This feature footer has the social media links and sprint icon. User learn more about sprint and share sprint to social media.*
 
@@ -276,28 +297,6 @@ There are two primary differences between desktop and mobile, which are breakpoi
    
    ----
    
-   ### About Sprint feature
-   
- * *The about Sprint feature informs the user about Sprint's purpose and why the website was created.*
- 
- * *The feature will have three images with captions: "What is Sprint", "Why have Sprint", and "Sprint's future".*
- 
- * *When user hovers over each image, a text box slides out to the side and displays a description. Once user moves cursor to the next image the text slides back inside the image.*
- 
- * *Footer of this feature has the sprint icon and the social media icons where user can share their Sprint experience.*
- 
- <details>
-  <summary>About Sprint page</summary>
-<div align="center">
-<img src="" 
-     target="_blank" rel=""/>
-  </div>
-  </details>
-  
-  #### About Sprint summary 
-  - *This feature is a positive addition to the site as this allows the user to learn more about Sprint.*
-  
-  ----
    
 ## Features left to implement
    - Summary *"This site starts as a personal tool and as improvements are made and features added to become a public tool."*
@@ -310,6 +309,8 @@ There are two primary differences between desktop and mobile, which are breakpoi
 * Html, Css, Javascript, Python languages
 
 * MongoDB - https://www.mongodb.com/
+
+* Materialize - https://materializecss.com/
 
 * Balslamiq - https://balsamiq.com/
 
