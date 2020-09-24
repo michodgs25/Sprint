@@ -174,27 +174,6 @@ The main difference between desktop and mobile is breakpoints, which adapts feat
   
   
    -------------------------------------
-  
-  ### About Sprint page
-    
-  <details>
-  <summary>About Sprint page</summary>
-  <br>
-  <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/about-sprint.png"
-         </div>
-    </details>
-  
-  ### Mobile about Sprint page
-  
-  <details>
-  <summary>About Sprint mobile page</summary>
-  <br>
-  <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-about.png"
-         </div>
-    </details>
-    
 
 ## Features
 
