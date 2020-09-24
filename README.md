@@ -102,7 +102,7 @@ There are two primary differences between desktop and mobile, which are breakpoi
 </div>
   </details>
   
-### Mobile welcome page mobile
+### Mobile welcome page and tablet width 768px and lower
 
 <details>
   <summary>Mobile Welcome page</summary>
@@ -112,7 +112,7 @@ There are two primary differences between desktop and mobile, which are breakpoi
 </div>
   </details>
   
-### Homepage for desktop and mobile
+### Homepage for desktop and tablet& mobile 
   
   <details>
   <summary>Homepage</summary>
@@ -122,7 +122,7 @@ There are two primary differences between desktop and mobile, which are breakpoi
 </div>
   </details>
   
-  *Breakpoints applied to resize cards for mobile screens.*
+  *Breakpoints applied to resize cards for tablet& mobile screens.*
   
   -------------------------------------
   
@@ -136,7 +136,7 @@ There are two primary differences between desktop and mobile, which are breakpoi
          </div>
     </details>
   
-  ### Mobile create activity page
+  ### Mobile create activity page and tablets width 768px and lower
   
   <details>
   <summary>Mobile Create page</summary>
@@ -158,7 +158,7 @@ There are two primary differences between desktop and mobile, which are breakpoi
          </div>
     </details>
   
-  ### Mobile Explore page
+  ### Mobile Explore page and tablet width 768px and lower
   
   <details>
   <summary>Mobile Explore page</summary>
@@ -182,7 +182,7 @@ There are two primary differences between desktop and mobile, which are breakpoi
     </details>
 
 
-   ### Edit page mobile
+   ### Edit page mobile and tablet width 768px and lower
    
    <details>
   <summary>Mobile edit Sprint page</summary>
