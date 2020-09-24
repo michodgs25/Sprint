@@ -276,7 +276,7 @@ There are two primary differences between desktop and mobile, which are breakpoi
 
 * *Each log is an accordian initially displaying just the date and title, the user can click on post and an addition box drops down which displays activity description, difficulty of activity and a edit delete post buttons.*
 
-* *This feature has a search bar on the navigation bar, user can search through all the logged activities, nav-bar also follows user scroll.*
+* *This feature has a search bar on the navigation bar, user can search through all the logged activities, nav-bar also follows the user scroll.*
 
 * *Clicking the edit button opens up a version of the create page where user can update title, description, difficulty and the date of activity.*
 
