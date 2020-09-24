@@ -173,8 +173,8 @@ There are two primary differences between desktop and mobile, which are breakpoi
    
    ### Edit page desk-top
    
-     <details>
-  <summary>Mobile Explore page</summary>
+   <details>
+  <summary>Edit Sprint page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
@@ -184,8 +184,8 @@ There are two primary differences between desktop and mobile, which are breakpoi
 
    ### Edit page mobile
    
-     <details>
-  <summary>Mobile Explore page</summary>
+   <details>
+  <summary>Mobile edit Sprint page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
