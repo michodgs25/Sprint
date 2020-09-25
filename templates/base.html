@@ -22,7 +22,7 @@
                   <a href="{{ url_for('get_home') }}" class="brand-logo">Sprint</a>
                   <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                   <ul class="right hide-on-med-and-down">
-                     <li><a href="{{ url_for('get_home') }}">Home</a></li>
+                     <li class="tab row s3"><i class="fas fa-home" href="{{ url_for('get_home') }}"></i></li>
                      <li><a href="{{ url_for('get_tasks') }}">Explore Sprints</a></li>
                      <li><a href="{{ url_for('add_activity') }}">Create Sprint</a></li>
                      <form class="search-form" action="{{ url_for('search') }}" method="post">
@@ -43,7 +43,8 @@
          </div>
          <!--mobile sidenav-->
          <ul class="sidenav light-blue darken-4" id="mobile-demo">
-            <li class="tab row s3"><a href="{{ url_for('get_home') }}">Home</a></li>
+         <h5 class="side-title">Sprint</h5>
+            <li><a href="{{ url_for('get_home') }}">Home</a></li>
             <li class="tab row s3"><a href="{{ url_for('get_tasks') }}">Explore Sprints</a></li>
             <li class="tab row s3"><a href="{{ url_for('add_activity') }}">Create Sprint</a></li>
             <form class="search-form" action="{{ url_for('search') }}" method="post">

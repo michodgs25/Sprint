@@ -55,6 +55,7 @@
     margin-top: 2em;
 }
 
+/*welcome button styling*/
 .welcome-image .button:hover{
     background: rgb(245, 182, 66);
     color: rgb(52, 198, 235);
@@ -68,11 +69,6 @@ nav {
     border-left: none;
     border-right: none;
     padding-bottom: 1em;
-}
-
-/*nav mobile bars*/
-.fas fa-bars {
-    color: rgb(0, 0, 0);
 }
 
 nav ul {
@@ -89,21 +85,25 @@ nav ul li.home {
     font-weight: 500;
 }
 
+/*nav items positioning*/
 nav ul div {
     padding: 0 1.5625em;
     display: inline-flex;
 }
 
+/*nav item size and positioning*/
 nav ul div.items a {
     text-decoration: none;
     font-size: 1.125em;
     padding: 0 0.75em;
 }
 
+/*nav item hover shadow*/
 nav ul div.items a:hover {
     color: rgb(52, 198, 235);
 }
 
+/*search icon positioning& proportions*/
 nav ul .search-icon {
      height: 2.5em;
      width: 15em;
@@ -111,6 +111,7 @@ nav ul .search-icon {
      border-radius: 0.3125em;
 }
 
+/*search bar input area*/
 nav ul .search-icon input {
     height: 100%;
     width: 12.5em;
@@ -122,6 +123,7 @@ nav ul .search-icon input {
     border-radius: 0.3125em 0 0 0.3125em;
 }
 
+/*search icon proportions*/
 nav ul .search-icon .icon {
     height: 100%;
     width: 2.5em;
@@ -132,16 +134,32 @@ nav ul .search-icon .icon {
     cursor: pointer;
 }
 
+/*nav icon shadow*/
 nav ul .search-icon .icon:hover {
     background: rgb(52, 198, 235);
 }
 
+/*nav search icon color*/
 nav ul .search-icon .icon span {
     color: rgb(0, 0, 0);
     font-size: 1.125em;
 }
 
 /*side-nav*/
+
+/*sidenav mobile bars*/
+.fas fa-bars {
+    color: rgb(255, 255, 255);
+}
+
+/*side-nav title*/
+.side-title {
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 2em;
+}
+
+/*side-nav tabs*/
 .sidenav li a {
     align-items: center;
     color: rgb(255, 255, 255);
