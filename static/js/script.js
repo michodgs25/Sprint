@@ -52,6 +52,16 @@ $(document).ready(function(){
         }
     });
 });
+
+//hide navigation on welcome page
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/get_home') {
+    document.querySelector('.navbar-fixed').style.display = "none";
+  } else {
+    document.querySelector('.navbar-fixed').style.display = "block";
+  }
+});
+
 //hide navigation bar on homepage
 document.addEventListener('DOMContentLoaded', (event) => {
   if (window.location.pathname == '/get_home') {

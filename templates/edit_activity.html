@@ -4,8 +4,8 @@
 <h2 class="center-align">Edit Sprint</h2>
 <div class="row card-panel grey lighten-5">
    <form class="col s12" method="POST" action="{{ url_for('edit_activity', task_id=task._id) }}">
-         <!--choose specific activity-->
-         <div class="row">
+      <!--choose specific activity-->
+      <div class="row">
          <div class="input-field col s12">
             <select id="task_activity" name="task_activity" required>
                <option value="" disabled>Please select:</option>
@@ -20,7 +20,7 @@
       <div class="row">
          <div class="input-field col s12">
             <textarea id="task_title" name="task_title" class="validate" 
-             minlength="5" maxlength="20" required>{{ task.task_title }}</textarea>
+               minlength="5" maxlength="20" required>{{ task.task_title }}</textarea>
             <label for="task_title">Name Activity</label>
          </div>
       </div>
@@ -29,8 +29,8 @@
       <div class="row">
          <div class="input-field col s12">
             <textarea id="task_description" name="task_description" 
-            class="materialize-textarea validate" minlength="5" maxlength="100" required>{{- task.task_description -}}</textarea>
-           <label for="task_description">Describe your activity</label>
+               class="materialize-textarea validate" minlength="5" maxlength="100" required>{{- task.task_description -}}</textarea>
+            <label for="task_description">Describe your activity</label>
          </div>
       </div>
       <br>
@@ -65,10 +65,9 @@
       <div class="col s12 center-align"></div>
       <!--cancel changes made button-->
       <a href="{{ url_for('get_tasks') }}" class="btn-large red text-shadow">
-         Cancel <i class="fas fa-times-circle right"></i>
+      Cancel <i class="fas fa-times-circle right"></i>
       </a>
       <br>
    </form>
 </div>
-
 {% endblock %}

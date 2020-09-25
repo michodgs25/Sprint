@@ -18,6 +18,14 @@ app.secret_key = os.environ.get("SECRET_KEY")
 # create secret key variable and call it from database
 mongo = PyMongo(app)
 
+
+# create app route
+@app.route("/get_index")
+def get_home():
+# render welcome page template
+    return render_template("index.html")
+
+
 # create app route
 @app.route("/")
 @app.route("/get_tasks")
