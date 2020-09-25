@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 
 # create app route
 @app.route("/get_index")
-def get_home():
+def get_index():
 # render welcome page template
     return render_template("index.html")
 

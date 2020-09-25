@@ -141,6 +141,14 @@ nav ul .search-icon .icon span {
     font-size: 1.125em;
 }
 
+/*side-nav*/
+.sidenav li a {
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border: 0.0625em solid rgb(52, 198, 235);
+    border-top: none;
+}
+
 /*homepage section*/
 .card-image {
     width: 10em;

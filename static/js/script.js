@@ -2,7 +2,7 @@ $(document).ready(function(){
     //Automatically initialize all materialize components
     M.AutoInit();
     
-    //call side-nav, in mobile
+    //call side-nav, for mobile& tablet
     $('.sidenav').sidenav();
 
     //trigger feature discovery on explore page
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 //hide navigation on welcome page
 document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/get_home') {
+  if (window.location.pathname == '/get_index') {
     document.querySelector('.navbar-fixed').style.display = "none";
   } else {
     document.querySelector('.navbar-fixed').style.display = "block";
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //hide navigation bar on homepage
 document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/get_home') {
+  if (window.location.pathname == '/get_index') {
     document.querySelector('.navbar-fixed').style.display = "none";
   } else {
     document.querySelector('.navbar-fixed').style.display = "block";
