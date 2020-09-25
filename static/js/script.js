@@ -52,7 +52,7 @@ $(document).ready(function(){
         }
     });
 });
-
+//hide navigation bar on homepage
 document.addEventListener('DOMContentLoaded', (event) => {
   if (window.location.pathname == '/get_home') {
     document.querySelector('.navbar-fixed').style.display = "none";
@@ -61,10 +61,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
+//Hide footer on homepage
 document.addEventListener('DOMContentLoaded', (event) => {
   if (window.location.pathname == '/get_home') {
     document.querySelector('.page-footer').style.display = "none";
   } else {
     document.querySelector('.page-footer').style.display = "block";
+  }
+});
+
+//Hide search bar when on create page
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/add_activity') {
+    document.querySelector('.search-form', 'side-form').style.display = "none";
+  } else {
+    document.querySelector('.search-form', 'side-form').style.display = "block";
   }
 });
