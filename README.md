@@ -177,18 +177,18 @@ There are two primary differences between desktop and mobile, which are breakpoi
   <summary>Edit Sprint page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/edit-activity.png"
          </div>
     </details>
 
 
-   ### Edit page mobile and tablet width 768px and lower
+   ### Edit page mobile and tablet width of 768px and lower
    
    <details>
   <summary>Mobile edit Sprint page</summary>
   <br>
   <div align="center">
-    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
+    <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-edit-actvity.png"
          </div>
     </details>
 
