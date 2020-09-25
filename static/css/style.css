@@ -18,6 +18,13 @@
     flex-direction: column;
   }
 
+/*sticky footer*/
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
   main {
     flex: 1 0 auto;
   }
@@ -167,17 +174,22 @@ nav ul .search-icon .icon span {
     border-top: none;
 }
 
-/*homepage section*/
+/*homepage cards*/
 .card-image {
-    width: 10em;
+    background-position: center;
+    background-size: cover;
 }
 
 /*Create sprint section*/
+
+/*create page title*/
 .create-title h2 {
+    color: rgb(245, 182, 66);
     text-align: center;
     justify-content: center;
 }
 
+/*create form label styling*/
 label {
     color: rgb(245, 182, 66);
 }
@@ -187,6 +199,7 @@ label {
     margin: 0.3125em;
 }
 
+/*accordian header*/
 .collapsible-header .col span {
     margin: 0.3125em;
     line-height: 2.625em;
