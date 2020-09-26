@@ -189,14 +189,31 @@ nav ul .search-icon .icon span {
     justify-content: center;
 }
 
+/*create& edit page heading*/
+h2 {
+    color: rgb(245, 182, 66);
+}
+
 /*create form label styling*/
 label {
     color: rgb(245, 182, 66);
 }
 
 /*explore sprints page*/
+
+/*edit and delete buttons*/
 .btn-small {
     margin: 0.3125em;
+}
+
+/*logged sprint title*/
+h5 {
+    color: rgb(30, 70, 179);
+}
+
+/*logged sprint description& difficulty*/
+strong {
+    color: rgb(245, 182, 66);
 }
 
 /*accordian header*/
