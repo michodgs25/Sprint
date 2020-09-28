@@ -152,7 +152,7 @@ nav ul .search-icon .icon span {
     font-size: 1.125em;
 }
 
-/*side-nav*/
+/*side-nav mobile section*/
 
 /*sidenav mobile bars*/
 .fas fa-bars {
@@ -237,4 +237,11 @@ strong {
 .collapsible-header .col span {
     margin: 0.3125em;
     line-height: 2.625em;
+}
+
+/*footer section*/
+
+/*social media icons size*/
+i fab fa-facebook-square  fab fa-twitter-square fab fa-instagram {
+    font-size: 4em;
 }
