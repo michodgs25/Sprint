@@ -92,9 +92,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 //Hide search bar when on create page
 document.addEventListener('DOMContentLoaded', (event) => {
   if (window.location.pathname == '/add_activity') {
-    document.querySelector('.search-form', 'side-form').style.display = "none";
+    document.querySelector('.search-form').style.display = "none";
   } else {
-    document.querySelector('.search-form', 'side-form').style.display = "block";
+    document.querySelector('.search-form').style.display = "block";
   }
 });
 
@@ -107,3 +107,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
+//Hide navigation bar when on edit page
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/edit_activity') {
+    document.querySelector('.navbar-fixed').style.display = "none";
+  } else {
+    document.querySelector('.navbar-fixed').style.display = "block";
+  }
+});
+
+//Hide footer on edit page
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/edit_activity') {
+    document.querySelector('.page-footer').style.display = "none";
+  } else {
+    document.querySelector('.page-footer').style.display = "block";
+  }
+});
