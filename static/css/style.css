@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:&family=Oswald:wght@300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-}
-
 .welcome-image body {
     color: rgb(52, 198, 235);
      position: relative;
@@ -192,6 +185,7 @@ nav ul .search-icon .icon span {
     justify-content: center;
 }
 
+/*icon color*/
 i {
     color: rgb(255, 255, 255);
 }
@@ -204,11 +198,6 @@ h2 {
 /*create form label styling*/
 label {
     color: rgb(245, 182, 66);
-}
-
-/*create save button*/
-.save-button .edit-buttons {
-    text-align: center;
 }
 
 /*edit& delete buttons*/
@@ -241,7 +230,34 @@ strong {
 
 /*footer section*/
 
+/*footer title*/
+h5 {
+    text-align: center;
+    padding-right: 12em;
+    margin-right: 12em;
+    color: rgb(255, 255, 255);
+}
+
 /*social media icons size*/
-i fab fa-facebook-square  fab fa-twitter-square fab fa-instagram {
-    font-size: 4em;
+.social {
+    text-align: center;
+    font-size: 2em;
+}
+
+/*icon positioning*/
+.social li {
+    padding: 0.5em 4em;
+	padding-top: 0.5em;
+    display: inline-block;
+}
+
+.social li:hover {
+    color: rgb(245, 182, 66);
+    transition: .5s;
+}
+
+/*footer copyright*/
+.footer-copyright {
+    font-style: italic;
+    color: rgb(255, 255, 255);
 }
