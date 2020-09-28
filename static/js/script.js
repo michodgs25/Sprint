@@ -106,21 +106,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.side-form').style.display = "block";
   }
 });
-
-//Hide navigation bar when on edit page
-document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/edit_activity') {
-    document.querySelector('.navbar-fixed').style.display = "none";
-  } else {
-    document.querySelector('.navbar-fixed').style.display = "block";
-  }
-});
-
-//Hide footer on edit page
-document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/edit_activity') {
-    document.querySelector('.page-footer').style.display = "none";
-  } else {
-    document.querySelector('.page-footer').style.display = "block";
-  }
-});

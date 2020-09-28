@@ -82,7 +82,7 @@ def add_activity():
         # find and sort tasks and render redirected page
     task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("add_activity.html", task=task)
-                
+
 
 # create app route, call task id from database
 # call get and post method, when user modifies data
@@ -108,7 +108,6 @@ def edit_activity(task_id):
         flash("Activity Successfully Updated")
     # find one and sort updated task in database
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-    task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("edit_activity.html", task=task)
 
 

@@ -183,7 +183,7 @@ nav ul .search-icon .icon span {
     background-size: cover;
 }
 
-/*Create sprint section*/
+/*Create & edit sprint section*/
 
 /*create page title*/
 .create-title h2 {
@@ -206,8 +206,13 @@ label {
     color: rgb(245, 182, 66);
 }
 
-/*save button*/
-.save-button {
+/*create save button*/
+.save-button .edit-buttons {
+    text-align: center;
+}
+
+/*edit& delete buttons*/
+.edit-buttons {
     text-align: center;
 }
 
