@@ -148,7 +148,14 @@ nav ul .search-icon .icon span {
 /*nav page icons*/
 .navbar-fixed li a i {
     color: rgb(30, 70, 179);
-    padding-right: 0.5em;
+    padding-right: 0.8em;
+}
+
+/*add break-point to ipad pro width*/
+@media screen and (max-width: 64em) {
+	.navbar-fixed li a i {
+        padding-right: 0.19em;
+	}
 }
 
 /*side-nav mobile section*/
@@ -179,7 +186,7 @@ nav ul .search-icon .icon span {
     color: rgb(245, 182, 66);
 }
 
-/*homepage cards*/
+/*homepage section*/
 
 /*homepage card image position*/
 .card-image {
@@ -261,14 +268,13 @@ h5 {
 }
 
 .social a i:hover {
-    color: rgb(52, 198, 235);
+    color: rgb(30, 70, 179);
 }
 
 /*footer copyright*/
 .footer-copyright {
     font-style: italic;
     color: rgb(255, 255, 255);
-    background: rgb(30, 70, 179);
 }
 
 /*footer icon mobsile size*/
