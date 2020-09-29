@@ -12,7 +12,6 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
 
     //sidenav select and collapse functions
-    $('select').material_select();
     $(".button-collapse").sideNav();
     
     //trigger an autoresize for textarea 1& 2
