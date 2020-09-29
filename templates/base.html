@@ -14,7 +14,7 @@
       {% endblock %}
       <title>Sprint</title>
       <!--Favicon, site icon-->
-    <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+      <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
    </head>
    <body>
       <header>
@@ -31,11 +31,16 @@
                         <div row valign-wrapper>
                            <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
                            <div class="input-field">
-                              <input type="text" name="query" id="query" required>
-                              <label class="label-icon" for="query"><i class=""></i></label>
-                           </div>
-                           <div class="s12 m4">
-                              <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
+                              <div class="row">
+                                 <div class="input-field col s12">
+                                    <input name="query" id="query" type="text" class="validate"  
+                                       minlength="1" maxlength="25" required>
+                                    <label class="label-icon" for="query">Search Sprints here:</label>
+                                 </div>
+                              </div>
+                              <div class="s12 m4">
+                                 <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
+                              </div>
                            </div>
                         </div>
                      </form>
@@ -45,40 +50,49 @@
          </div>
          <!--mobile sidenav-->
          <ul class="sidenav light-blue darken-4" id="mobile-demo">
-         <h5 class="side-title">Sprint</h5>
+            <li>
+               <div class="user-view">
+                  <div class="background">
+                     <img src="static/images/website/sidenav-image.jpg">
+                  </div>
+                  <h5 class="side-title">Sprint</h5>
+               </div>
+            </li>
             <li class="tab row s3"><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
             <li class="tab row s3"><a href="{{ url_for('get_tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
             <li class="tab row s3"><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
-            <form class="side-form" action="{{ url_for('search') }}" method="post">
-               <div row valign-wrapper>
-                  <i class="fas fa-search prefix"></i>
-                  <div class="input-field">
-                     <input type="text" name="query" id="mobilequery" required>
-                     <label class="label-icon" for="query"><i class=""></i></label>
+            <div>
+               <form class="side-form" action="{{ url_for('search') }}" method="post">
+                  <div row valign-wrapper>
+                     <i class="fas fa-search prefix"></i>
+                     <div class="input-field">
+                        <input type="text" name="query" id="mobilequery" required>
+                        <label class="label-icon" for="query"><i class=""></i></label>
+                     </div>
+                     <div class="s6 m4">
+                        <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
+                     </div>
                   </div>
-                  <div class="s12 m4">
-                     <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
-                  </div>
-               </div>
-            </form>
+               </form>
+            </div>
          </ul>
       </header>
       {% block content %}
       {% endblock %}
       <!--footer section-->
       <footer class="page-footer">
-               <div class="row">
-               <div class="container">
+         <div class="row">
+            <div class="container">
                <h5>Share Sprint</h5>
-               </div>
-               <div class="social">
-                  <ul>
-                     <li><a href="https://www.facebook.com/login"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-                     <li><a href="https://twitter.com/login"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
-                     <li><a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                  </ul>
-               </div>
             </div>
+            <div class="social">
+               <ul>
+                  <li><a href="https://www.facebook.com/login"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/login"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+               </ul>
+            </div>
+         </div>
          <div class="footer-copyright">
             <div class="container">
                © 2020 Copyright michodgs25

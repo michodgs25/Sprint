@@ -141,7 +141,7 @@ nav ul .search-icon .icon:hover {
 
 /*nav search icon color*/
 nav ul .search-icon .icon span {
-    color: rgb(0, 0, 0);
+    color: rgb(30, 70, 179);
     font-size: 1.125em;
 }
 
@@ -168,7 +168,9 @@ nav ul .search-icon .icon span {
 /*side-nav title*/
 .side-title {
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb(30, 70, 179);
+    font-weight: 800;
+    font-style: bold;
     padding: 2em;
 }
 
@@ -184,6 +186,19 @@ nav ul .search-icon .icon span {
 /*side nav icons*/
 .sidenav li a i {
     color: rgb(245, 182, 66);
+}
+
+/*sidenav search-bar*/
+.sidenav .input-field .red btn text-shadow {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    color: rgb(255, 255, 255);
+}
+
+/*sidenav input field background*/
+.sidenav .input-field textarea {
+    background-color: none;
 }
 
 /*homepage section*/
@@ -249,9 +264,9 @@ strong {
 /*footer section*/
 
 /*footer title*/
-h5 {
-    text-align: left;
+.page-footer h5 {
     color: rgb(255, 255, 255);
+    text-align: left;
 }
 
 /*social media icons size*/
