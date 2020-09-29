@@ -98,6 +98,10 @@ nav ul div.items a {
     padding: 0 0.75em;
 }
 
+nav ul a {
+    padding: 0 0.75em;
+}
+
 /*nav item hover shadow*/
 nav ul div.items a:hover {
     color: rgb(52, 198, 235);
@@ -143,6 +147,7 @@ nav ul .search-icon .icon:hover {
 nav ul .search-icon .icon span {
     color: rgb(30, 70, 179);
     font-size: 1.125em;
+    padding: 1em;
 }
 
 /*nav page icons*/
@@ -293,30 +298,36 @@ strong {
 }
 
 /*footer icon mobsile size*/
-
 @media screen and (max-width: 37.5em) {
 	.social  {
-		font-size: 1em;
+		font-size: 0.9em;
 		padding: 0.001em;
 		padding-top: 1em;
         text-align: left;
 	}
 }
 
-/*breakpoint specific for iphone 5/SE*/
-
-@media screen and (max-width: 26.25em) {
+/*breakpoint for screen widths 360px*/
+@media screen and (max-width: 22.5em) {
 	.social {
         text-align: left;
-		font-size: 0.977em;
+        padding: 0.1em;
+		font-size: 0.9em;
 	}
 }
 
-/*breakpoint specific for galaxy fold*/
+/*breakpoint for screen widths 320px*/
+@media screen and (max-width: 20em) {
+	.social {
+        text-align: left;
+        padding: 0.1em;
+		font-size: 0.8em;
+	}
+}
 
+/*breakpoint widths of 280px */
 @media screen and (max-width: 17.5em) {
 	.social {
-        align-content: left;
         text-align: left;
 		font-size: 0.7em;
 	}
