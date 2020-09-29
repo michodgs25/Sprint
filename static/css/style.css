@@ -232,9 +232,7 @@ strong {
 
 /*footer title*/
 h5 {
-    text-align: center;
-    padding-right: 12em;
-    margin-right: 12em;
+    text-align: left;
     color: rgb(255, 255, 255);
 }
 
@@ -251,13 +249,43 @@ h5 {
     display: inline-block;
 }
 
-.social li:hover {
-    color: rgb(245, 182, 66);
-    transition: .5s;
+.social a i:hover {
+    color: rgb(52, 198, 235);
 }
 
 /*footer copyright*/
 .footer-copyright {
     font-style: italic;
     color: rgb(255, 255, 255);
+    background: rgb(30, 70, 179);
+}
+
+/*footer icon mobsile size*/
+
+@media screen and (max-width: 37.5em) {
+	.social  {
+		font-size: 1em;
+		padding: 0.001em;
+		padding-top: 1em;
+        text-align: left;
+	}
+}
+
+/*breakpoint specific for iphone 5/SE*/
+
+@media screen and (max-width: 26.25em) {
+	.social {
+        text-align: left;
+		font-size: 0.977em;
+	}
+}
+
+/*breakpoint specific for galaxy fold*/
+
+@media screen and (max-width: 17.5em) {
+	.social {
+        align-content: left;
+        text-align: left;
+		font-size: 0.7em;
+	}
 }
