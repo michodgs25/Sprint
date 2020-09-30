@@ -162,7 +162,6 @@ nav ul .search-icon .icon span {
     align-items: center;
     color: rgb(30, 70, 179);
     font-weight: 800;
-    font-style: bold;
     padding: 2em;
 }
 
@@ -186,11 +185,6 @@ nav ul .search-icon .icon span {
     align-items: center;
     width: 50%;
     color: rgb(255, 255, 255);
-}
-
-/*sidenav input field background*/
-.sidenav .input-field textarea {
-    background-color: none;
 }
 
 /*homepage section*/
