@@ -10,23 +10,28 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
       <!--custom css file-->
       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-      {% block styles %}
-      {% endblock %}
+      <!--site name-->
       <title>Sprint</title>
       <!--Favicon, site icon-->
       <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
    </head>
    <body>
+      {% block styles %}
+      {% endblock %}
       <header>
+         <!--Navigation follows user scroll, encourage user to explore-->
          <div class="navbar-fixed">
             <nav class="nav-extended">
                <div class="nav-wrapper">
+                  <!--Site name, personalises the site-->
                   <a href="{{ url_for('get_home') }}" class="brand-logo">Sprint</a>
                   <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars" id="nav-bars"></i></a>
+                  <!--when in mobile& tablet the sidenav is hidden and slides out right-->
                   <ul class="right hide-on-med-and-down">
                      <li><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
                      <li><a href="{{ url_for('get_tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
                      <li><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
+                     <!--search bar on explore page only, user can search all sprints-->
                      <form class="search-form" action="{{ url_for('search') }}" method="post">
                         <div row valign-wrapper>
                            <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
@@ -38,7 +43,8 @@
                                     <label class="label-icon" for="query"></label>
                                  </div>
                               </div>
-                                 <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
+                              <!--user can reset search results-->
+                              <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
                            </div>
                         </div>
                      </form>
@@ -51,28 +57,32 @@
             <li>
                <div class="user-view">
                   <div class="background">
-                     <img src="static/images/website/sidenav-image.jpg">
+                     <!--Sprint title& image, increase user interaction-->
+                     <img src="static/images/website/sidenav-image.jpg" alt="Male athlete in running motion">
                   </div>
                   <h5 class="side-title">Sprint</h5>
                </div>
             </li>
+            <!--User can choose to either create or explore sprints or back to homepage-->
             <li class="tab row s3"><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
             <li class="tab row s3"><a href="{{ url_for('get_tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
             <li class="tab row s3"><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
-            <div>
-               <form class="side-form" action="{{ url_for('search') }}" method="post">
+            <!--on explore page, user can search specific sprints-->
+            <form class="side-form" action="{{ url_for('search') }}" method="post">
+               <div>
                   <div row valign-wrapper>
                      <i class="fas fa-search prefix"></i>
                      <div class="input-field">
                         <input type="text" name="query" id="mobilequery" required>
                         <label class="label-icon" for="query"><i class=""></i></label>
                      </div>
+                     <!--User can reset results, and display all logs-->
                      <div class="s12 m12">
                         <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
                      </div>
                   </div>
-               </form>
-            </div>
+               </div>
+            </form>
          </ul>
       </header>
       {% block content %}
@@ -83,14 +93,18 @@
             <div class="container">
                <h5>Share Sprint</h5>
             </div>
+            <!--social media icons, encourage user to share sprint-->
             <div class="social">
                <ul>
                   <li><a href="https://www.facebook.com/login" rel="noopener" target="_blank">
-                     <i class="fab fa-facebook-square" alt="facebook icon" aria-hidden="true"></i></a></li>
+                     <i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                  </li>
                   <li><a href="https://twitter.com/login" rel="noopener" target="_blank">
-                     <i class="fab fa-twitter-square" alt="twitter icon" aria-hidden="true"></i></a></li>
+                     <i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+                  </li>
                   <li><a href="https://www.instagram.com/accounts/login/" rel="noopener" target="_blank">
-                     <i class="fab fa-instagram" alt="instagram icon" aria-hidden="true"></i></a></li>
+                     <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                  </li>
                </ul>
             </div>
          </div>
