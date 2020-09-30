@@ -360,7 +360,7 @@ This sites version control is through github and using gitpod IDE, once complete
 <details>
   <summary>deploy heroku</summary>
 <div align="center">
-<img src="./assets/images/readme/heroku-connect.jpg" 
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/heroku-connect.jpg" 
      target="_blank" rel=""/>
   </div>
   </details>
@@ -377,7 +377,7 @@ This sites version control is through github and using gitpod IDE, once complete
 
 * To run this site locally, via git-pod, type into the terminal:
   
-  - python3 -m http.server 
+  - python app.py
   
   - opens port 8000, which the IDE presents three options two of which, view the site immediately:
   __Open preview(Opens a window within the IDE) or open in browser(that is set as the main browser).__
