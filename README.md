@@ -365,13 +365,13 @@ This sites version control is through github and using gitpod IDE, once complete
   </div>
   </details>
 
-* To run locally, you can visit the project page(master branch):
+* To run locally, you can visit the project page(master branch: https://github.com/michodgs25/Sprint):
 
   <details>
   <summary>Master Branch page</summary>
   <br>
   <div align="center">
-    <img src="" target="_blank" rel=""/>
+    <img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/master-branch.jpg" target="_blank" rel=""/>
   </div>
  </details>
 
@@ -379,7 +379,7 @@ This sites version control is through github and using gitpod IDE, once complete
   
   - python app.py
   
-  - opens port 8000, which the IDE presents three options two of which, view the site immediately:
+  - opens port 8080, which the IDE presents three options two of which, view the site immediately:
   __Open preview(Opens a window within the IDE) or open in browser(that is set as the main browser).__
 
 * The code will be executed in the browser that is set as main browser, this can be Chrome or one of the other available browsers. 
