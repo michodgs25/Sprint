@@ -87,7 +87,7 @@ nav ul li.home {
 
 /*nav items positioning*/
 nav ul div {
-    padding: 0 1.5625em;
+    padding: 0 0.5em;
     display: inline-flex;
 }
 
