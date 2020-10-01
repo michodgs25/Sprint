@@ -349,6 +349,15 @@ This sites version control is through github and using gitpod IDE, once complete
  - *This pushes the file to the github project repository.*
 
 ## Deployment
+
+#### Requirements 
+You will need the following tools installed on your system:
+
+Python 3 - https://www.python.org/downloads/
+An IDE such as Visual Studio, gitpod, Code, or PyCharm
+An account at MongoDB Atlas - https://www.mongodb.com/
+Git - https://gist.github.com/derhuerst/1b15ff4652a867391f03
+
 * This site is hosted via Heroku
 
 * Firstly clicking "new" on landing page, giving it the name sprint-flask and chose Europe as the edge server for faster delivery.
@@ -364,6 +373,8 @@ This sites version control is through github and using gitpod IDE, once complete
      target="_blank" rel=""/>
   </div>
   </details>
+  
+  ### Local Deployment
 
 * To run locally, you can visit the project page(master branch: https://github.com/michodgs25/Sprint):
 
@@ -386,7 +397,7 @@ This sites version control is through github and using gitpod IDE, once complete
 When executed the homepage will appear.
 
 ## Project barriers and the solutions
-*This section looks into the barriers that occurred during the process of this building this project and what solutions were chosen to hurdle those barriers:*
+* This section looks into the barriers that occurred during the process of this building this project and what solutions were chosen to hurdle those barriers:*
 
 <br>
 
