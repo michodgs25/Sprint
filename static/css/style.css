@@ -189,11 +189,42 @@ nav ul .search-icon .icon span {
 
 /*homepage section*/
 
+/*card shadow*/
+.card {
+    box-shadow: 0 4px 8px 0 rgb(30, 70, 179);
+    transition: 0.3s;
+}
+
 /*homepage card image position*/
 .card-image {
     background-position: center;
     background-size: cover;
 }
+
+
+/*homepage card& card-panel position*/
+@media screen and (min-width: 64em) {
+	.card-panel {
+        margin: 8.0299990686464em 0 1em 0;
+	}
+}
+
+/*card-panel position width 411px*/
+@media screen and (max-width: 23.4375em) {
+	.card-panel {
+        margin: 0.5em 0 1em 0;
+	}
+}
+
+/*homepage card& card-panel position 375px*/
+@media screen and (max-width: 23.4375em) {
+	.card-panel {
+        margin: 0.5em 0 1em 0;
+	}
+}
+
+/*card mobile size*/
+
 
 /*Create & edit sprint section*/
 
