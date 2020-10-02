@@ -204,8 +204,8 @@ nav ul .search-icon .icon span {
 
 /*homepage card& card-panel position*/
 @media screen and (min-width: 64em) {
-	.card-panel {
-        margin: 8.0299990686464em 0 1em 0;
+	.card-panel .home  {
+        margin: 8.0299990686464em 0 2em 0;
 	}
 }
 
