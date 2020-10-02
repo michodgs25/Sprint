@@ -90,7 +90,10 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
   <br>
 
 ## Wire-Frames
-There are two primary differences between desktop and mobile, which are breakpoints, which adapts features to fit various screen sizes and the implementation of a side-nav for mobile only.
+These wireframes were designed with Balsamiq Mockups 3. The first version of scope and some minor things have changed during the development for the final version. 
+A major change being the homepage cards which instead of the cards being side by, they are stacked with create sprint on top and explore sprints directly below.
+
+There are two primary differences between desktop and mobile, which are breakpoints, which adapts features to fit various screen sizes and the implementation of a side-nav for mobile and tablet 780px& under only.
 
 ### Welcome page Desk-top
 
