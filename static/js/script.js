@@ -10,9 +10,6 @@ $(document).ready(function(){
 
     //Trigger accordian collapse
     $('.collapsible').collapsible();
-
-    //sidenav select and collapse functions
-    $(".button-collapse").sideNav();
     
     //trigger an autoresize for textarea 1& 2
     if ($('#textarea1').length > 0) {

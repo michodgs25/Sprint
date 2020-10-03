@@ -28,7 +28,7 @@ def get_index():
 
 # create app route
 @app.route("/")
-@app.route("/get_tasks")
+@app.route("/tasks")
 # define get tasks
 def get_tasks():
 # create tasks variable and call database tasks collection
@@ -58,7 +58,7 @@ def get_home():
 # which saves data to database and
 # to the explore sprint page
 # tells python if data is requested to post data
-@app.route("/add_activity", methods=["GET", "POST"])
+@app.route("/activity/add", methods=["GET", "POST"])
 def add_activity():
     if request.method == "POST":
         # call task variable and provide key value pairs
@@ -87,8 +87,11 @@ def add_activity():
 # create app route, call task id from database
 # call get and post method, when user modifies data
 # python will update the post in both database and explore page
-@app.route("/edit_activity/<task_id>", methods=["GET", "POST"])
+@app.route("/activity/edit/<task_id>", methods=["POST", "GET"])
 def edit_activity(task_id):
+    task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
+    if not task:
+        return render_template("error.html")
     if request.method == "POST":
         # create submit varible
         # attatch same key value pairs from add_activity
@@ -112,7 +115,7 @@ def edit_activity(task_id):
 
 
 # create app route, call task id from database collection
-@app.route("/delete_activity/<task_id>")
+@app.route("/activity/delete/<task_id>")
 def delete_activity(task_id):   
     # call collection id and inform database to remove
     # object id from the collection
