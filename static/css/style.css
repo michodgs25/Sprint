@@ -257,12 +257,19 @@ label {
 
 /*explore sprints page*/
 
-/*edit and delete buttons*/
-.btn-small {
-    margin: 0.3125em;
+/*accordian title*/
+h6 {
+    margin-right: 0.5em; 
 }
 
-/*logged sprint title*/
+
+/*edit and delete buttons*/
+.btn-small {
+    margin: 0.8em;
+    padding-left: 0.8em;
+}
+
+/*accordian body title*/
 h5 {
     color: rgb(30, 70, 179);
 }
@@ -272,18 +279,31 @@ strong {
     color: rgb(245, 182, 66);
 }
 
-/*accordian header*/
-.collapsible-header .col span {
-    margin: 0.3125em;
-    line-height: 2.625em;
+/*280px screen size*/
+/*card-panel position width 411px*/
+@media screen and (min-width: 17.5em) {
+	.btn-small {
+    margin: 0.5em;
+    padding-left: 0.5em;
+	}
 }
 
+
+
 /*footer section*/
+
+/*footer height*/
+.page-footer .footer-copyright {
+    line-height: 1em;
+    min-height: 0.625em;
+    padding-top: 0.0625em;
+}
 
 /*footer title*/
 .page-footer h5 {
     color: rgb(255, 255, 255);
     text-align: left;
+    line-height: 10%;
 }
 
 /*social media icons size*/

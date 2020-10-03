@@ -102,3 +102,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.side-form').style.display = "block";
   }
 });
+
+//hide navigation bar on error page
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/error.html') {
+    document.querySelector('.navbar-fixed').style.display = "none";
+  } else {
+    document.querySelector('.navbar-fixed').style.display = "block";
+  }
+});
+
+//Hide footer on error page
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/error.html') {
+    document.querySelector('.page-footer').style.display = "none";
+  } else {
+    document.querySelector('.page-footer').style.display = "block";
+  }
+});
