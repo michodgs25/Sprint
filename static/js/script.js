@@ -5,9 +5,6 @@ $(document).ready(function(){
     //call side-nav, for mobile& tablet
     $('.sidenav').sidenav();
 
-    //trigger feature discovery on explore page
-    $('.tap-target').tapTarget();
-
     //Trigger accordian collapse
     $('.collapsible').collapsible();
     
@@ -27,16 +24,6 @@ $(document).ready(function(){
             
     //Trigger select box options
     $('select').formSelect();
-
-    //dialog box, asks user whether they want to delete post
-    $( "#dialog-message" ).dialog({
-      modal: true,
-      buttons: {
-        Ok: function() {
-          $( this ).dialog( "close" );
-        }
-      }
-    });
 
     //call datepicker, user can select date
     $('.datepicker').datepicker({
@@ -100,23 +87,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.side-form').style.display = "none";
   } else {
     document.querySelector('.side-form').style.display = "block";
-  }
-});
-
-//hide navigation bar on error page
-document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/error.html') {
-    document.querySelector('.navbar-fixed').style.display = "none";
-  } else {
-    document.querySelector('.navbar-fixed').style.display = "block";
-  }
-});
-
-//Hide footer on error page
-document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/error.html') {
-    document.querySelector('.page-footer').style.display = "none";
-  } else {
-    document.querySelector('.page-footer').style.display = "block";
   }
 });

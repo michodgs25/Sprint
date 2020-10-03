@@ -3,24 +3,24 @@
 .welcome-image body {
     color: rgb(52, 198, 235);
      position: relative;
-}
+     }
 
 .welcome-image body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+    }
 
 /*sticky footer*/
   body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+    }
 
   main {
     flex: 1 0 auto;
-  }
+    }
 
 .welcome-image {
     background-image: url("../images/website/welcome-page-image.jpg");
@@ -33,16 +33,16 @@
     align-items: center;
     text-align: center;
     padding: 0 1.25em;
-}
+    }
 
 .home-logo {
     font-size: 4em;
     border-radius: 1em;
-}
+    }
 
 .welcome-image p {
     padding: 5em;
-}
+    }
 
 /*welcome page button*/
 .welcome-image .button {
@@ -53,13 +53,13 @@
     padding: 0.625em 1.25em;
     border-radius: 0.625em;
     margin-top: 2em;
-}
+    }
 
 /*welcome button styling*/
 .welcome-image .button:hover{
     background: rgb(245, 182, 66);
     color: rgb(52, 198, 235);
-}
+    }
 
 /*nav-bar section*/
 
@@ -71,7 +71,7 @@ nav {
     border-left: none;
     border-right: none;
     padding-bottom: 1em;
-}
+    }
 
 /*Navigation items positioning*/
 nav ul {
@@ -79,25 +79,25 @@ nav ul {
     list-style: none;
     flex-wrap: wrap;
     align-items: center;
-}
+    }
 
 /*nav items positioning*/
 nav ul div {
     padding: 0 0.5em;
     display: inline-flex;
-}
+    }
 
 /*nav item size and positioning*/
 nav ul div.items a {
     text-decoration: none;
     font-size: 1.125em;
     padding: 0 0.75em;
-}
+    }
 
 /*nav item hover shadow*/
 nav ul div.items a:hover {
     color: rgb(52, 198, 235);
-}
+    }
 
 /*search icon positioning& proportions*/
 nav ul .search-icon {
@@ -105,7 +105,7 @@ nav ul .search-icon {
      width: 15em;
      display: flex;
      border-radius: 0.3125em;
-}
+     }
 
 /*search bar input area*/
 nav ul .search-icon input {
@@ -117,7 +117,7 @@ nav ul .search-icon input {
     color: rgb(255, 255, 255);
     font-size: 1em;
     border-radius: 0.3125em 0 0 0.3125em;
-}
+    }
 
 /*search icon proportions*/
 nav ul .search-icon .icon {
@@ -128,20 +128,25 @@ nav ul .search-icon .icon {
     border: 0.0625em solid rgb(0, 0, 0);
     border-radius: 0  0.3125em  0.3125em 0;
     cursor: pointer;
-}
+    }
 
 /*nav search icon color*/
 nav ul .search-icon .icon span {
     color: rgb(30, 70, 179);
     font-size: 1.125em;
     padding: 1.5em;
-}
+    }
 
 /*nav page icons*/
 .navbar-fixed li a i {
     color: rgb(30, 70, 179);
     padding-right: 1em;
-}
+    }
+
+/*reset btn position*/
+nav ul a.btn {
+    margin-top: 0.625em;
+    }
 
 /*add break-point to ipad pro width*/
 @media screen and (max-width: 64em) {
@@ -155,7 +160,7 @@ nav ul .search-icon .icon span {
 /*sidenav mobile bars*/
 .fas fa-bars {
     color: rgb(255, 255, 255);
-}
+    }
 
 /*side-nav title*/
 .side-title {
@@ -163,7 +168,7 @@ nav ul .search-icon .icon span {
     color: rgb(30, 70, 179);
     font-weight: 800;
     padding: 2em;
-}
+    }
 
 /*side-nav tabs*/
 .sidenav li a {
@@ -172,12 +177,12 @@ nav ul .search-icon .icon span {
     border: 0.0625em solid rgb(52, 198, 235);
     border-top: none;
     border-right: none;
-}
+    }
 
 /*side nav icons*/
 .sidenav li a i {
     color: rgb(245, 182, 66);
-}
+    }
 
 /*sidenav search-bar*/
 .sidenav .input-field .red btn text-shadow {
@@ -185,7 +190,7 @@ nav ul .search-icon .icon span {
     align-items: center;
     width: 50%;
     color: rgb(255, 255, 255);
-}
+    }
 
 /*homepage section*/
 
@@ -193,13 +198,13 @@ nav ul .search-icon .icon span {
 .card {
     box-shadow: 0 4px 8px 0 rgb(30, 70, 179);
     transition: 0.3s;
-}
+    }
 
 /*homepage card image position*/
 .card-image {
     background-position: center;
     background-size: cover;
-}
+    }
 
 
 /*homepage card& card-panel position*/
@@ -223,9 +228,6 @@ nav ul .search-icon .icon span {
 	}
 }
 
-/*card mobile size*/
-
-
 /*Create & edit sprint section*/
 
 /*create page title*/
@@ -233,51 +235,55 @@ nav ul .search-icon .icon span {
     color: rgb(245, 182, 66);
     text-align: center;
     justify-content: center;
-}
+    }
 
 /*icon color*/
 i {
     color: rgb(255, 255, 255);
-}
+    }
 
 /*create& edit page heading*/
 h2 {
     color: rgb(245, 182, 66);
-}
+    }
 
 /*create form label styling*/
 label {
     color: rgb(245, 182, 66);
-}
+    }
 
 /*edit& delete buttons*/
 .edit-buttons {
     text-align: center;
-}
+    }
 
 /*explore sprints page*/
 
 /*accordian title*/
 h6 {
     margin-right: 0.5em; 
-}
-
+    }
 
 /*edit and delete buttons*/
 .btn-small {
     margin: 0.8em;
     padding-left: 0.8em;
-}
+    }
 
 /*accordian body title*/
 h5 {
     color: rgb(30, 70, 179);
+    }
+
+/*accordian body position*/
+.collapsible-body {
+text-align: -webkit-auto;
 }
 
 /*logged sprint description& difficulty*/
 strong {
     color: rgb(245, 182, 66);
-}
+    }
 
 /*280px screen size*/
 /*card-panel position width 411px*/
@@ -288,8 +294,6 @@ strong {
 	}
 }
 
-
-
 /*footer section*/
 
 /*footer height*/
@@ -297,37 +301,37 @@ strong {
     line-height: 1em;
     min-height: 0.625em;
     padding-top: 0.0625em;
-}
+    }
 
 /*footer title*/
 .page-footer h5 {
     color: rgb(255, 255, 255);
     text-align: left;
     line-height: 10%;
-}
+    }
 
 /*social media icons size*/
 .social {
     text-align: center;
     font-size: 2em;
-}
+    }
 
 /*icon positioning*/
 .social li {
     padding: 0.5em 4em;
 	padding-top: 0.5em;
     display: inline-block;
-}
+    }
 
 .social a i:hover {
     color: rgb(30, 70, 179);
-}
+    }
 
 /*footer copyright*/
 .footer-copyright {
     font-style: italic;
     color: rgb(255, 255, 255);
-}
+    }
 
 /*footer icon mobsile size*/
 @media screen and (max-width: 37.5em) {
