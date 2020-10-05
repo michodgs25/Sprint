@@ -53,16 +53,14 @@
             </nav>
          </div>
          <!--mobile sidenav-->
-         <ul class="sidenav light-blue darken-4" id="mobile-demo">
-            <li>
+         <ul id="mobile-demo" class="sidenav light-blue darken-4">
                <div class="user-view">
                   <div class="background">
                      <!--Sprint title& image, increase user interaction-->
                      <img src="static/images/website/sidenav-image.jpg" alt="Male athlete in running motion">
                   </div>
-                  <h5 class="side-title">Sprint</h5>
+                  <h6 class="side-title">Sprint</h6>
                </div>
-            </li>
             <!--User can choose to either create or explore sprints or back to homepage-->
             <li class="tab row s3"><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
             <li class="tab row s3"><a href="{{ url_for('get_tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>

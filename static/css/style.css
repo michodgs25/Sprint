@@ -179,8 +179,8 @@ nav ul a.btn {
 /*side-nav mobile section*/
 
 /*sidenav mobile bars*/
-.fas fa-bars {
-    color: rgb(255, 255, 255);
+#nav-bars .sidenav-trigger .fas fa-bars {
+    text-align: left;
     }
 
 /*side-nav title*/
@@ -265,6 +265,7 @@ i {
 
 /*create& edit page heading*/
 h2 {
+    text-align: center;
     color: rgb(245, 182, 66);
     }
 
@@ -388,4 +389,12 @@ strong {
         text-align: left;
 		font-size: 0.7em;
 	}
+}
+
+/*error page section*/
+
+/*title*/
+.error {
+    text-align: center;
+    color: rgb(245, 182, 66);
 }
