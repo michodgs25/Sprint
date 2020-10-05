@@ -1,7 +1,7 @@
 import os
 from flask import (
     Flask, flash, render_template,
-     redirect, request, session, url_for)
+    redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
@@ -20,8 +20,11 @@ mongo = PyMongo(app)
 
 
 # create app route
-@app.route("/get_index")
+@app.route("/")
+@app.route("/index")
 def get_index():
+    # create tasks variable and call database tasks collection
+    tasks = list(mongo.db.tasks.find())
 # render welcome page template
     return render_template("index.html")
 
@@ -31,10 +34,10 @@ def get_index():
 @app.route("/tasks")
 # define get tasks
 def get_tasks():
-# create tasks variable and call database tasks collection
+    # create tasks variable and call database tasks collection
     tasks = list(mongo.db.tasks.find())
-# render explore sprints template and store tasks data
-    return render_template("explore.html", tasks=tasks)
+    # render explore sprints template
+    return render_template("explore.html",tasks=tasks)
 
 
 # create route for searching database with
@@ -48,7 +51,7 @@ def search():
 
 
 # create app route
-@app.route("/get_home")
+@app.route("/home")
 def get_home():
 # render home template
     return render_template("home.html")
@@ -116,7 +119,7 @@ def edit_activity(task_id):
 
 # create app route, call task id from database collection
 @app.route("/activity/delete/<task_id>")
-def delete_activity(task_id):   
+def delete_activity(task_id):
     # call collection id and inform database to remove
     # object id from the collection
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})

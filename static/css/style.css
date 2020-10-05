@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Oswald&display=swap');
 
 .welcome-image body {
-    color: rgb(52, 198, 235);
-     position: relative;
-     }
-
-.welcome-image body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -18,10 +13,7 @@
     flex-direction: column;
     }
 
-  main {
-    flex: 1 0 auto;
-    }
-
+/*welcome page, image& positioning*/
 .welcome-image {
     background-image: url("../images/website/welcome-page-image.jpg");
     background-size: cover;
@@ -31,37 +23,66 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 0 1.25em;
     }
 
+
+/*site logo*/
 .home-logo {
     font-size: 4em;
     border-radius: 1em;
     }
 
-.welcome-image p {
-    padding: 5em;
+/*welcome page text*/
+.welcome-image h2 {
+    padding: 1em;
+    font-style: revert;
+    color: rgb(255, 255, 255);
     }
 
 /*welcome page button*/
 .welcome-image .button {
-    font-size: 1.125em;
+    font-size: 2.5em;
     text-decoration: none;
-    color: rgb(245, 182, 66);
-    border: rgb(52, 198, 235) 0.0625em solid;
+    color: rgb(255, 255, 255);
+    border: rgb(245, 182, 66) 0.07em solid;
     padding: 0.625em 1.25em;
     border-radius: 0.625em;
-    margin-top: 2em;
+    margin-top: 1em;
     }
 
 /*welcome button styling*/
 .welcome-image .button:hover{
     background: rgb(245, 182, 66);
-    color: rgb(52, 198, 235);
+    color: rgb(30, 70, 179);
     }
 
-/*nav-bar section*/
+.home-logo img {
+    width: 3em;
+    border-radius: 30%;
+    margin-bottom: 3em;
+}
+
+i {
+    align-content: center;
+    align-items: center;
+}
+
+/*mobile welcome page*/
+@media screen and (max-width: 25.6875em) {
+	.home-logo img {
+        width: 2em;
+        border-radius: inherit;
+        margin-bottom: 1em;
+	}
+    .welcome-image .button {
+        font-size: 1em;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+/*site navigation section*/
 
 /*navigation color& border*/
 nav {
