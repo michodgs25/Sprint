@@ -13,7 +13,7 @@
       <!--site name-->
       <title>Sprint</title>
       <!--Favicon, site icon-->
-      <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+      <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png" SameSite=Lax>
    </head>
    <body>
       {% block styles %}
@@ -34,7 +34,6 @@
                      <!--search bar on explore page only, user can search all sprints-->
                      <form class="search-form" action="{{ url_for('search') }}" method="post">
                         <div row valign-wrapper>
-                           <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
                            <div class="input-field">
                               <div class="row">
                                  <div class="input-field col s12">
@@ -43,6 +42,7 @@
                                     <label class="label-icon" for="query"></label>
                                  </div>
                               </div>
+                              <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
                               <!--user can reset search results-->
                               <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
                            </div>
@@ -54,13 +54,13 @@
          </div>
          <!--mobile sidenav-->
          <ul id="mobile-demo" class="sidenav light-blue darken-4">
-               <div class="user-view">
-                  <div class="background">
-                     <!--Sprint title& image, increase user interaction-->
-                     <img src="static/images/website/sidenav-image.jpg" alt="Male athlete in running motion">
-                  </div>
-                  <h6 class="side-title">Sprint</h6>
+            <div class="user-view">
+               <div class="background">
+                  <!--Sprint title& image, increase user interaction-->
+                  <img src="static/images/website/sidenav-image.jpg" alt="Male athlete in running motion" SameSite=Lax>
                </div>
+               <h6 class="side-title">Sprint</h6>
+            </div>
             <!--User can choose to either create or explore sprints or back to homepage-->
             <li class="tab row s3"><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
             <li class="tab row s3"><a href="{{ url_for('get_tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
@@ -69,7 +69,7 @@
             <form class="side-form" action="{{ url_for('search') }}" method="post">
                <div>
                   <div row valign-wrapper>
-                     <i class="fas fa-search prefix"></i>
+                  <i class="fas fa-search prefix"></i>
                      <div class="input-field">
                         <input type="text" name="query" id="mobilequery" required>
                         <label class="label-icon" for="query"><i class=""></i></label>
