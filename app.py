@@ -91,6 +91,15 @@ def add_activity():
     task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("add_activity.html", task=task)
 
+    """Edit task data.
+
+    Create app route, call task id from database.
+    Call get and post method, when user modifies data.
+    Python will update the post in both database and explore page.
+    Create submit varible
+
+    """
+
 
 @app.route("/activity/edit/<task_id>", methods=["POST", "GET"])
 def edit_activity(task_id):
@@ -117,13 +126,6 @@ def edit_activity(task_id):
     # find one and sort updated task in database
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     return render_template("edit_activity.html", task=task)
-    """Edit task data.
-
-    Create app route, call task id from database.
-    Call get and post method, when user modifies data.
-    Python will update the post in both database and explore page.
-    Create submit varible
-    """
 
 
 @app.route("/activity/delete/<task_id>")
