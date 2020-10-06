@@ -7,25 +7,32 @@ from bson.objectid import ObjectId
 if os.path.exists("env.py"):
     import env
 
-
-app = Flask(__name__)
 # Use OS function to create environment variables.
-app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+app = Flask(__name__)
 # Create and configurate a variable named MONGO_DBNAME
+app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+"""Create mongo URI variable.
+
+Call URI from database, establishing the connection
+between mongo database& theflask app.
+
+"""
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
-# Create mongo URI variable, and call URI from database,
-# establishing the connection between mongo database& the app.
+"""Connect flask app to Mongo database.
+
+use OS.environ.get function to fetch database name,
+from MONGOb and attach to the MONGO_URI variable.
+
+"""
 app.secret_key = os.environ.get("SECRET_KEY")
-# use OS.environ.get function to fetch database name,
-# from MONGOb and attach to the variable
-mongo = PyMongo(app)
 # Create pymongo variable and attatch it to the flask app.
+mongo = PyMongo(app)
 
 
 # Create App.route which is a Python decorator.
-@app.route("/")
 # The decorator tells app, when user visits domain,
 # at the given .route(), execute the index() function.
+@app.route("/")
 @app.route("/index")
 def get_index():
     # Renders index.html document.
@@ -36,18 +43,25 @@ def get_index():
 @app.route("/tasks")
 # define get tasks variable
 def get_tasks():
-    # Use list(mongo.db.tasks.find()) method,
-    # to fetch database collection named tasks& attatch to the tasks variable.
-    tasks = list(mongo.db.tasks.find())
-    # render explore sprints template
-    # Create domain pathway to explore page.
+    """Fetch database collection.
+
+    Use list(mongo.db.tasks.find()) method,
+    to fetch database collection named tasks&
+    attatch to the tasks variable.
+    render explore sprints template
+    Create domain pathway to explore page
+"""
     return render_template("explore.html", tasks=tasks)
 
 
-# create route for searching database with
-# the search bar
+# create route to search database
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """
+    Add methods GET and POST,
+    GET requests specific tasks data,
+    POST sends data to create update tasks data.
+    """
     query = request.form.get("query")
     tasks = list(mongo.db.tasks.find({"$text": {"$search": query}}))
     # render explore page template and search results
