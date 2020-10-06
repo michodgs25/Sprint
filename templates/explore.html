@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 <br>
+<!--collapsible accordian with for task loop-->
 <ul class="collapsible">
    {% for task in tasks %}
    <li>
+   <!--accordian header, task date& title-->
       <div class="collapsible-header light-blue darken-4 white-text text-shadow">
          <i class="fas fa-caret-down arrow"></i>
+         <!--Call date and title-->
          <h6>{{ task.task_date }}
          <br>
          {{ task.task_title }}</h6>
@@ -17,6 +20,7 @@
          Delete
          </a>
       </div>
+      <!--Collapsible body, task description& difficulty-->
       <div class="collapsible-body row card-panel light-grey darken-1">
          <span class="log-description">
             <h5>Activity description:</h5>
