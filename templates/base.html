@@ -13,7 +13,7 @@
       <!--site name-->
       <title>Sprint</title>
       <!--Favicon, site icon-->
-      <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png" SameSite=Lax>
+      <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
    </head>
    <body>
       {% block styles %}
@@ -29,7 +29,7 @@
                   <!--when in mobile& tablet the sidenav is hidden and slides out right-->
                   <ul class="right hide-on-med-and-down">
                      <li><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
-                     <li><a href="{{ url_for('get_tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
+                     <li><a href="{{ url_for('tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
                      <li><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
                      <!--search bar on explore page only, user can search all sprints-->
                      <form class="search-form" action="{{ url_for('search') }}" method="post">
@@ -44,7 +44,7 @@
                               </div>
                               <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
                               <!--user can reset search results-->
-                              <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
+                              <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset</a>
                            </div>
                         </div>
                      </form>
@@ -57,13 +57,13 @@
             <div class="user-view">
                <div class="background">
                   <!--Sprint title& image, increase user interaction-->
-                  <img src="static/images/website/sidenav-image.jpg" alt="Male athlete in running motion" SameSite=Lax>
+                  <img src="static/images/website/sidenav-image.jpg" alt="Male athlete in running motion">
                </div>
                <h6 class="side-title">Sprint</h6>
             </div>
             <!--User can choose to either create or explore sprints or back to homepage-->
             <li class="tab row s3"><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
-            <li class="tab row s3"><a href="{{ url_for('get_tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
+            <li class="tab row s3"><a href="{{ url_for('tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
             <li class="tab row s3"><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
             <!--on explore page, user can search specific sprints-->
             <form class="side-form" action="{{ url_for('search') }}" method="post">
@@ -76,7 +76,7 @@
                      </div>
                      <!--User can reset results, and display all logs-->
                      <div class="s12 m12">
-                        <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
+                        <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset</a>
                      </div>
                   </div>
                </div>
