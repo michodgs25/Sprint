@@ -9,7 +9,7 @@
 *Keeping fit by running or walking is popular amongst millions of people across the entire globe from your local park to the olympic games.* 
 *An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, and factors such as surface& weather.* 
 
-*With this in mind Sprint platform was designed with the main purpose of being a tool that allows the user to log their walking or run activities with ease anywhere and on any device. Sprint wants to make possible for the user to manage their every log on the platform, such as changing the activity name, changing their difficulty preference or even deleting that Sprint log allogether.*
+*With this in mind the Sprint platform was designed with the main purpose of being a tool that allows the user to log their walking or run activities with ease anywhere and on any device. Sprint wants to make possible for the user to manage their every single log on the platform, such as changing the activity name, changing their difficulty preference or even deleting that Sprint log altogether.*
 
 #### You can visit the Sprint platform [here.](https://flask-sprint-project.herokuapp.com/)
 
@@ -39,32 +39,7 @@ The purpose of this project is to be used as a personal activity log for my runs
 
 ## UX
 
-__Sprint__ site was inspired by an app I use everyday named __Strava__, see their website here:
-https://www.strava.com/.
-
-__Sprint__ website aims: **(Also see user stories below and project purpose above)**.
-
-* To be easy to log activities.
-
-* The site should be appealing to view, using imagery and bright colors.
-
-* User can log specific variables of each activity such as the weather or surface.
-
-* User can search specific logged activities.
-
-* Users can share their activities via social media.
-
-## Design
-The website designs are inspired by fashion site examples: *https://www.sitebuilderreport.com/inspiration/fashion-websites?a=ga&gclid=CjwKCAjwq_D7BRADEiwAVMDdHoGEnRu5zrH-fEWgfpOnhxGxPaq8MuHTTI8feKxabc5NvymTHEQVohoCUJ4QAvD_BwE* for example the welcome page which I took the idea of an full page image with a simple subtitle& button that takes the user to the main site.
-
-This project was developed with a focus on a mobile approach first. However, with full responsiveness on other screen sizes.
-I applied materialize library to all the major features of the site, which includes the cards, navigation, side-bar, input form, accordian, buttons and the footer.
-
-The main idea for the design of this project was to have a fun and exciting appearance, with dark orange to dark blue proving the perfect contrast. This contrast is pleasant to look at and make texts and icons(orange, white, black colors) stick out in a positive way.
-
-### Typography
-
-- The main fonts selected for this project is **Noto-sans** and **Oswald**. I think they are a well designed and easy to read google fonts.
+------
 
 ### User Stories
 
@@ -86,12 +61,69 @@ The main idea for the design of this project was to have a fun and exciting appe
   
   <br>
   
+  As this application will be purposely designed for me as the user, this platform will:
+  
+- Access the platform from your favourite equipment, such as smartphones, tablets, laptops or PCs, without loss of content.
 
+- View all Sprints on one page logged on the platform and all its details, such as description, difficulty, name, and others. 
+
+- Add new Sprint logs on the platform.
+
+- Update any of the logs on the platform.
+
+- Delete any logs on the platform.
+
+- Be able to search through all Sprint logs using a search bar.
+
+- Filter all logs using search bar by title or
+
+## Design
+The website designs are inspired by fashion site examples: 
+*https://www.sitebuilderreport.com/inspiration/fashion-websites?a=ga&gclid=CjwKCAjwq_D7BRADEiwAVMDdHoGEnRu5zrH-fEWgfpOnhxGxPaq8MuHTTI8feKxabc5NvymTHEQVohoCUJ4QAvD_BwE* 
+
+for example the welcome page which I took the idea of an full page image with a simple subtitle& button that takes the user to the main site.
+
+This project was developed with the focus on a mobile approach first. However, with full responsiveness on other screen sizes.
+I applied materialize library to all the major features of the site, which includes the cards, navigation, side-bar, input form, accordian, buttons and the footer.
+
+The main idea for the design of this project was to have a fun and exciting appearance, with dark orange to dark blue proving the perfect contrast. This contrast is pleasant to look at and make texts and icons(orange, white, black colors) stick out in a positive way.
+
+------
+
+### Typography
+
+- The main fonts selected for this project is **Noto-sans** and **Oswald**. I think they are a well designed and easy to read google fonts.
+
+------
+
+### Colours
+
+- The welcome page is one big image of two runner on icy surface, the color tone is a dull blue so I ensure the title& button stand-out using white text& icons and the button background lights up orange.
+
+- Main site the colour scheme, I used highly contrasting but equally compatible fonts alongside white texts& icons.
+
+- The homepage cards have a orange card-panel background, both cards have an image each with a blue/teel button at the foot of button against the white background of the cards.
+
+- The navigation bar(create, explore and edit pages) on desktop and screen sizes above 780px the background is orange with dark blue icons, white Sprint title and a search bar which the typed text is black.
+
+- Devices on mobile and tablet below 750px I applied a sidenav which bars are white, background color is dark blue, icons are orange and texts white plus an image at the top of 
+the sidenav with dark blue sprint title. 
+
+Read full summary of site colorway here: *https://github.com/michodgs25/Sprint/issues/3#issue-716076941*
+
+------
+
+### Icons
+
+The icons used in this project are provided by [Font Awesome 5.14.0](https://fontawesome.com/).
+
+  
 ## Wire-Frames
 These wireframes were designed with Balsamiq Mockups 3. The first version of scope and some minor things have changed during the development for the final version. 
-A major change being the homepage cards which instead of the cards being side by, they are stacked with create sprint on top and explore sprints directly below.
+A major change being the homepage cards which instead of the cards being side by, they are stacked with create sprint on top and explore sprints directly below. 
+Also a major change was to not include a icon on the welcome page as this clashed with full page image.
 
-There are two primary differences between desktop and mobile, which are breakpoints, which adapts features to fit various screen sizes and the implementation of a side-nav for mobile and tablet 780px& under only.
+Another two differences between desktop and tablet(below 768px)& mobile, which are breakpoints, which adapts features to fit various screen sizes and the implementation of a side-nav for mobile and tablet 780px& under only.
 
 ### Welcome page Desk-top
 
