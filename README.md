@@ -54,21 +54,17 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 
 * Users can share their activities via social media.
 
+## Design
+The website designs are inspired by fashion site examples: *https://www.sitebuilderreport.com/inspiration/fashion-websites?a=ga&gclid=CjwKCAjwq_D7BRADEiwAVMDdHoGEnRu5zrH-fEWgfpOnhxGxPaq8MuHTTI8feKxabc5NvymTHEQVohoCUJ4QAvD_BwE* for example the welcome page which I took the idea of an full page image with a simple subtitle& button that takes the user to the main site.
 
+This project was developed with a focus on a mobile approach first. However, with full responsiveness on other screen sizes.
+I applied materialize library to all the major features of the site, which includes the cards, navigation, side-bar, input form, accordian, buttons and the footer.
 
+The main idea for the design of this project was to have a fun and exciting appearance, with dark orange to dark blue proving the perfect contrast. This contrast is pleasant to look at and make texts and icons(orange, white, black colors) stick out in a positive way.
 
-#### Main Fonts used in this project
+### Typography
 
-<details>
-  <summary>Fonts</summary>
-  <br>
-<div align="center">
-<img src="" target="_blank" rel=""/>
-<img src="" target="_blank" rel=""/>
-<img src="" target="_blank" rel=""/>
-<img src="" target="_blank" rel=""/>
-  </div>
-  </details>
+- The main fonts selected for this project is **Noto-sans** and **Oswald**. I think they are a well designed and easy to read google fonts.
 
 ### User Stories
 
@@ -89,6 +85,7 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 *"Good afternoon, I compete in my local park run every weekend, and would like to share my runs with my friends via social media."*
   
   <br>
+  
 
 ## Wire-Frames
 These wireframes were designed with Balsamiq Mockups 3. The first version of scope and some minor things have changed during the development for the final version. 
