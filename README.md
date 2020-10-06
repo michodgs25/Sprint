@@ -1,20 +1,19 @@
-# Sprint
+<div align="center">
+<img src="https://github.com/michodgs24/Sprint/blob/master/static/images/readme/banner.jpg" 
+     target="_blank" rel="noopener" alt="Sprint">
+</div>
+<h2 align="center">Sprint</h2>
 
 ### Track your workouts one sprint at a time!
 
 *Keeping fit by running or walking is popular amongst millions of people across the entire globe from your local park to the olympic games.* 
 *An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, and factors such as surface& weather.* 
 
-*Sprint aims to provide a user the ability to log their walking or run activities with ease.*
+*With this in mind Sprint platform was designed with the main purpose of being a tool that allows the user to log their walking or run activities with ease anywhere and on any device. Sprint wants to make possible for the user to manage their every log on the platform, such as changing the activity name, changing their difficulty preference or even deleting that Sprint log allogether.*
 
-<br>
-<img src="https://github.com/michodgs24/Sprint/blob/master/static/images/readme/banner.jpg">
+#### You can visit the Sprint platform [here.](https://flask-sprint-project.herokuapp.com/)
 
-#### Live website here: https://flask-sprint-project.herokuapp.com/ - Refresh page if having loading issues
-
-  - Navigation feature demo:**
-
-  - Footer feature demo: **
+  - Site mobile demo: *https://www.youtube.com/watch?v=j5vqz2_EDUA*
 
 ## Contents
 
@@ -54,6 +53,8 @@ __Sprint__ website aims: **(Also see user stories below and project purpose abov
 * User can search specific logged activities.
 
 * Users can share their activities via social media.
+
+
 
 
 #### Main Fonts used in this project
