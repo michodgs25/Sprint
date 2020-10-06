@@ -9,65 +9,39 @@ if os.path.exists("env.py"):
 
 
 app = Flask(__name__)
+# Use OS function to create environment variables.
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+# Create and configurate a variable named MONGO_DBNAME
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
+# Create mongo URI variable, and call URI from database,
+# establishing the connection between mongo database& the app.
 app.secret_key = os.environ.get("SECRET_KEY")
+# use OS.environ.get function to fetch database name,
+# from MONGOb and attach to the variable
 mongo = PyMongo(app)
-"""Using the python OS method,
-which comes under Python’s standard utility modules
-
-OS.environ module provides a portable way of using
-operating system dependent functionality.
-
-The OS environ.get in Python is a mapping object
-that represents the environmental variables,
-in this case the DBNAME, URI and KEY
-and returns a dictionary
-using the environmental variable
-as key and values called from database as value.
-
-Create and configurate a variable named MONGO_DBNAME,
-use OS.environ.get function to fetch database name,
-from MONGOb and attach to the variable just created.
-
-Use the same method as above calling the mongo URI,
-which establishes the connection between mongo and the application.
-
-In addition create secret key variable and fetch that key
-from the above database, attaching the value to the
-environment variable.
-
-Create pymongo variable and attatch it to the flask app.
-"""
+# Create pymongo variable and attatch it to the flask app.
 
 
+# Create App.route which is a Python decorator.
 @app.route("/")
+# The decorator tells app, when user visits domain,
+# at the given .route(), execute the index() function.
 @app.route("/index")
 def get_index():
+    # Renders index.html document.
     return render_template("index.html")
-    """Create App.route which is a Python decorator,
-    The decorator tells app, that when user visits domain,
-    at the given .route(), execute the index() function,
-    and renders index.html document.
-"""
 
 
-# create app route
+# create app route decorator
 @app.route("/tasks")
-# define get tasks
+# define get tasks variable
 def get_tasks():
-    # create tasks variable and call database tasks collection
+    # Use list(mongo.db.tasks.find()) method,
+    # to fetch database collection named tasks& attatch to the tasks variable.
     tasks = list(mongo.db.tasks.find())
     # render explore sprints template
+    # Create domain pathway to explore page.
     return render_template("explore.html", tasks=tasks)
-    """Apply same python decorator method as above,
-    create tasks variable, use tasks = list(mongo.db.tasks.find()),
-    to fetch database collection named tasks&
-    attatch to the tasks variable.
-
-    Returns html document, which uses a for loop, 
-    to organise tasks.
-    """
 
 
 # create route for searching database with
@@ -78,15 +52,13 @@ def search():
     tasks = list(mongo.db.tasks.find({"$text": {"$search": query}}))
     # render explore page template and search results
     return render_template("explore.html", tasks=tasks)
-    """Use app.route python decorator method,
-    to search through tasks collection using text indexing.
-    """
+    # Use app.route method,to search tasks collection.
 
 
 # create app route
 @app.route("/home")
 def get_home():
-# render home template
+    # render home template
     return render_template("home.html")
 
 
@@ -120,9 +92,6 @@ def add_activity():
     return render_template("add_activity.html", task=task)
 
 
-# create app route, call task id from database
-# call get and post method, when user modifies data
-# python will update the post in both database and explore page
 @app.route("/activity/edit/<task_id>", methods=["POST", "GET"])
 def edit_activity(task_id):
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
@@ -148,23 +117,36 @@ def edit_activity(task_id):
     # find one and sort updated task in database
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     return render_template("edit_activity.html", task=task)
+    """Edit task data.
+
+    Create app route, call task id from database.
+    Call get and post method, when user modifies data.
+    Python will update the post in both database and explore page.
+    Create submit varible
+    """
 
 
-# create app route, call task id from database collection
 @app.route("/activity/delete/<task_id>")
 def delete_activity(task_id):
-    # call collection id and inform database to remove
-    # object id from the collection
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})
     flash("Task Removed")
     return redirect(url_for("get_tasks"))
+    """Remove task the database.
+
+    Call collection id using  mongo.db.tasks.remove.
+    Inform database to remove task id.
+    Flash message, inform user that task has been removed
+    return user to explore page domain.
+    """
 
 
-# tell python to host page on this server
-# call ip address, set in firstly MongoDB and
-# secondly in heroku settings
-# call backend port to run via selected browser
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
+"""Tell python to host page on this server.
+
+Call IP address set in MongoDB and heroku settings,
+tell the app using the OS.environ method to run the address.
+Use the OS.environ.get method to run backend port via the browser.
+"""
