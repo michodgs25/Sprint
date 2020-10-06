@@ -7,23 +7,39 @@ if os.path.exists("env.py"):
         import env
 
 
-# Use OS function to create environment variables.
 app = Flask(__name__)
-# Create and configurate a variable named MONGO_DBNAME
+"""Create app and environment variables.
+
+Use OS function to create environment variables.
+Create and configurate a variable named MONGO_DBNAME
+"""
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+"""Connect flask app to the MongoDb database.
+
+Create MONGO_URI variable, use OS.get function,
+calling the MONGO_URI string and attaching the string,
+to the MONGO_URI variable.
+"""
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
+"""Access the database.
+
+Create secret_key variable and use the OS function,
+to attach the SECRET_KEY to secret_key variable.
+"""
 app.secret_key = os.environ.get("SECRET_KEY")
 # Create pymongo variable and attatch it to the flask app.
 mongo = PyMongo(app)
 
 
-# Create App.route which is a Python decorator.
-# The decorator tells app, when user visits domain,
-# at the given .route(), execute the index() function.
 @app.route("/")
 @app.route("/index")
 def get_index():
-    # Renders index.html document.
+    """
+    Create App.route which is a Python decorator.
+    The decorator tells app, when user visits domain,
+    at the given .route(), execute the index() function.
+    Renders index.html document.
+    """
     return render_template("index.html")
 
 
@@ -48,19 +64,27 @@ def search():
 # create app route
 @app.route("/home")
 def get_home():
-    # render home template
+    """Add new tasks to database.
+
+    Create app route saving data to the database.
+    Request POST method to send task to the database.
+    Create task variable and attach key values that matches
+    the tasks collection values.
+    Render home template and renders homepage index.html.
+    """
     return render_template("home.html")
 
 
-# create app route, call methods with arguments
-# which saves data to database and
-# to the explore sprint page
-# tells python if data is requested to post data
 @app.route("/activity/add", methods=["GET", "POST"])
 def add_activity():
     if request.method == "POST":
-        # call task variable and provide key value pairs
-        # the key value pair are taken from database collection named tasks
+        """Add new tasks to database.
+
+        Create app route saving data to the database.
+        Request POST method to send task to the database.
+        Create task variable and attach key values that matches
+        the tasks collection values.
+        """
         task = {
                "task_name": request.form.get("task_name"),
                "task_surname": request.form.get("task_surname"),
@@ -86,10 +110,17 @@ def add_activity():
 def edit_activity(task_id):
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     if not task:
+        # If task no longer exists, app returns error page
         return render_template("error.html")
     if request.method == "POST":
-        # create submit varible
-        # attatch same key value pairs from add_activity
+        """Allow user to edit tasks.
+
+        create the submit varible,
+        and attach the same key value pairs
+        from add_activity function.
+        Use mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit),
+        to update task in the database.
+        """
         submit = {
             "task_name": request.form.get("task_name"),
             "task_surname": request.form.get("task_surname"),
@@ -111,12 +142,24 @@ def edit_activity(task_id):
 
 @app.route("/activity/delete/<task_id>")
 def delete_activity(task_id):
+    """Allow user to delete tasks.
+
+    Use mongo.db.tasks.remove({"_id": ObjectId(task_id)}),
+    to remove the task from the database.
+    Once task is deleted, flash message informs user of this,
+    and page redirects to the explore page with all search results.
+        """
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})
     flash("Task Removed")
     return redirect(url_for("tasks"))
 
 
 if __name__ == "__main__":
+    """Connect flask app to Mongo database.
+
+    use OS.environ.get function to fetch database name,
+    from MONGOb and attach to the MONGO_URI variable.
+    """
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
