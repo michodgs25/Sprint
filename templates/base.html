@@ -13,7 +13,7 @@
       <!--site name-->
       <title>Sprint</title>
       <!--Favicon, site icon-->
-      <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+      <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/website/favicon/favicon-16x16.png') }}">
    </head>
    <body>
       {% block styles %}
@@ -57,7 +57,7 @@
             <div class="user-view">
                <div class="background">
                   <!--Sprint title& image, increase user interaction-->
-                  <img src="static/images/website/sidenav-image.jpg" alt="Male athlete in running motion">
+                  <img src="{{url_for('static', filename='images/website/sidenav-image.jpg')}}" alt="Male athlete in running motion">
                </div>
                <h6 class="side-title">Sprint</h6>
             </div>
