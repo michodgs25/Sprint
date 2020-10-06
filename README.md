@@ -10,7 +10,7 @@
 <br>
 <img src="https://github.com/michodgs24/Sprint/blob/master/static/images/readme/banner.jpg">
 
-#### Live website here: - Refresh page if having loading issues
+#### Live website here: https://flask-sprint-project.herokuapp.com/ - Refresh page if having loading issues
 
   - Navigation feature demo:**
 
