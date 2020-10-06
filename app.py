@@ -9,35 +9,65 @@ if os.path.exists("env.py"):
 
 
 app = Flask(__name__)
-# call mongo database
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
-# call os environment
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
-# establish link to database
 app.secret_key = os.environ.get("SECRET_KEY")
-# create secret key variable and call it from database
 mongo = PyMongo(app)
+"""Using the python OS method,
+which comes under Python’s standard utility modules
+
+OS.environ module provides a portable way of using
+operating system dependent functionality.
+
+The OS environ.get in Python is a mapping object
+that represents the environmental variables,
+in this case the DBNAME, URI and KEY
+and returns a dictionary
+using the environmental variable
+as key and values called from database as value.
+
+Create and configurate a variable named MONGO_DBNAME,
+use OS.environ.get function to fetch database name,
+from MONGOb and attach to the variable just created.
+
+Use the same method as above calling the mongo URI,
+which establishes the connection between mongo and the application.
+
+In addition create secret key variable and fetch that key
+from the above database, attaching the value to the
+environment variable.
+
+Create pymongo variable and attatch it to the flask app.
+"""
 
 
-# create app route
 @app.route("/")
 @app.route("/index")
 def get_index():
-    # create tasks variable and call database tasks collection
-    tasks = list(mongo.db.tasks.find())
-# render welcome page template
     return render_template("index.html")
+    """Create App.route which is a Python decorator,
+    The decorator tells app, that when user visits domain,
+    at the given .route(), execute the index() function,
+    and renders index.html document.
+"""
 
 
 # create app route
-@app.route("/")
 @app.route("/tasks")
 # define get tasks
 def get_tasks():
     # create tasks variable and call database tasks collection
     tasks = list(mongo.db.tasks.find())
     # render explore sprints template
-    return render_template("explore.html",tasks=tasks)
+    return render_template("explore.html", tasks=tasks)
+    """Apply same python decorator method as above,
+    create tasks variable, use tasks = list(mongo.db.tasks.find()),
+    to fetch database collection named tasks&
+    attatch to the tasks variable.
+
+    Returns html document, which uses a for loop, 
+    to organise tasks.
+    """
 
 
 # create route for searching database with
@@ -48,6 +78,9 @@ def search():
     tasks = list(mongo.db.tasks.find({"$text": {"$search": query}}))
     # render explore page template and search results
     return render_template("explore.html", tasks=tasks)
+    """Use app.route python decorator method,
+    to search through tasks collection using text indexing.
+    """
 
 
 # create app route
