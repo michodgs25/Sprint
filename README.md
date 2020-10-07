@@ -39,7 +39,6 @@ The purpose of this project is to be used as a personal activity log for my runs
 
 ## UX
 
-------
 
 ### User Stories
 
@@ -125,7 +124,7 @@ Also a major change was to not include a icon on the welcome page as this clashe
 
 Another two differences between desktop and tablet(below 768px)& mobile, which are breakpoints, which adapts features to fit various screen sizes and the implementation of a side-nav for mobile and tablet 780px& under only.
 
-### Welcome page Desk-top
+### Welcome page Desktop
 
 <details>
   <summary>Welcome page</summary>
@@ -204,7 +203,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   
    -------------------------------------
    
-   ### Edit page desk-top
+   ### Edit page desktop
    
    <details>
   <summary>Edit Sprint page</summary>
@@ -233,18 +232,15 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 * *Welcome page, has a full sized background-image.*
 
-* *The sprint icon is at the top of the page, user can click the icon and it will transport to about sprint page.*
+* *In the middle of the image is the welcome page title, that encourages user to enter.*
 
-* *Below the site logo/icon is the title, provides a brief sentence on what Sprint is about.*
-
-* *Center of the image is a button titled "Run on in!", this transports user to create or explore home page.*
+* *Below the image is a button titled "Sprint on it", this transports user to create or explore home page.*
 
 <details>
-  <summary>Welcome page</summary>
+  <summary>Welcome page: Desktop top: Tablet left: Mobile right</summary>
   <br>
 <div align="center">
-<img src="" target="_blank" rel=""/>
-<img src="" target="_blank" rel=""/>
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/sprint-welcome-page.jpg" target="_blank" rel=""/>
   </div>
   </details>
   
@@ -254,20 +250,20 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
    
    ----
 
-### Home& Create or explore cards features
+### Home& Create or explore Sprint cards feature
 
 * *Adapted from the materialize library, the cards are a creative way to provide the user the two available options: Create or Explore.*
 
-* *Both cards have an image with a button tag: "Create activity" and "Explore activities" and when button is clicked takes the user to the respective page, which either the Create or explore.*
+* *Both cards have an image with a button tag: "Create Sprint" and "Explore Sprints" and when button is clicked takes the user to the respective page, which is either the Create or explore.*
 
 * *The Create activity card takes the user to the create page where user can log a new activity.*
 
 * *The Explore activities card takes the user to the explore page which displays all the previously logged activities by the user.*
 
 <details>
-  <summary>Create or Explore page</summary>
+  <summary>Homepage, Desktop top: Tablet left: Mobile right</summary>
 <div align="center">
-<img src="" target="_blank" rel=""/>
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/sprint-homepage.jpg" target="_blank" rel=""/>
   </div>
   </details>
   
@@ -291,9 +287,9 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 * *The create page has a social media footer in which user can share activity.*
 
 <details>
-  <summary>The create activity page</summary>
+  <summary>The create activity page, Desktop top: Tablet left: Mobile right</summary>
 <div align="center">
-<img src="" 
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/sprint-create.jpg" 
      target="_blank" rel=""/>
   </div>
   </details>
@@ -318,9 +314,9 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 * *This feature footer has the social media links and sprint icon. User learn more about sprint and share sprint to social media.*
 
 <details>
-  <summary>The explore activities page</summary>
+  <summary>The explore activities page, Desktop top: Tablet left: Mobile right</summary>
 <div align="center">
-<img src="" 
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/sprint-explore.jpg" 
      target="_blank" rel=""/>
   </div>
   </details>
@@ -329,6 +325,39 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
    - *Explore activities page is very positive feature of this site as this increases user interaction by exploring through their own activity logs.*
    
    ----
+   
+   ### Edit activity feature
+
+* *The edit activity page primary purpose is for user to edit their already logged activity.*
+
+* *The user can edit their logged Sprint.*
+
+* *The edit page feature has two buttons named save changes and cancel changes.*
+
+<details>
+  <summary>The edit activity, Desktop top: Tablet left: Mobile right</summary>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/sprint-edit.jpg" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
+  
+   #### Edit activity Summary:
+   - *Create activity page, a crucial part of this site, as this allows the user to create an activity log.*
+   
+   ----
+   
+   **CRUD - CREATE**
+When User accesses the create sprint page, they create a sprint 
+
+**CRUD - READ**
+User can...
+
+**CRUD - UPDATE**
+User can update...
+
+**CRUD - DELETE**
+When clicking on the option to delete the logged sprint on explore page...
    
    
 ## Features left to implement
