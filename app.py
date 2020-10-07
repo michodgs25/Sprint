@@ -144,7 +144,6 @@ def add_activity():
         to create page.
         """
         mongo.db.tasks.insert_one(task)
-        flash("Activity Successfully added")
         return redirect(url_for("tasks"))
     task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("add_activity.html", task=task)
@@ -185,6 +184,8 @@ def edit_activity(task_id):
             "task_difficulty": request.form.get("task_difficulty"),
             "task_date": request.form.get("task_date")
         }
+        mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
+        return redirect(url_for("tasks"))
         """Update task in the database collection.
 
         Call:
@@ -202,8 +203,7 @@ def edit_activity(task_id):
         Return:
         edit page template.
         """
-        mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
-        flash("Activity Successfully Updated")
+        mongo.db.tasks.update_one({"_id": ObjectId(task_id)}, submit)
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     return render_template("edit_activity.html", task=task)
 

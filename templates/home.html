@@ -4,34 +4,34 @@
 <!--Create sprint card-->
 <div class="col card-panel orange home">
 <div class="col">
-   <div class="col s12 m7">
-   <!--Create card, transports user to create page-->
-      <div class="container">
-         <div class="card large">
-            <div class="card-image">
-               <img src="static/images/home/create-card.jpg">
-               <h5 class="card-title">Create A Sprint</h5>
+    <div class="col s12 m7">
+        <!--Create card, transports user to create page-->
+        <div class="container">
+            <div class="card large">
+                <div class="card-image">
+                    <img src="static/images/home/create-card.jpg">
+                    <h5 class="card-title">Create A Sprint</h5>
+                </div>
+                <div class="card-action">
+                    <a href="{{ url_for('add_activity') }}" class="waves-effect waves-light btn-large">Create Sprint</a>
+                </div>
             </div>
-            <div class="card-action">
-               <a href="{{ url_for('add_activity') }}" class="waves-effect waves-light btn-large">Create Sprint</a>
+        </div>
+    </div>
+    <!--Explore Sprint card-->
+    <div class="col s12 m7">
+        <!--Explore card, transports user to explore page-->
+        <div class="container">
+            <div class="card large">
+                <div class="card-image">
+                    <img src="static/images/home/explore-card.jpg">
+                    <span class="card-title">Explore Your Sprints</span>
+                </div>
+                <div class="card-action">
+                    <a href="{{ url_for('tasks') }}" class="waves-effect waves-light btn-large">Explore Sprints</a>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-   <!--Explore Sprint card-->
-   <div class="col s12 m7">
-   <!--Explore card, transports user to explore page-->
-      <div class="container">
-         <div class="card large">
-            <div class="card-image">
-               <img src="static/images/home/explore-card.jpg">
-               <span class="card-title">Explore Your Sprints</span>
-            </div>
-            <div class="card-action">
-               <a href="{{ url_for('tasks') }}" class="waves-effect waves-light btn-large">Explore Sprints</a>
-            </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
