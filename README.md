@@ -21,6 +21,7 @@
 * [User-Stories](#User-Stories)
  * [Project purpose](#Project-purpose)
 * [Wire-Frames](#Wire-Frames)
+   * [CRUD](#CRUD)
  * [Features](#Features)
  * [Technologies](#Technologies)
  * [Testing](#Testing)
@@ -344,17 +345,22 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
    
    ----
    
+   ## Crud
+   CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off.
+   
+   With this in mind below is the sprint platform CRUD method:
+   
    **CRUD - CREATE**
-When User accesses the create sprint page, they create a sprint 
+The User can create a sprint log on the create sprint page and save the log to the explore sprints page. 
 
 **CRUD - READ**
-User can...
+User can read every single one of their saved sprint logs on the explore sprints page.
 
 **CRUD - UPDATE**
-User can update...
+User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.
 
 **CRUD - DELETE**
-When clicking on the option to delete the logged sprint on explore page...
+User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.
    
    
 ## Features left to implement
@@ -362,10 +368,22 @@ When clicking on the option to delete the logged sprint on explore page...
    
    * __See full article here: https://github.com/michodgs24/Sprint/issues/1#issue-675980810__ 
 
+## Libraries
+
+- Materialize CSS and JS Libraries: 
+https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css 
+
+https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
+
+*The materialize CSS& JS libraries are the cornerstone library of this project providing the major features like the nav, sidenav, cards, accordian, footer and custom styling.*
+  
+- Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
+
+*Font awesome provide all the icons for this site, such as the social media icons for the footer.*
+   
+
 
 ## Technologies
-
-* Html, Css, Javascript, Python languages
 
 * MongoDB - https://www.mongodb.com/
 
@@ -381,6 +399,8 @@ When clicking on the option to delete the logged sprint on explore page...
 
 * W3S html& css validator - https://validator.w3.org/
 
+* Pylint - https://pypi.org/project/pylint/
+
 * mobiReady - https://ready.mobi/
 
 * Google mobile friendly test- https://search.google.com/test/mobile-friendly
@@ -389,6 +409,10 @@ When clicking on the option to delete the logged sprint on explore page...
 
 * Free formatter - https://www.freeformatter.com/html-formatter.html#ad-output
 
+## Languages
+
+  - In this project I used *HTML5*, *CSS*, *JAVASCRIPT* and *PYTHON* as programming languages.
+
 ## Testing
 
 Summary: *""*
@@ -396,9 +420,9 @@ Summary: *""*
 __See testing documentation here: https://github.com/michodgs24/Sprint/blob/master/test.md__
 
 ## Version Control
-This sites version control is through github and using gitpod IDE, once completed a piece of work, I would type into the terminal:
-  
-#### git add index.html
+This sites version control is through github linked to the heroku app, using gitpod IDE, once completed a piece of work, I would type into the terminal:
+
+ #### git add -A
  - *Adds a change in the working directory to the staging area.*
   
 #### git commit -m "Update index.html code formatting" 
@@ -413,7 +437,7 @@ This sites version control is through github and using gitpod IDE, once complete
 You will need the following tools installed on your system:
 
 Python 3 - https://www.python.org/downloads/
-An IDE such as Visual Studio, gitpod, Code, or PyCharm
+An IDE such as Visual Studio, gitpod, Code, or like this project gitpod
 An account at MongoDB Atlas - https://www.mongodb.com/
 Git - https://gist.github.com/derhuerst/1b15ff4652a867391f03
 
