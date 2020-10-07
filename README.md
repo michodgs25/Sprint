@@ -42,21 +42,19 @@ The purpose of this project is to be used as a personal activity log for my runs
 
 ### User Stories
 
------
+Here are some outside user opinions on what the site should offer:
 
-*"As a local park runner I would like to log my run times and compare with my previous run times as this shows me where my fitness is at."*
-
----
-
-*"My name is Lucy, I would like the site to be appealing and easy to use as I find alot of activity sites to be boring."*
+*"As a local park runner I think the platform should keep a log of my runs and I can compare with my previous runs easily, this shows me where my fitness is at."*
 
 ---
 
-*"Hey, my name is Lebron, a professional basketball player, I want a site that allows me to input my running activity distance and activity difficulty as this keeps a record of what I have done."*
+*"My name is Lucy, I would like the site to be appealing with lots of color and icons, as I find alot of activity sites to be boring."*
 
 ---
 
-*"Good afternoon, I compete in my local park run every weekend, and would like to share my runs with my friends via social media."*
+*"Hey, my name is Lebron, a professional basketball player, I think that the site should allow me to input my running activity distance and activity difficulty as this keeps a record of what I have done."*
+
+---
   
   <br>
   
@@ -87,7 +85,6 @@ I applied materialize library to all the major features of the site, which inclu
 
 The main idea for the design of this project was to have a fun and exciting appearance, with dark orange to dark blue proving the perfect contrast. This contrast is pleasant to look at and make texts and icons(orange, white, black colors) stick out in a positive way.
 
-------
 
 ### Typography
 
@@ -97,7 +94,7 @@ The main idea for the design of this project was to have a fun and exciting appe
 
 ### Colours
 
-- The welcome page is one big image of two runner on icy surface, the color tone is a dull blue so I ensure the title& button stand-out using white text& icons and the button background lights up orange.
+- The welcome page is one big image of two runner on icy surface, the image color tone is a dull blue so I ensured the title& button stand-out, using white text& icons and the button background lights up orange and the white text turns dark blue.
 
 - Main site the colour scheme, I used highly contrasting but equally compatible fonts alongside white texts& icons.
 
