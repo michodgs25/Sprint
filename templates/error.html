@@ -10,11 +10,13 @@
       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
       <!--site name-->
       <title>Sprint</title>
+      <!--Favicon, site icon-->
+      <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon/favicon-16x16.png') }}">
    </head>
    <!--Error message and return home button-->
    <div class="error">
       <h1>Error, this Sprint no longer exists</h1>
-      <button>
+      <button class="error-button">
          <a href="{{ url_for('get_home') }}">
             <h3>Run back home</h3>
          </a>

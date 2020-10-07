@@ -25,7 +25,6 @@
     align-items: center;
     }
 
-
 /*site logo*/
 .home-logo {
     font-size: 4em;
@@ -55,17 +54,6 @@
     background: rgb(245, 182, 66);
     color: rgb(30, 70, 179);
     }
-
-.home-logo img {
-    width: 3em;
-    border-radius: 30%;
-    margin-bottom: 3em;
-}
-
-i {
-    align-content: center;
-    align-items: center;
-}
 
 /*mobile welcome page*/
 @media screen and (max-width: 25.6875em) {
@@ -205,14 +193,6 @@ nav ul a.btn {
     color: rgb(245, 182, 66);
     }
 
-/*sidenav search-bar*/
-.sidenav .input-field .red btn text-shadow {
-    text-align: center;
-    align-items: center;
-    width: 50%;
-    color: rgb(255, 255, 255);
-    }
-
 /*homepage section*/
 
 /*card shadow*/
@@ -226,7 +206,6 @@ nav ul a.btn {
     background-position: center;
     background-size: cover;
     }
-
 
 /*homepage card& card-panel position*/
 @media screen and (min-width: 64em) {
@@ -300,7 +279,7 @@ h5 {
 /*accordian body position*/
 .collapsible-body {
 text-align: -webkit-auto;
-}
+    }
 
 /*logged sprint description& difficulty*/
 strong {
@@ -397,4 +376,4 @@ strong {
 .error {
     text-align: center;
     color: rgb(245, 182, 66);
-}
+    }

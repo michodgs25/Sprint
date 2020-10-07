@@ -100,7 +100,7 @@ def add_activity():
         mongo.db.tasks.insert_one(task)
         flash("Activity Successfully added")
         # redirect user to new page when task is saved
-        return redirect(url_for("get_tasks"))
+        return redirect(url_for("tasks"))
         # find and sort tasks and render redirected page
     task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("add_activity.html", task=task)
