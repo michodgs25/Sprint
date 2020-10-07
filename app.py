@@ -4,7 +4,7 @@ from flask import (
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
-        import env
+    import env
 
 
 app = Flask(__name__)
@@ -43,22 +43,37 @@ def get_index():
     return render_template("index.html")
 
 
-# create app route decorator
 @app.route("/tasks")
-# define get tasks variable
 def tasks():
+    """Add user pathway to explore page.
+
+    Define tasks variable
+    Attach database task collection to tasks variable.
+    Return explore page template.
+    """
     tasks = list(mongo.db.tasks.find())
     return render_template("explore.html", tasks=tasks)
 
 
-# create route to search database
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """Create route to search database.
+
+    Define search variable.
+
+    Create query variable,
+    use request.form.get method to obtain,
+    task data variables and attach to the query variable.
+
+    Create tasks variable, use mongo function,
+    list(mongo.db.tasks.find to search title& description,
+    set in mongodb.
+
+    Return explore page template.
+    """
     query = request.form.get("query")
     tasks = list(mongo.db.tasks.find({"$text": {"$search": query}}))
-    # render explore page template and search results
     return render_template("explore.html", tasks=tasks)
-    # Use app.route method,to search tasks collection.
 
 
 # create app route
@@ -96,12 +111,22 @@ def add_activity():
                "task_difficulty": request.form.get("task_difficulty"),
                "task_date": request.form.get("task_date")
         }
-        # tell python to insert one task into database when saved
+        """Save new Sprint logs to the tasks collection.
+
+        Use mongo function mongo.db.tasks.insert_one,
+        to insert new task into the database collection.
+
+        Flask message informs user the task has been added.
+
+        App redirects user to explore page when log is saved.
+
+        Call task variable and use mongo function:
+        mongo.db.tasks.find().sort to sort task in the collection,
+        and redirect to create page template.
+        """
         mongo.db.tasks.insert_one(task)
         flash("Activity Successfully added")
-        # redirect user to new page when task is saved
         return redirect(url_for("tasks"))
-        # find and sort tasks and render redirected page
     task = mongo.db.tasks.find().sort("task_name", 1)
     return render_template("add_activity.html", task=task)
 
@@ -110,7 +135,11 @@ def add_activity():
 def edit_activity(task_id):
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     if not task:
-        # If task no longer exists, app returns error page
+        """Return error page if log does not exist.
+
+        Add if not statement, which app returns error page,
+        when a log no longer exists.
+        """
         return render_template("error.html")
     if request.method == "POST":
         """Allow user to edit tasks.
@@ -118,6 +147,7 @@ def edit_activity(task_id):
         create the submit varible,
         and attach the same key value pairs
         from add_activity function.
+
         Use mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit),
         to update task in the database.
         """
@@ -132,10 +162,22 @@ def edit_activity(task_id):
             "task_difficulty": request.form.get("task_difficulty"),
             "task_date": request.form.get("task_date")
         }
-        # call database collection task id, to update task
+        """Update task in the database collection.
+
+        Call database collection task object id,
+        to update& submit task,
+        and call flash message,
+        to inform user that task has been updated.
+
+        Create task variable, attach mongo function,
+        to find one task in the collection.
+
+        Sort updated task in the collection,
+        using the mongo function mongo.db.tasks.find_one.
+        and return edit page template.
+        """
         mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
         flash("Activity Successfully Updated")
-    # find one and sort updated task in database
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     return render_template("edit_activity.html", task=task)
 
@@ -146,9 +188,10 @@ def delete_activity(task_id):
 
     Use mongo.db.tasks.remove({"_id": ObjectId(task_id)}),
     to remove the task from the database.
+
     Once task is deleted, flash message informs user of this,
     and page redirects to the explore page with all search results.
-        """
+    """
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})
     flash("Task Removed")
     return redirect(url_for("tasks"))
