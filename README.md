@@ -21,7 +21,7 @@
 * [User-Stories](#User-Stories)
  * [Project purpose](#Project-purpose)
 * [Wire-Frames](#Wire-Frames)
-   * [CRUD](#CRUD)
+ * [CRUD](#CRUD)
  * [Features](#Features)
  * [Technologies](#Technologies)
  * [Testing](#Testing)
@@ -55,13 +55,12 @@ Here are some outside user opinions on what the site should offer:
 
 *"Hey, my name is Lebron, a professional basketball player, I think that the site should allow me to input my running activity distance and activity difficulty as this keeps a record of what I have done."*
 
----
   
   <br>
   
   As this application will be purposely designed for me as the user, this platform will:
   
-- Access the platform from your favourite equipment, such as smartphones, tablets, laptops or PCs, without loss of content.
+- Access the platform from all my favourite devices, such as smartphones, tablets, laptops or PCs, without loss of content.
 
 - View all Sprints on one page logged on the platform and all its details, such as description, difficulty, name, and others. 
 
@@ -135,7 +134,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 ### Mobile welcome page and tablet width 768px and lower
 
 <details>
-  <summary>Mobile Welcome page</summary>
+  <summary>Tablet& Mobile Welcome page</summary>
   <br>
 <div align="center">
 <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-home.png" target="_blank" rel=""/>
@@ -145,7 +144,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 ### Homepage for desktop and tablet& mobile 
   
   <details>
-  <summary>Homepage</summary>
+  <summary>Tablet& Homepage</summary>
   <br>
 <div align="center">
 <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-create-compare.png" target="_blank" rel=""/>
@@ -169,7 +168,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   ### Mobile create activity page and tablets width 768px and lower
   
   <details>
-  <summary>Mobile Create page</summary>
+  <summary>Tablet& Mobile Create page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-create-page.png"
@@ -191,7 +190,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   ### Mobile Explore page and tablet width 768px and lower
   
   <details>
-  <summary>Mobile Explore page</summary>
+  <summary>Tablet& Mobile Explore page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
@@ -215,7 +214,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
    ### Edit page mobile and tablet width of 768px and lower
    
    <details>
-  <summary>Mobile edit Sprint page</summary>
+  <summary>Tablet& Mobile edit Sprint page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-edit-actvity.png"
@@ -307,7 +306,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 * *Clicking the edit button opens up a version of the create page where user can update title, description, difficulty and the date of activity.*
 
-* *Clicking the delete button will remove post.
+* *Clicking the delete button will remove post.*
 
 * *This feature footer has the social media links and sprint icon. User learn more about sprint and share sprint to social media.*
 
@@ -343,24 +342,23 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
    #### Edit activity Summary:
    - *Create activity page, a crucial part of this site, as this allows the user to create an activity log.*
    
-   ----
    
    ## Crud
    CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off.
    
    With this in mind below is the sprint platform CRUD method:
    
-   **CRUD - CREATE**
-The User can create a sprint log on the create sprint page and save the log to the explore sprints page. 
+**CREATE**
+*The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
+ 
+**READ**
+*User can read every single one of their saved sprint logs on the explore sprints page.*
 
-**CRUD - READ**
-User can read every single one of their saved sprint logs on the explore sprints page.
+**UPDATE**
+*User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.*
 
-**CRUD - UPDATE**
-User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.
-
-**CRUD - DELETE**
-User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.
+**DELETE**
+*User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.*
    
    
 ## Features left to implement
@@ -371,9 +369,9 @@ User can delete a sprint log via delete button on a sprint log via the explore s
 ## Libraries
 
 - Materialize CSS and JS Libraries: 
-https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css 
+* https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css 
 
-https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
+* https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
 
 *The materialize CSS& JS libraries are the cornerstone library of this project providing the major features like the nav, sidenav, cards, accordian, footer and custom styling.*
   
@@ -415,9 +413,11 @@ https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
 
 ## Testing
 
-Summary: *""*
+Summary: *"During the development of this project, I had the experience of facing some problems, exhaustively testing the functionality of each part of the platform and managed to solve most of the problems that arose before writing this document.
 
-__See testing documentation here: https://github.com/michodgs24/Sprint/blob/master/test.md__
+I received help from some family and friends to do the tests on the platform resources and all the problems presented were solved without problems for example my brother found that on his mobile device there was x-scroll on the create sprint page."*
+
+__See testing documentation here: https://github.com/michodgs25/Sprint/issues/4#issue-716890135__
 
 ## Version Control
 This sites version control is through github linked to the heroku app, using gitpod IDE, once completed a piece of work, I would type into the terminal:
@@ -438,16 +438,81 @@ You will need the following tools installed on your system:
 
 Python 3 - https://www.python.org/downloads/
 An IDE such as Visual Studio, gitpod, Code, or like this project gitpod
-An account at MongoDB Atlas - https://www.mongodb.com/
+An account at MongoDB Atlas - https:https://github.com/michodgs25/Sprint//www.mongodb.com/
 Git - https://gist.github.com/derhuerst/1b15ff4652a867391f03
 
-* This site is hosted via Heroku
+## Local Deployment
+The following instructions are based on use on a Windows 10 OS and IDE git Code. If your OS is different, the commands may be different, but the process, in general, remains the same.
 
-* Firstly clicking "new" on landing page, giving it the name sprint-flask and chose Europe as the edge server for faster delivery.
+#### Instructions
 
-* Heroku transports to the deploy page, which provides two options on how to deploy site, either through heroku git CLI or github.
+- Save a copy of the Github repository located at https://github.com/michodgs25/Sprint.
+  - Unzip the repo into the chosen folder.
+- If you have Git installed on your system, you can clone the repository with the following command.
+```
+git clone https://github.com/michodgs25/Sprint
+```
 
-* For this project I chose to deploy via my github and followed these instructions:
+- Within the chosen directory, create a virtual environment with the command:
+```
+python -m venv venv
+```  
+
+- Activate the virtual environment with the command:
+```
+.\venv\bin\activate 
+```
+
+- Install all required modules with the command: 
+```
+pip install -r requirements.txt
+```
+
+- Create a file called `.flaskenv` if not exists.
+
+- Inside the `.flaskenv` file check for the following entries:
+```
+FLASK_ENV=development
+FLASK_APP=app.py
+```
+
+- Create a `.env` file with your credentials:
+e.g
+```
+MONGO_URI="insert your mongo URI details here"
+SECRET_KEY="insert your secret key here"
+```
+
+- Create a database in MongoDB Atlas called **third_milestone_project** with a collection called **tasks**
+(of course you can choose your own database& collection name)
+
+- Run the application with the command
+```
+flask run
+```
+- Open the website at `http://127.0.0.1:5000`
+
+## Remote Deployment
+
+#### Instructions
+To deploy this app to Heroku you need to follow the steps below:
+
+- Create a **requirements.txt** file so that Heroku can install all the dependencies required to run the app.
+  `pip freeze > requirements.txt`
+
+- Create a **Procfile** with the command:
+  `echo web: python app.py > Procfile`
+
+- In this step, you have to create a free account on the [Heroku website](https://signup.heroku.com/).
+-  Login to the account, click on new and then create a new app. In the following screen, you need to give a name and choose the Europe region.
+-  In the menu access the **Deploy** option, after that click on Connect to Github. Just below provide the information from the app's repository on GitHub and select the option Enable Automatic Deploy.
+- On the Dashboard of the APP, click on Settings and then click on the option **Reveal config Vars**.
+- Now you need to add the following variables to **Reveal config Vars**:
+  - **IP**: `0.0.0.0`
+  - **PORT**: `5000`
+  - **MONGO_URI**: `link to your Mongo DB`
+  - **SECRET_KEY**: `your chosen secret key`
+- You are now ready to access the deployed app on Heroku.
 
 <details>
   <summary>deploy heroku</summary>
@@ -456,28 +521,6 @@ Git - https://gist.github.com/derhuerst/1b15ff4652a867391f03
      target="_blank" rel=""/>
   </div>
   </details>
-  
-  ### Local Deployment
-
-* To run locally, you can visit the project page(master branch: https://github.com/michodgs25/Sprint):
-
-  <details>
-  <summary>Master Branch page</summary>
-  <br>
-  <div align="center">
-    <img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/master-branch.jpg" target="_blank" rel=""/>
-  </div>
- </details>
-
-* To run this site locally, via git-pod, type into the terminal:
-  
-  - python app.py
-  
-  - opens port 8080, which the IDE presents three options two of which, view the site immediately:
-  __Open preview(Opens a window within the IDE) or open in browser(that is set as the main browser).__
-
-* The code will be executed in the browser that is set as main browser, this can be Chrome or one of the other available browsers. 
-When executed the homepage will appear.
 
 ## Project barriers and the solutions
 * This section looks into the barriers that occurred during the process of this building this project and what solutions were chosen to hurdle those barriers:*
@@ -551,32 +594,9 @@ When executed the homepage will appear.
 
 ## Acknowledgements
 
-* ...... - Code file: **
-  - Credit to....
-
-* Code institute - *https://codeinstitute.net/*
-  - Credit to.....
-
-* resource - **
-  - Credit to.....
-
-* resource - **
-  - Credit....
-  
-* resource - **
-  - Credit..
-
-* Resource - **
-  - Credit .....
-  
-* Lighthouse - find in developer tools
-  - Credit lighthouse for providing critical analysis of site.
-
-* mobiReady - https://ready.mobi/
-  - Credit mobiReady for automated mobile testing service to ensure site is fit for mobile
-  
-* Google mobile friendly test - https://search.google.com/test/mobile-friendly
-  - Credit Google mobile testing to ensure site is error free and mobile friendly
+Very Special Thanks to:
+- My mentor in Code Institute **Rohit ** who had all the patience to explain and make me understand certain concepts and peculiarities of the project content.
+- All people, including family, friends, who have tested the platform on their real devices, reporting to me about any usability issues and giving improvement tips to improve the usability.
   
  #### All code adapted is for educational purposes only and not for commercial gain.
 
