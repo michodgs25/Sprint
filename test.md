@@ -32,30 +32,10 @@ Also opened site on Samsung S10 mobile device and explored all the features.
 ### Google developer tool lighthouse:
    - Opened Google developer tools on-site, find lighthouse on navigation bar(next to security) and click generate report.
 
-<details>
-  <summary>Lighthouse Results</summary>
-  <br>
-  <div align="center">
-    <img src=""
-         </div>
- </details>
-  
-   - Summary: *"The lighthouse tool provided a good insight into the website mobile performance and assisted the development process......"*
-
 ----
 
  ### Google mobile friendly test:
-   - Entered website link as indicated into enter bar on homepage, an automated testing tool to verify if site is equipped for mobile devices follow link below to see the results:
-
-   <details>
-  <summary>Google mobile test</summary>
-  <br>
-  <div align="center">
-<img src=" target="_blank" rel=""/>
-         </div>
- </details>
- 
-  - Summary: *"This tool has...."*
+   - Entered website link as indicated into enter bar on homepage, an automated testing tool to verify if site is equipped for mobile devices.
  
  #### Google mobile friendliness results discussed here -
  
@@ -63,17 +43,6 @@ Also opened site on Samsung S10 mobile device and explored all the features.
 
 ### mobiReady mobile test:
   - Enter website link as indicated into enter bar on homepage, press enter and the site automates the website to whether it will be mobile ready.
-    
-  <details>
-  <summary>mobiReady</summary>
-  <br>
-  <div align="center">
- <img src="" target="_blank" rel=""/>
- <img src="" target="_blank" rel=""/>
-         </div>
- </details>
-
-   - Summary: *"Overall this tool proved useful as it highlighted....."*
   
 #### mobiReady results discussed here - 
 
@@ -82,13 +51,17 @@ Also opened site on Samsung S10 mobile device and explored all the features.
 ----
 
 ## Functional testing 
-To ensure each feature works as intended, I manually tested each section from navigation bar to the footer icon links.
+To ensure each feature works as intended, I manually tested each section from welcome page, to the footer icon links.
 
-   - Summary:
-   *""*
    
  #### Read full manual walk-through of each feature and how is should work here: 
- .......
+ 
+ __Welcome page__ - button lights up, transports me to the homepage as expected and image and texts are all as intended.
+ 
+ __Home page__ - Both card buttons light up and transport me to the correct pages. Card images and texts all as intended.
+ 
+ __Create page__ - Each text input, textarea and select allowed me to input the information and when redirected, that information had been saved correctly. 
+ 
  
  ----
 
