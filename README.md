@@ -570,15 +570,6 @@ To deploy this app to Heroku you need to follow the steps below:
   - Summary 
   *""*
 
-#### Read full article here - Feature
-
------
-
-* __feature__ -  
-
-  - Summary 
-  *""*
-
 #### Read full article here - 
 
 -----
