@@ -1,6 +1,6 @@
 import os
 from flask import (
-    Flask, flash, render_template, redirect, request, session, url_for)
+    Flask, render_template, redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
@@ -221,7 +221,6 @@ def delete_activity(task_id):
         to the explore page with all logs.
         """
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})
-    flash("Task Removed")
     return redirect(url_for("tasks"))
 
 

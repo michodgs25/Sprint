@@ -34,7 +34,6 @@
 /*welcome page text*/
 .welcome-image h2 {
     padding: 1em;
-    font-style: revert;
     color: rgb(255, 255, 255);
     }
 
@@ -80,6 +79,11 @@ nav {
     border-left: none;
     border-right: none;
     padding-bottom: 1em;
+    }
+
+/*navigation bar logo position*/
+nav .brand-logo {
+    margin: 0.3em;
     }
 
 /*Navigation items positioning*/

@@ -32,8 +32,7 @@
                             <li><a href="{{ url_for('tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
                             <li><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
                             <!--search bar on explore page only, user can search all sprints-->
-                            <form class="search-form" action="{{ url_for('search') }}" method="post">
-                                <div row valign-wrapper>
+                            <li><form class="search-form" action="{{ url_for('search') }}" method="post">
                                     <div class="input-field">
                                         <div class="row">
                                             <div class="input-field col s12">
@@ -46,8 +45,8 @@
                                         <!--user can reset search results-->
                                         <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset</a>
                                     </div>
-                                </div>
                             </form>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -66,9 +65,8 @@
                 <li class="tab row s3"><a href="{{ url_for('tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
                 <li class="tab row s3"><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
                 <!--on explore page, user can search specific sprints-->
-                <form class="side-form" action="{{ url_for('search') }}" method="post">
+                <li><form class="side-form" action="{{ url_for('search') }}" method="post">
                     <div>
-                        <div row valign-wrapper>
                             <i class="fas fa-search prefix"></i>
                             <div class="input-field">
                                 <input type="text" name="query" id="mobilequery" required>
@@ -79,8 +77,8 @@
                                 <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset</a>
                             </div>
                         </div>
-                    </div>
                 </form>
+                </li>
             </ul>
         </header>
         {% block content %}
