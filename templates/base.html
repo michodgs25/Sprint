@@ -32,7 +32,8 @@
                             <li><a href="{{ url_for('tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
                             <li><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
                             <!--search bar on explore page only, user can search all sprints-->
-                            <li><form class="search-form" action="{{ url_for('search') }}" method="post">
+                            <li>
+                                <form class="search-form" action="{{ url_for('search') }}" method="post">
                                     <div class="input-field">
                                         <div class="row">
                                             <div class="input-field col s12">
@@ -45,7 +46,7 @@
                                         <!--user can reset search results-->
                                         <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset</a>
                                     </div>
-                            </form>
+                                </form>
                             </li>
                         </ul>
                     </div>

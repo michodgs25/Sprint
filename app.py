@@ -8,28 +8,6 @@ if os.path.exists("env.py"):
 
 
 app = Flask(__name__)
-"""Create app and environment variables.
-
-Add:
-Instance of flask and store in Flask(__name__) variable.
-Apply:
-OS function to create environment variables.
-Create:
-configurate a variable named MONGO_DBNAME
-Connect:
-flask app to the MongoDb database.
-Create:
-MONGO_URI variable, use OS.get function.
-Call:
-the MONGO_URI string and attaching the string,
-to the MONGO_URI variable.
-Create:
-secret_key variable and use the OS function,
-Attach:
-the SECRET_KEY to secret_key variable.
-Create:
-pymongo variable and attatch it to the flask app
-"""
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
@@ -46,7 +24,7 @@ def get_index():
     Decorator:
     tells app, when user visits domain,
     at the given .route(), execute the index() function.
-    Render:
+    Return:
     the index.html document.
     """
     return render_template("index.html")
@@ -225,20 +203,6 @@ def delete_activity(task_id):
 
 
 if __name__ == "__main__":
-    """Tell app how and where to run the application.
-
-    Connect:
-    flask app to Mongo database.
-    Apply:
-    OS.environ.get function to fetch MongoDb variables,
-    from hidden env file.
-    IP:
-    tell OS to host page, on IP set in env file.
-    Port:
-    converted into an integer and fetched from env file.
-    Debug:
-    equal to true, so I see specific error messages.
-    """
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
