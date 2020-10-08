@@ -19,12 +19,9 @@ mongo = PyMongo(app)
 def get_index():
     """Define domain pathway to welcome page.
 
-    Create:
-    App.route which is a Python decorator.
-    Decorator:
-    tells app, when user visits domain,
-    at the given .route(), execute the index() function.
-    Return:
+    Args:
+    get index: define opening page of the platform.
+    Returns:
     the index.html document.
     """
     return render_template("index.html")
@@ -34,12 +31,10 @@ def get_index():
 def tasks():
     """Add user pathway to explore page.
 
-    Define:
-    tasks variable.
-    Attach:
-    database task collection to tasks variable.
-    Return:
-    explore page template document.
+    Args:
+    Tasks variable: define explore page, call tasks collection list.
+    Returns:
+    previous saved tasks from collection, renders explore page template.
     """
     tasks = list(mongo.db.tasks.find())
     return render_template("explore.html", tasks=tasks)
@@ -49,19 +44,10 @@ def tasks():
 def search():
     """Create route to search database.
 
-    Define:
-    search variable.
-    Create:
-    query variable.
-    Apply:
-    request.form.get method to obtain,
-    task data variables and attach to the query variable.
-    Create:
-    tasks variable, use mongo function,
-    list(mongo.db.tasks.find to search title& description,
-    set in mongodb.
-    Return:
-    explore page template.
+    Args:
+    Define search& query variables, GET& POST.
+    Returns:
+    render explore page template& abilty to search tasks.
     """
     query = request.form.get("query")
     tasks = list(mongo.db.tasks.find({"$text": {"$search": query}}))
@@ -70,13 +56,6 @@ def search():
 
 @app.route("/home")
 def get_home():
-    """Create route to homepage.
-
-    Define:
-    get_home variable.
-    return:
-    homepage html template.
-    """
     return render_template("home.html")
 
 
@@ -85,14 +64,16 @@ def add_activity():
     if request.method == "POST":
         """Add new task to database.
 
-        Create:
-        app route saving data to the database tasks collection,
-        and intial methods GET AND POST.
-        Request:
+        Args:
+        request key value pairs from tasks collection.
         POST method to send task to the database.
-        Create:
-        task variable and attach key values,
-        that matches the tasks collection values.
+        Call mongo function mongo.db.tasks.insert_one,
+        Call mongo.db.tasks.find().sort("task_name", 1).
+        Returns:
+        Insert new task to the database.
+        Insert new task into the database collection.
+        Sort new task in database.
+        Redirect user to explore swprints page.
         """
         task = {
                "task_name": request.form.get("task_name"),
@@ -105,22 +86,6 @@ def add_activity():
                "task_difficulty": request.form.get("task_difficulty"),
                "task_date": request.form.get("task_date")
         }
-        """Save new Sprint logs to the tasks collection.
-
-        Apply:
-        mongo function mongo.db.tasks.insert_one,
-        to insert new task into the database collection.
-        Flash message:
-        informs user the task has been added.
-        App:
-        redirects user to explore page when log is saved.
-        Call:
-        task variable.
-        Use mongo function:
-        mongo.db.tasks.find().sort to sort task in the collection,
-        Redirect:
-        to create page.
-        """
         mongo.db.tasks.insert_one(task)
         return redirect(url_for("tasks"))
     task = mongo.db.tasks.find().sort("task_name", 1)
@@ -144,10 +109,10 @@ def edit_activity(task_id):
     if not task:
         """Return error page if log does not exist.
 
-        Add:
-        if not statement, which app returns error page,
-        when:
-        a log no longer exists.
+        Args:
+        if not statement
+        Returns:
+        error page
         """
         return render_template("error.html")
     if request.method == "POST":
@@ -166,20 +131,13 @@ def edit_activity(task_id):
         return redirect(url_for("tasks"))
         """Update task in the database collection.
 
-        Call:
+        Args:
         database collection task object id.
-        Update:
-        submit task, and call flash message,
-        to inform user that task has been updated.
-        Create:
-        task variable and attach mongo function,
+        Create task variable and attach mongo function,
         to find one task in the collection.
-        Sort:
-        updated task in the collection.
-        Apply:
-        mongo function mongo.db.tasks.find_one.
         Return:
-        edit page template.
+        updated task in the collection.
+        Updated sprint log and redirect to explore page.
         """
         mongo.db.tasks.update_one({"_id": ObjectId(task_id)}, submit)
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
@@ -188,16 +146,6 @@ def edit_activity(task_id):
 
 @app.route("/activity/delete/<task_id>")
 def delete_activity(task_id):
-    """Allow user to delete tasks.
-
-        Apply:
-        mongo.db.tasks.remove({"_id": ObjectId(task_id)}),
-        to remove the task from the database.
-        Task is deleted:
-        flash message informs user of this.
-        Redirect:
-        to the explore page with all logs.
-        """
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})
     return redirect(url_for("tasks"))
 
