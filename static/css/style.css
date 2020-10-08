@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Oswald&display=swap');
 
-.welcome-image body {
+.welcome-image body{
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: rgb(245, 182, 66); 
     }
 
-/*sticky footer*/
+/*page structure*/
   body {
     display: flex;
     min-height: 100vh;
@@ -67,6 +68,51 @@
     h2 {
         text-align: center;
     }
+}
+
+/*homepage section*/
+
+/*page background color*/
+.home  body {
+      background-color: rgb(245, 182, 66);
+    }
+
+/*card button position*/
+.card .card-action {
+    text-align: center;
+    }
+
+/*card shadow*/
+.card {
+    box-shadow: 0 4px 8px 0 rgb(30, 70, 179);
+    transition: 0.3s;
+    }
+
+/*homepage card image position*/
+.card-image {
+    background-position: center;
+    background-size: cover;
+    }
+
+/*homepage card& card-panel position*/
+@media screen and (min-width: 64em) {
+	.card-panel .home  {
+        margin: 8.0299990686464em 0 2em 0;
+	}
+}
+
+/*card-panel position width 411px*/
+@media screen and (max-width: 23.4375em) {
+	.card-panel {
+        margin: 0.5em 0 1em 0;
+	}
+}
+
+/*homepage card& card-panel position 375px*/
+@media screen and (max-width: 23.4375em) {
+	.card-panel {
+        margin: 0.5em 0 1em 0;
+	}
 }
 
 /*site navigation section*/
@@ -196,41 +242,6 @@ nav ul a.btn {
 .sidenav li a i {
     color: rgb(245, 182, 66);
     }
-
-/*homepage section*/
-
-/*card shadow*/
-.card {
-    box-shadow: 0 4px 8px 0 rgb(30, 70, 179);
-    transition: 0.3s;
-    }
-
-/*homepage card image position*/
-.card-image {
-    background-position: center;
-    background-size: cover;
-    }
-
-/*homepage card& card-panel position*/
-@media screen and (min-width: 64em) {
-	.card-panel .home  {
-        margin: 8.0299990686464em 0 2em 0;
-	}
-}
-
-/*card-panel position width 411px*/
-@media screen and (max-width: 23.4375em) {
-	.card-panel {
-        margin: 0.5em 0 1em 0;
-	}
-}
-
-/*homepage card& card-panel position 375px*/
-@media screen and (max-width: 23.4375em) {
-	.card-panel {
-        margin: 0.5em 0 1em 0;
-	}
-}
 
 /*Create & edit sprint section*/
 

@@ -1,38 +1,57 @@
-{% extends "base.html" %}
-{% block content %}
-<br>
-<!--Create sprint card-->
-<div class="col card-panel orange home">
-<div class="col">
-    <div class="col s12 m7">
-        <!--Create card, transports user to create page-->
-        <div class="container">
-            <div class="card large">
-                <div class="card-image">
-                    <img src="static/images/home/create-card.jpg" alt="Runner in the dunes">
-                    <h5 class="card-title">Create A Sprint</h5>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- materilize minified CSS library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+        <!--custom css file-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+        <!--site name-->
+        <title>Sprint</title>
+        <!--Favicon, site icon-->
+        <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+    </head>
+    <!--Create sprint card-->
+    <body class="home">
+        <br>
+        <!--Create sprint card-->
+        <div class="home">
+            <div class="col">
+                <div class="col s12 m7">
+                    <!--Create card, transports user to create page-->
+                    <div class="container">
+                        <div class="card large">
+                            <div class="card-image">
+                                <img src="static/images/home/create-card.jpg" alt="Runner in the dunes">
+                                <h5 class="card-title">Create A Sprint</h5>
+                            </div>
+                            <div class="card-action">
+                                <a href="{{ url_for('add_activity') }}" class="waves-effect waves-light btn-large">Create Sprint</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-action">
-                    <a href="{{ url_for('add_activity') }}" class="waves-effect waves-light btn-large">Create Sprint</a>
+                <!--Explore Sprint card-->
+                <div class="col s12 m7">
+                    <!--Explore card, transports user to explore page-->
+                    <div class="container">
+                        <div class="card large">
+                            <div class="card-image">
+                                <img src="static/images/home/explore-card.jpg" alt="Group of runners in the woods">
+                                <span class="card-title">Explore Your Sprints</span>
+                            </div>
+                            <div class="card-action">
+                                <a href="{{ url_for('tasks') }}" class="waves-effect waves-light btn-large">Explore Sprints</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Explore Sprint card-->
-    <div class="col s12 m7">
-        <!--Explore card, transports user to explore page-->
-        <div class="container">
-            <div class="card large">
-                <div class="card-image">
-                    <img src="static/images/home/explore-card.jpg" alt="Group of runners in the woods">
-                    <span class="card-title">Explore Your Sprints</span>
-                </div>
-                <div class="card-action">
-                    <a href="{{ url_for('tasks') }}" class="waves-effect waves-light btn-large">Explore Sprints</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-{% endblock %}
+        <footer>
+            <!-- Compiled materialize Js -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        </footer>
+    </body>
+</html>
