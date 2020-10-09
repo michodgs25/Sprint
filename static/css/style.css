@@ -246,6 +246,19 @@ nav ul a.btn {
     color: rgb(245, 182, 66);
     }
 
+/*sidenav search input area*/
+.side-search {
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    background-color: rgb(245, 182, 66);
+}
+
+/*sidenav reset button position*/
+.side-reset {
+    text-align: right;
+    margin: 1em;
+}
+
 /*Create & edit sprint section*/
 
 /*create page title*/

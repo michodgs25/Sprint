@@ -65,14 +65,15 @@
                 <li class="tab row s3"><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
                 <!--on explore page, user can search specific sprints-->
                 <form class="side-form" action="{{ url_for('search') }}" method="post">
-                    <div>
+                    <div class="side-search">
                             <i class="fas fa-search prefix"></i>
                             <div class="input-field">
                                 <input type="text" name="query" id="mobilequery" required>
                                 <label class="label-icon" for="query"><i class=""></i></label>
+                                <label for="#!">Search:</label>
                             </div>
                             <!--User can reset results, and display all logs-->
-                            <div class="s12">
+                            <div class="side-reset">
                                 <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset Search</a>
                             </div>
                         </div>
