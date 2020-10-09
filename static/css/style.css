@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Oswald&display=swap');
 
-.welcome-image body{
+.welcome-image body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -93,18 +93,18 @@
     background-size: cover;
     }
 
-/*homepage card background position*/
-@media screen and (min-width: 64em) {
-	.home  {
-        margin-top: 4.5em;
-	}
+/*homepage background in ipad*/
+@media screen and (min-height: 64em) {
+.home .card-image {
+    text-align: center;
+    }
 }
 
-/*homepage card background position*/
-@media screen and (min-width: 17.5em) {
-	.home  {
-        margin-top: 0.5em;
-	}
+/*homepage back in ipad*/
+@media screen and (min-height: 64em) {
+.home .card-image {
+    text-align: center;
+    }
 }
 
 /*site navigation section*/
@@ -112,16 +112,15 @@
 /*navigation color& border*/
 nav {
     background: rgb(245, 182, 66);
-    padding: 0.625em 2.5em 0.625em 4.375em;
     border: 0.0625em solid rgb(245, 182, 66);
     border-left: none;
     border-right: none;
-    padding-bottom: 1em;
     }
 
 /*navigation bar logo position*/
 nav .brand-logo {
     margin-top: 0.2em;
+    padding-left: 0.5em;
     }
 
 /*Navigation items positioning*/
@@ -134,7 +133,7 @@ nav ul {
 
 /*nav items positioning*/
 nav ul div {
-    padding: 0 0.5em;
+    padding: 0 0.9em;
     display: inline-flex;
     }
 
