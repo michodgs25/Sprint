@@ -36,27 +36,9 @@ $(document).ready(function(){
     });
 });
 
-//hide navigation bar on homepage
-document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/home') {
-    document.querySelector('.navbar-fixed').style.display = "none";
-  } else {
-    document.querySelector('.navbar-fixed').style.display = "block";
-  }
-});
-
-//Hide footer on homepage
-document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/home') {
-    document.querySelector('.page-footer').style.display = "none";
-  } else {
-    document.querySelector('.page-footer').style.display = "block";
-  }
-});
-
 //Hide search bar when on create page
 document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/add_activity') {
+  if (window.location.pathname == '/activity/add') {
     document.querySelector('.search-form').style.display = "none";
   } else {
     document.querySelector('.search-form').style.display = "block";
@@ -65,7 +47,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //Hide search bar on create page mobile screen
 document.addEventListener('DOMContentLoaded', (event) => {
-  if (window.location.pathname == '/add_activity') {
+  if (window.location.pathname == '/activity/add') {
     document.querySelector('.side-form').style.display = "none";
   } else {
     document.querySelector('.side-form').style.display = "block";
