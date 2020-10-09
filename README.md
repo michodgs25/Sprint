@@ -151,7 +151,8 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 </div>
   </details>
   
-  *Breakpoints applied to resize cards for tablet& mobile screens.*
+  *Breakpoints applied to resize cards for tablet& mobile screens.
+  Cards placed horizontally instead of side by side, this fits the mobile first approach.*
   
   -------------------------------------
   
@@ -223,6 +224,16 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 -------------------------
 
+   ### Error page 
+   
+   <details>
+  <summary>Error page, breakpoints again used like the homepage</summary>
+  <br>
+  <div align="center">
+    <img src="https://github.com/michodgs25/Sprint/blob/master/static/wire-frame/desktop/error-page.png"
+         </div>
+    </details>
+
 ## Features
 
 ### Welcome page
@@ -231,7 +242,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 * *In the middle of the image is the welcome page title, that encourages user to enter.*
 
-* *Below the image is a button titled "Sprint on it", this transports user to create or explore home page.*
+* *Below the title is a button titled "Sprint on it", this transports user to home page.*
 
 <details>
   <summary>Welcome page: Desktop top: Tablet left: Mobile right</summary>
@@ -244,7 +255,6 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   #### Welcome page Summary: 
    - *This feature was inspired by user stories, to be appealing and landing page designs via Google Images.*
    
-   
    ----
 
 ### Home& Create or explore Sprint cards feature
@@ -252,6 +262,8 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 * *Adapted from the materialize library, the cards are a creative way to provide the user the two available options: Create or Explore.*
 
 * *Both cards have an image with a button tag: "Create Sprint" and "Explore Sprints" and when button is clicked takes the user to the respective page, which is either the Create or explore.*
+
+* *The cards have a classical look with an image, white blank middle section and button at the center bottom.*
 
 * *The Create activity card takes the user to the create page where user can log a new activity.*
 
@@ -308,7 +320,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 * *Clicking the delete button will remove post.*
 
-* *This feature footer has the social media links and sprint icon. User learn more about sprint and share sprint to social media.*
+* *This feature footer has the social media links.*
 
 <details>
   <summary>The explore activities page, Desktop top: Tablet left: Mobile right</summary>
@@ -322,6 +334,23 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
    - *Explore activities page is very positive feature of this site as this increases user interaction by exploring through their own activity logs.*
    
    ----
+   
+   ### Navigation bar and sidenav features
+   
+ * *The platform navigation bar is only used for the create sprint, explore and edit pages as the welcome& home page and error page have their own specific navigation.
+ The point of this logic was to ensure the user sticks to the platform pathway as intended; the aim being to ensure activities are logged efficiently.*
+ 
+* *When the platform is used via a mobile or tablet device screens 768px& below applies a sidenav which is indicated by bars burger icon and a vertical section slides out to the right. The vertical nav consists of an image with the sprint title and below it three tabs: Home, Create Sprint, Explore Sprints then below a search text input and the reset search button.*
+
+<details>
+  <summary>Navigation(top) and sidenav(bottom):</summary>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/nav-sidenav.jpg" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
+  
+----
    
    ### Edit activity feature
 
@@ -342,27 +371,50 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
    #### Edit activity Summary:
    - *Create activity page, a crucial part of this site, as this allows the user to create an activity log.*
    
+ -----
+ 
+ ### Error page feature
+ 
+ * *If the log has been deleted, and if the log page still exists on another page, once refreshed will return this error page.
+ 
+ * *The page has a green button which transports the user back to the homepage.*
+ 
+ 
+<details>
+  <summary>The edit activity, Desktop top: Tablet left: Mobile right</summary>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/error-feature.jpg" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
+  
+  #### Error page Summary:
+  
+  * *Using a defensive programmer approach, the addition of the error page guards against any unforseen circumstances.*
+ 
+ ------
+   
    
    ## Crud
    CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off.
    
    With this in mind below is the sprint platform CRUD method:
    
-**CREATE**
+**CREATE** -
 *The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
  
-**READ**
+**READ** - 
 *User can read every single one of their saved sprint logs on the explore sprints page.*
 
-**UPDATE**
+**UPDATE** -
 *User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.*
 
-**DELETE**
+**DELETE** -
 *User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.*
    
    
 ## Features left to implement
-   - Summary *"This site starts as a personal tool and as improvements are made and features added to become a public tool."*
+   - Summary *"This site starts as a personal tool and as improvements are made and features added to eventually become a public tool."*
    
    * __See full article here: https://github.com/michodgs24/Sprint/issues/1#issue-675980810__ 
 
@@ -373,39 +425,33 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 * https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
 
-*The materialize CSS& JS libraries are the cornerstone library of this project providing the major features like the nav, sidenav, cards, accordian, footer and custom styling.*
   
 - Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
 
-*Font awesome provide all the icons for this site, such as the social media icons for the footer.*
+- JQuery library: https://jquery.com/ 
    
-
 
 ## Technologies
 
-* MongoDB - https://www.mongodb.com/
+These technoligies helped create, shape and test my code
 
-* Materialize - https://materializecss.com/
+* MongoDB - https://www.mongodb.com/: provided the database to store my Sprint logs.
 
-* Balslamiq - https://balsamiq.com/
+* Balslamiq - https://balsamiq.com/:  provided tools to construct the wire-frames of the platform.
 
-* JQuery library - https://jquery.com/        
+* W3.CSS - https://www.w3schools.com/: provided the idea to add an image to the sidenav
 
-* W3.CSS - https://www.w3schools.com/
+* JS hint - https://jshint.com/: Tested my JS code and provided feedback to increase code quality.
 
-* JS hint - https://jshint.com/
+* W3S html& css validator - https://validator.w3.org/: Tested both my HTML& CSS code and provided feedback to improve quality.
 
-* W3S html& css validator - https://validator.w3.org/
+* Pylint - https://pypi.org/project/pylint/: Used with the IDE terminal typing `pylint app.py` this returns a report of the python code.
 
-* Pylint - https://pypi.org/project/pylint/
+* pep8 - http://pep8online.com/: An online python code tester, returns any errors within code inputted.
 
-* mobiReady - https://ready.mobi/
+* mobiReady - https://ready.mobi/: Online app that that test whether the app is mobile ready.
 
-* Google mobile friendly test- https://search.google.com/test/mobile-friendly
-
-* Lighthouse - Find via google developer tools in browser.
-
-* Free formatter - https://www.freeformatter.com/html-formatter.html#ad-output
+* Google dev tools: found top right corner of the chrome browser, more tool then bottom option. Provided a virtual testing environment.
 
 ## Languages
 
@@ -413,9 +459,9 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 ## Testing
 
-Summary: *"During the development of this project, I had the experience of facing some problems, exhaustively testing the functionality of each part of the platform and managed to solve most of the problems that arose before writing this document.
+Summary: *During the development of this project, I had the experience of facing some problems, exhaustively testing the functionality of each part of the platform and managed to solve most of the problems that arose before writing this document.*
 
-I received help from some family and friends to do the tests on the platform resources and all the problems presented were solved without problems for example my brother found that on his mobile device there was x-scroll on the create sprint page."*
+*I received help from some family and friends to do the tests on the platform resources and all the problems presented were solved without problems for example my brother found that on his mobile device there was x-scroll on the create sprint page."*
 
 __See testing documentation here: https://github.com/michodgs25/Sprint/issues/4#issue-716890135__
 
@@ -534,32 +580,6 @@ To deploy this app to Heroku you need to follow the steps below:
 
 #### Read full article here -  
 
------
-
-#### ..... barriers& solutions - 
-  
-  - Summary:
-  *""*
-
-#### Read full article here - 
-
------
-
-#### ..... barriers& solutions - 
-  
-  - Summary:
-*""*
-
-
-----
-
-#### ..... barriers& solutions - 
-   
-   - Summary:
-   *""*
-   
- #### Read full article here - 
- 
  -----
 
 ## issues and bugs
@@ -574,10 +594,11 @@ To deploy this app to Heroku you need to follow the steps below:
 
 -----
 
-* __Navigation__ -
+## Slack feedback
 
-  - Summary 
-  *""*
+Special thanks to the valuable feedback given by slack users: 
+
+
   
 #### Read full article here - 
 
