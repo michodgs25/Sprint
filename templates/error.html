@@ -6,6 +6,8 @@
         <!--font-awesome library-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
             integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" type="text/css" />
+        <!-- materilize minified CSS library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
         <!--custom css file-->
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
         <!--site name-->
@@ -16,9 +18,8 @@
     <body class="welcome-image">
         <!--Error message and return home button-->
         <div class="error">
-            <h1>Error, this Sprint no longer exists</h1>
-            <a href="{{ url_for('tasks') }}" class="btn-large green darken-2"></a>
-            Run back home
+            <h3>This Sprint no longer exists</h3>
+            <a href="{{ url_for('tasks') }}" class="btn-large green darken-2">Run back home</a>
         </div>
     </body>
 </html>
