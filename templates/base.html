@@ -40,12 +40,16 @@
                                                     minlength="1" maxlength="25" required>
                                                 <label class="label-icon" for="query"></label>
                                             </div>
-                                        </div>
+                                            <div>
                                         <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                                        </div>
+                                        </div>
                                         <!--user can reset search results-->
-                                        <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset</a>
+                                        <div>
+                                        <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset Search</a>
+                                        </div>
                                     </div>
-                                </form>
+                            </form>
                         </ul>
                     </div>
                 </nav>
