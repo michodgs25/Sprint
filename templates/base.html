@@ -18,7 +18,7 @@
     <body>
         {% block styles %}
         {% endblock %}
-        <header>
+     <header>
             <!--Navigation follows user scroll, encourage user to explore-->
             <div class="navbar-fixed">
                 <nav class="nav-extended">
@@ -74,8 +74,8 @@
                                 <label class="label-icon" for="query"><i class=""></i></label>
                             </div>
                             <!--User can reset results, and display all logs-->
-                            <div class="s12 m12">
-                                <a href="{{ url_for('tasks') }}" class="green btn text-shadow">Enter</a>
+                            <div class="s12">
+                                <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset Search</a>
                             </div>
                         </div>
                 </form>

@@ -93,10 +93,17 @@
     background-size: cover;
     }
 
-/*homepage card& card-panel position*/
-@media screen and (max-width: 64em) {
+/*homepage card background position*/
+@media screen and (min-width: 64em) {
 	.home  {
         margin-top: 4.5em;
+	}
+}
+
+/*homepage card background position*/
+@media screen and (min-width: 17.5em) {
+	.home  {
+        margin-top: 0.5em;
 	}
 }
 
@@ -114,7 +121,7 @@ nav {
 
 /*navigation bar logo position*/
 nav .brand-logo {
-    margin: 0.3em;
+    margin-top: 0.2em;
     }
 
 /*Navigation items positioning*/
@@ -187,6 +194,18 @@ nav ul .search-icon .icon span {
     padding-right: 1em;
     }
 
+/*nav form icon margin*/
+.input-field .prefix {
+    top: .0em;
+    margin-right: 1em;
+    }
+
+/*nav form margin-top*/
+nav form {
+    height: 100%;
+    margin-top: 0em;
+    }
+
 /*reset btn position*/
 nav ul a.btn {
     margin-top: 0.625em;
@@ -235,11 +254,6 @@ nav ul a.btn {
     color: rgb(245, 182, 66);
     text-align: center;
     justify-content: center;
-    }
-
-/*icon color*/
-i {
-    color: rgb(255, 255, 255);
     }
 
 /*create& edit page heading*/
@@ -296,6 +310,11 @@ strong {
 }
 
 /*footer section*/
+
+/*social media icon color*/
+.social i {
+    color: rgb(255, 255, 255);
+    }
 
 /*footer height*/
 .page-footer .footer-copyright {
