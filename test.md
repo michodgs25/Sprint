@@ -1,35 +1,57 @@
-## Testing
+# Testing
 
-Summary: *""*
+#### Responsiveness
 
-__See testing documentation here:.......__
+* The Chrome and Firefox browser development tools were used to check for responsiveness and scaling issues on different screen sizes.
 
-### Testing site on different browsers - i.
-Shared the link on google, internet explorer and yahoo to ensure the site looks and works as it should on different browers. 
+* This project was tested across multiple browsers (Chrome, Opera, Safari, Firefox, and IE) in different simulated and real devices.
 
-### Testing device on various screen sizes - ii. 
-Opened Google developer tools and toggled the site between various devices, that include:
+- Phones
 
-* iphone X
-* Moto G4
-* Pixel 2
-* Pixel 2 XL
-* iphone 5/SE
-* iphone 6/7/8 & plus
-* ipad and ipad pro
+  - Galaxy Note 8
+  - Galaxy Note 9
+  - Gakaxy Note 10 (real device)
+  - Galaxy S5
+  - Galaxy S7+ (real device)
+  - Galaxy S9/S9+ (real device)
+  - Galaxy S10 (real device)
+  - iPhone 5/SE
+  - iPhone 6/7/8
+  - iPhone 8 Plus (real device)
+  - iPhone X (real device)
+  - iPhone XR (real device)
+  - iphone XS 
+  - iphone XS Max (real device)
+  - Huawei P30 Pro (real device)
+  - Nexus 5X
+  - Nexus 6P
+  - Pixel 2
+  - Pixel 2 XL
 
-Also opened site on Samsung S10 mobile device and explored all the features.
+- Tablets
+  - iPad (real device)
+  - iPad Pro 10.5-inch
+  - iPad Pro 12.9
+  - Kindle Fire HDX
+  - Nexus 10
+  - Nexus 7
 
+* Laptops
 
-#### Summary: 
-**
+  - MacBook Pro 13" (real device)
+  - Asus Swift 3 (real device)
+
+* Windows 10 computer
+  - Philips 1080p Full HD (real device)
+ 
+**Were found some display issues with discontinued browsers such as IE and obsolete versions of Chrome and Opera.**
 
 ## Site performance testing
 
-### Testing mobile friendliness - iii.
+### Testing mobile friendliness
 *Applied three different verified automated online testing tools to ensure website is ready for mobile:*
 
-### Google developer tool lighthouse:
+#### Google developer tool lighthouse:
    - Opened Google developer tools on-site, find lighthouse on navigation bar(next to security) and click generate report.
 
 ----
@@ -60,8 +82,18 @@ To ensure each feature works as intended, I manually tested each section from we
  
  __Home page__ - Both card buttons light up and transport me to the correct pages. Card images and texts all as intended.
  
- __Create page__ - Each text input, textarea and select allowed me to input the information and when redirected, that information had been saved correctly. 
+ __Create Sprint page__ - The navigation bar which is fixed(follows user scroll) links, works as intended, the JS function successfully hid the search bar
+ (Ensuring the user explores the sprint on the explore sprints page only),
+each text input, textarea and select allowed me to input the information and when redirected, that information had been saved correctly. In addition the footer links work also as intended. 
+
+The create page sidenav also works as intended functionally and stylistically with each link taking the user to each respective page.
+The search text input is also hidden successfully as intended.
  
+__Explore Sprints page__ - Like the create page, the navigation bar which is fixed(follows user scroll) the bar links, search text input and reset button works as intended. Searching sprint logs returned the desired data and returned no logs if data inputted did not exist within the database. Each accordian has the intended header texts and body has the title& description of each individual log.
+
+The explore page sidenav like the desktop navigation, the links and search text input plus reset button all work as intended. 
+
+__Error page__ - page image and button works as intended with the latter taking the user back to the homepage.
  
  ----
 
@@ -74,6 +106,41 @@ Tested the JavaScript code with https://jshint.com/ - done by copying& pasting t
 
 #### - Summary:
 *No errors were found in either tests, ensuring code is error free.*
+
+#### Validators
+- HTML
+
+  - [The W3C Markup Validation Service](https://validator.w3.org/)
+
+* A handful of errors found:
+
+the {{url_for('') }} jinja method used frequently throughout the project as this provided easy access to each page of the platform for the user calling each page from the app.py file. This was not changed as the benefits outweighed the negatives plus both my mentor course institute informed me that I can ignore those errors.
+
+The other errors that I was unable to resolve were using form& div tags as a descendant of a ul tag. 
+
+* div tag
+`<ul id="mobile-demo" class="sidenav light-blue darken-4">
+                <div class="user-view">
+                    <div class="background">
+                        <!--Sprint title& image, increase user interaction-->
+                        <img src="{{url_for('static', filename='images/website/sidenav-image.jpg')}}" alt="Male athlete in running motion">
+                    </div>
+                    <h6 class="side-title">Sprint</h6>
+                </div>`
+
+These minor errors do not adhere to software development standards but the design and functionality of the sidenav fit the vision of the site whereas replacing the tags made the image, tabs, and search bar untidy.
+
+- CSS
+
+  - [The W3C Markup Validation Service](https://jigsaw.w3.org/css-validator)
+
+* No errors found.
+
+- JavaScript
+
+  - [JS Hint](https://jshint.com/)
+
+* No errors found.
 
 ---- 
 
