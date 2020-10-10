@@ -16,17 +16,15 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/login", methods=["GET", "POST"])
-def login():
-    if request.method == "POST":
-    existing_user = mongo.db.users.find_one(
-        {"username": request.form.get("username").lower()})
-    
-    login = {
-        "username": request.form.get("username").lower(),
-        "password": generate_password_hash(request.form.get("password"))
-    }
-    return render_template("login.html")
+@app.route("/index")
+def get_index():
+    """Define domain pathway to welcome page.
+    Args:
+    get index: define opening page of the platform.
+    Returns:
+    the index.html document.
+    """
+    return render_template("index.html")
 
 
 @app.route("/tasks")

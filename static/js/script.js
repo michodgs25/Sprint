@@ -35,3 +35,21 @@ $(document).ready(function(){
         }
     });
 });
+
+//Hide search bar when on create page	
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (window.location.pathname == '/activity/add') {
+    document.querySelector('.search-form').style.display = "none";
+  } else {
+    document.querySelector('.search-form').style.display = "block";
+  }
+});
+
+//Hide search bar on create page mobile screen
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/activity/add') {
+    document.querySelector('.side-form').style.display = "none";
+  } else {
+    document.querySelector('.side-form').style.display = "block";
+}
+});

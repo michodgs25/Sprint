@@ -6,6 +6,12 @@
     flex-direction: column;
     }
 
+/*welcome page text*/	
+.welcome-image h2 {	
+    padding: 1em;	
+    color: rgb(255, 255, 255);	
+    }
+
 /*page structure*/
   body {
     display: flex;
