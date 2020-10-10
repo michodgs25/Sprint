@@ -49,34 +49,42 @@
 ## Site performance testing
 
 ### Testing mobile friendliness
-*Applied three different verified automated online testing tools to ensure website is ready for mobile:*
+*Applied the google lighthouse tool and mobiReady online automated tools:*
 
 #### Google developer tool lighthouse:
    - Opened Google developer tools on-site, find lighthouse on navigation bar(next to security) and click generate report.
+   
+Results below:
+
+  <details>
+  <summary>Lighthouse</summary>
+  <br>
+  <div align="center">
+    <img src="https://github.com/michodgs25/Sprint/blob/master/static/images/test-results/lighthouse-results.jpg"
+         </div>
+    </details>
 
 ----
 
- ### Google mobile friendly test:
-   - Entered website link as indicated into enter bar on homepage, an automated testing tool to verify if site is equipped for mobile devices.
- 
- #### Google mobile friendliness results discussed here -
- 
- ----
-
-### mobiReady mobile test:
+#### mobiReady mobile test:
   - Enter website link as indicated into enter bar on homepage, press enter and the site automates the website to whether it will be mobile ready.
   
-#### mobiReady results discussed here - 
+    <details>
+  <summary>MobiReady</summary>
+  <br>
+  <div align="center">
+    <img src="https://github.com/michodgs25/Sprint/blob/master/static/images/test-results/mobi-test.jpg"
+         </div>
+    </details>
 
-*Automated testing provided great value to shedding light on issues within the site as human error is very prevalent in the development process.
+
+* *Both tests come back positive with only minor errors.*
 
 ----
 
 ## Functional testing 
-To ensure each feature works as intended, I manually tested each section from welcome page, to the footer icon links.
-
-   
- #### Read full manual walk-through of each feature and how is should work here: 
+To ensure each feature works as intended, I manually tested each platform feature welcome page, to the footer icon links:
+ 
  
  __Welcome page__ - button lights up, transports me to the homepage as expected and image and texts are all as intended.
  
@@ -143,17 +151,3 @@ These minor errors do not adhere to software development standards but the desig
 * No errors found.
 
 ---- 
-
-### Testing website on mobile - iiiii
-Copied site link:
-
-#### - Summary:
-*All features....*
-
-#### See mobile test footage here: 
-......
-......
-
-----
-
-### Slack feedback
