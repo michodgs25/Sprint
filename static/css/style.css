@@ -29,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     }
 
 /*welcome page button*/
@@ -55,9 +56,6 @@
         border-radius: inherit;
         margin-bottom: 1em;
 	}
-    .welcome-image .button {
-        font-size: 1em;
-    }
     h2 {
         text-align: center;
     }

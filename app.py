@@ -40,11 +40,6 @@ def tasks():
     return render_template("explore.html", tasks=tasks)
 
 
-@app.route("/register", methods=["GET", "POST"])
-def register():
-    return render_template("register.html")
-
-
 @app.route("/search", methods=["GET", "POST"])
 def search():
     """Create route to search database.
