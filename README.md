@@ -16,21 +16,30 @@
   - Site mobile demo: *https://www.youtube.com/watch?v=j5vqz2_EDUA*
 
 ## Contents
-
+* [Project purpose](#Project-purpose)
 * [UX](#UX)
 * [User-Stories](#User-Stories)
- * [Project purpose](#Project-purpose)
+* [Design](#Design)
+     * [Typography](#Typography)
+     * [Colours](#Colours)
+     * [Icons](#Icons)
 * [Wire-Frames](#Wire-Frames)
- * [CRUD](#CRUD)
- * [Features](#Features)
- * [Technologies](#Technologies)
- * [Testing](#Testing)
- * [Version-control](#Version-control)
- * [Deployment](#Deployment)
- * [Project-barriers-and-the-solutions](#Project-barriers-and-the-solutions)
- * [issues-and-bugs](#issues-and-bugs)
- * [Acknowledgements](#Acknowledgements)
- * [External-Media](#External-Media)
+     * [CRUD](#CRUD)
+     * [Features](#Features)
+     * [Features left to be implemented](#Features-left-to-be-implemented)
+* [Project-barriers-and-the-solutions](#Project-barriers-and-the-solutions)
+     * [issues-and-bugs](#issues-and-bugs)
+     * [Technologies](#Technologies)
+     * [Languages](#Languages)
+* [Testing](#Testing)
+     * [Version-control](#Version-control)
+     * [Deployment](#Deployment)
+     * [Local Deployment](#Local-Deployment)
+     * [Remote Deployment](#Remote-Deployment)
+* [Slack feedback](#Slack-feedback)
+     * [Libraries](#Libraries) 
+     * [Acknowledgements](#Acknowledgements)
+     * [External-Media](#External-Media)
 
 
 ## Project purpose
@@ -72,7 +81,7 @@ Here are some outside user opinions on what the site should offer:
 
 - Be able to search through all Sprint logs using a search bar.
 
-- Filter all logs using search bar by title or
+- Filter all logs using search bar by title or description.
 
 ## Design
 The website designs are inspired by fashion site examples: 
@@ -233,6 +242,29 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
     <img src="https://github.com/michodgs25/Sprint/blob/master/static/wire-frame/desktop/error-page.png"
          </div>
     </details>
+     
+     
+  ---------
+     
+ 
+ ## Crud
+   CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off. 
+   
+   The CRUD method is integral to this site, with this in mind, below is the sprint platform CRUD method:
+   
+**CREATE** -
+*The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
+ 
+**READ** - 
+*User can read every single one of their saved sprint logs on the explore sprints page.*
+
+**UPDATE** -
+*User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.*
+
+**DELETE** -
+*User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.*
+
+------
 
 ## Features
 
@@ -393,27 +425,9 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   * *Using a defensive programmer approach, the addition of the error page guards against any unforseen circumstances.*
  
  ------
+    
    
-   
-   ## Crud
-   CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off.
-   
-   With this in mind below is the sprint platform CRUD method:
-   
-**CREATE** -
-*The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
- 
-**READ** - 
-*User can read every single one of their saved sprint logs on the explore sprints page.*
-
-**UPDATE** -
-*User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.*
-
-**DELETE** -
-*User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.*
-   
-   
-## Features left to implement
+## Features left to be implemented
    - Summary *"This site starts as a personal tool and as improvements are made and features added to eventually become a public tool."*
    
    * __See full article here: https://github.com/michodgs24/Sprint/issues/1#issue-675980810__ 
@@ -429,6 +443,18 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 - Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
 
 - JQuery library: https://jquery.com/ 
+
+
+------
+
+
+## issues and bugs
+*This section looks into what existing issues that are still present in the project& what future iterations could do to resolve these issues:*
+
+* __Feature__ - 
+
+  - Summary 
+  *""*
    
 
 ## Technologies
@@ -453,9 +479,16 @@ These technoligies helped create, shape and test my code
 
 * Google dev tools: found top right corner of the chrome browser, more tool then bottom option. Provided a virtual testing environment.
 
+-------
+
+
 ## Languages
 
   - In this project I used *HTML5*, *CSS*, *JAVASCRIPT* and *PYTHON* as programming languages.
+  
+  
+-------
+  
 
 ## Testing
 
@@ -476,8 +509,13 @@ This sites version control is through github linked to the heroku app, using git
  
 #### git push index.html
  - *This pushes the file to the github project repository.*
+ 
+ 
+ ------
+
 
 ## Deployment
+
 
 #### Requirements 
 You will need the following tools installed on your system:
@@ -582,14 +620,6 @@ To deploy this app to Heroku you need to follow the steps below:
 
  -----
 
-## issues and bugs
-*This section looks into what existing issues that are still present in the project& what future iterations could do to resolve these issues:*
-
-* __Feature__ - 
-
-  - Summary 
-  *""*
-
 #### Read full article here - 
 
 -----
@@ -603,6 +633,21 @@ Special thanks to the valuable feedback given by slack users:
 #### Read full article here - 
 
 -----
+
+## Libraries
+
+- Materialize CSS and JS Libraries: 
+* https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css 
+
+* https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
+
+  
+- Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
+
+- JQuery library: https://jquery.com/ 
+
+
+------
 
 ## Acknowledgements
 
