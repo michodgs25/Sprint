@@ -9,7 +9,7 @@
 *Keeping fit by running or walking is popular amongst millions of people across the entire globe from your local park to the olympic games.* 
 *An essential part of increasing an individuals fitness and the ability to objectively gauge their own fitness is logging activity times, intensity, and factors such as surface& weather.* 
 
-*With this in mind the Sprint platform was designed with the main purpose of being a tool that allows the user to log their walking or run activities with ease anywhere and on any device. Sprint wants to make possible for the user to manage their every single log on the platform, such as changing the activity name, changing their difficulty preference or even deleting that Sprint log altogether.*
+*With this in mind the Sprint platform was designed with the main purpose of being a tool that allows the user to log their walking or run activities with ease anywhere and on any device. Sprint wants to make it possible for the user to manage their every single log on the platform, such as changing the activity name, changing their difficulty preference or even deleting that Sprint log altogether.*
 
 #### You can visit the Sprint platform [here.](https://flask-sprint-project.herokuapp.com/)
 
@@ -17,27 +17,26 @@
 
 ## Contents
 * [Project purpose](#Project-purpose)
-* [UX](#UX)
-* [User-Stories](#User-Stories)
+     * [UX](#UX)
+     * [User-Stories](#User-Stories)
 * [Design](#Design)
      * [Typography](#Typography)
      * [Colours](#Colours)
      * [Icons](#Icons)
-* [Wire-Frames](#Wire-Frames)
      * [CRUD](#CRUD)
+* [Wire-Frames](#Wire-Frames)
      * [Features](#Features)
      * [Features left to be implemented](#Features-left-to-be-implemented)
-* [Project-barriers-and-the-solutions](#Project-barriers-and-the-solutions)
      * [issues-and-bugs](#issues-and-bugs)
      * [Technologies](#Technologies)
      * [Languages](#Languages)
+     * [Libraries](#Libraries)
 * [Testing](#Testing)
      * [Version-control](#Version-control)
      * [Deployment](#Deployment)
      * [Local Deployment](#Local-Deployment)
      * [Remote Deployment](#Remote-Deployment)
-* [Slack feedback](#Slack-feedback)
-     * [Libraries](#Libraries) 
+* [Slack feedback](#Slack-feedback) 
      * [Acknowledgements](#Acknowledgements)
      * [External-Media](#External-Media)
 
@@ -47,7 +46,7 @@
 The purpose of this project is to be used as a personal activity log for my runs; because I am passionate about running and want to keep a daily log of set activities to track my times, distance& activity difficulty. 
 
 
-## UX
+# UX
 
 
 ### User Stories
@@ -83,16 +82,17 @@ Here are some outside user opinions on what the site should offer:
 
 - Filter all logs using search bar by title or description.
 
-## Design
+# Design
+Since this application is meant as a personal tool for just for myself, a register and login page was not deemed necessary as this would slow down the process of logging Sprints.
+
 The website designs are inspired by fashion site examples: 
 *https://www.sitebuilderreport.com/inspiration/fashion-websites?a=ga&gclid=CjwKCAjwq_D7BRADEiwAVMDdHoGEnRu5zrH-fEWgfpOnhxGxPaq8MuHTTI8feKxabc5NvymTHEQVohoCUJ4QAvD_BwE* 
-
 for example the welcome page which I took the idea of an full page image with a simple subtitle& button that takes the user to the main site.
 
 This project was developed with the focus on a mobile approach first. However, with full responsiveness on other screen sizes.
 I applied materialize library to all the major features of the site, which includes the cards, navigation, side-bar, input form, accordian, buttons and the footer.
 
-The main idea for the design of this project was to have a fun and exciting appearance, with dark orange to dark blue proving the perfect contrast. This contrast is pleasant to look at and make texts and icons(orange, white, black colors) stick out in a positive way.
+A major aim of this project was to have a fun and exciting appearance, with dark orange to dark blue proving the perfect contrast. This contrast is pleasant to look at and make texts and icons(orange, white, black colors) stick out in a positive way.
 
 
 ### Typography
@@ -109,7 +109,7 @@ The main idea for the design of this project was to have a fun and exciting appe
 
 - The homepage cards have a orange card-panel background, both cards have an image each with a blue/teel button at the foot of button against the white background of the cards.
 
-- The navigation bar(create, explore and edit pages) on desktop and screen sizes above 780px the background is orange with dark blue icons, white Sprint title and a search bar which the typed text is black.
+- The navigation bar(create, explore and edit pages) on desktop and screen sizes above 768px the background is orange with dark blue icons, white Sprint title and a search bar which the typed text is black.
 
 - Devices on mobile and tablet below 750px I applied a sidenav which bars are white, background color is dark blue, icons are orange and texts white plus an image at the top of 
 the sidenav with dark blue sprint title. 
@@ -122,33 +122,52 @@ Read full summary of site colorway here: *https://github.com/michodgs25/Sprint/i
 
 The icons used in this project are provided by [Font Awesome 5.14.0](https://fontawesome.com/).
 
+
+ ## Crud
+   CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off. 
+   
+   The CRUD method is integral to this sites functionality, with this in mind, below is the sprint platform CRUD method:
+   
+**CREATE** -
+*The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
+ 
+**READ** - 
+*User can read every single one of their saved sprint logs on the explore sprints page.*
+
+**UPDATE** -
+*User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.*
+
+**DELETE** -
+*User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.*
+
+------
+
   
-## Wire-Frames
+# Wire-Frames
 These wireframes were designed with Balsamiq Mockups 3. The first version of scope and some minor things have changed during the development for the final version. 
 A major change being the homepage cards which instead of the cards being side by, they are stacked with create sprint on top and explore sprints directly below. 
-Also a major change was to not include a icon on the welcome page as this clashed with full page image.
+
+Also a major change was to not include the site logo icon and the social media symbols on the welcome page as this clashed with full page image.
 
 Another two differences between desktop and tablet(below 768px)& mobile, which are breakpoints, which adapts features to fit various screen sizes and the implementation of a side-nav for mobile and tablet 780px& under only.
 
-### Welcome page Desktop
+### Welcome page Desktop And Tablet& Mobile
 
 <details>
   <summary>Welcome page</summary>
   <br>
 <div align="center">
 <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/sprint-home-wire.png" target="_blank" rel=""/>
-</div>
-  </details>
-  
-### Mobile welcome page and tablet width 768px and lower
-
-<details>
-  <summary>Tablet& Mobile Welcome page</summary>
+     <br>
+    <summary>Tablet& Mobile Welcome page</summary>
   <br>
 <div align="center">
 <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-home.png" target="_blank" rel=""/>
 </div>
+</div>
   </details>
+  
+*Site logo and social media excluded from final product*
   
 ### Homepage for desktop and tablet& mobile 
   
@@ -172,16 +191,11 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/create-activity.png"
-         </div>
-    </details>
-  
-  ### Mobile create activity page and tablets width 768px and lower
-  
-  <details>
-  <summary>Tablet& Mobile Create page</summary>
+     <summary>Tablet& Mobile Create page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-create-page.png"
+         </div>
          </div>
     </details>
   
@@ -194,46 +208,35 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/explore-page.png"
-         </div>
-    </details>
-  
-  ### Mobile Explore page and tablet width 768px and lower
-  
-  <details>
-  <summary>Tablet& Mobile Explore page</summary>
+    <summary>Tablet& Mobile Explore page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-explore.png"
+         </div>
          </div>
     </details>
   
   
    -------------------------------------
    
-   ### Edit page desktop
+   ### Edit page
    
    <details>
   <summary>Edit Sprint page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/desktop/edit-activity.png"
-         </div>
-    </details>
-
-
-   ### Edit page mobile and tablet width of 768px and lower
-   
-   <details>
-  <summary>Tablet& Mobile edit Sprint page</summary>
+   <summary>Tablet& Mobile edit Sprint page</summary>
   <br>
   <div align="center">
     <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-edit-actvity.png"
+         </div>
          </div>
     </details>
 
 -------------------------
 
-   ### Error page 
+   ### Error page all screen sizes
    
    <details>
   <summary>Error page, breakpoints again used like the homepage</summary>
@@ -244,29 +247,12 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
     </details>
      
      
-  ---------
-     
- 
- ## Crud
-   CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off. 
-   
-   The CRUD method is integral to this sites functionality, with this in mind, below is the sprint platform CRUD method:
-   
-**CREATE** -
-*The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
- 
-**READ** - 
-*User can read every single one of their saved sprint logs on the explore sprints page.*
+  *Breakpoints adapt the page to each screen size.* 
+    
+  ------------
+    
 
-**UPDATE** -
-*User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.*
-
-**DELETE** -
-*User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.*
-
-------
-
-## Features
+# Features
 
 ## Existing Features 
 
@@ -437,7 +423,20 @@ Login and Register pages
 User profile
 * *Add a user profile page, allow new users to create their own personal page on the site.*
 
-Summary: Adding a login page was seriously considered after receiving feedback from Slack [here.](https://github.com/michodgs25/Sprint/blob/master/static/docs/Sprint_peer%20group%20feedback%20review_09102020.pdf) but decided against this as much of the site structure had already been built and not enough time to implement properly before the project deadline. So has been moved to future feature implementations
+Summary: Adding a login page was seriously considered after receiving feedback from Slack [here.](https://github.com/michodgs25/Sprint/blob/master/static/docs/Sprint_peer%20group%20feedback%20review_09102020.pdf). 
+But decided against this as much of the site structure had already been built and not enough time to implement properly before the project deadline. So has been moved to future feature implementations.
+
+
+----------
+
+
+### issues and bugs
+*This section looks into what existing issues that are still present in the project& what future iterations could do to resolve these issues:*
+
+* __Feature__ - 
+
+  - Summary 
+  *""*
   
 
 ## Libraries
@@ -455,14 +454,12 @@ Summary: Adding a login page was seriously considered after receiving feedback f
 
 ------
 
+## Languages
 
-## issues and bugs
-*This section looks into what existing issues that are still present in the project& what future iterations could do to resolve these issues:*
-
-* __Feature__ - 
-
-  - Summary 
-  *""*
+  - In this project I used *HTML5*, *CSS*, *JAVASCRIPT* and *PYTHON* as programming languages.
+  
+  
+-------
    
 
 ## Technologies
@@ -487,14 +484,6 @@ These technoligies helped create, shape and test my code
 
 * Google dev tools: found top right corner of the chrome browser, more tool then bottom option. Provided a virtual testing environment.
 
--------
-
-
-## Languages
-
-  - In this project I used *HTML5*, *CSS*, *JAVASCRIPT* and *PYTHON* as programming languages.
-  
-  
 -------
   
 
@@ -614,22 +603,6 @@ To deploy this app to Heroku you need to follow the steps below:
   </div>
   </details>
 
-## Project barriers and the solutions
-* This section looks into the barriers that occurred during the process of this building this project and what solutions were chosen to hurdle those barriers:*
-
-<br>
-
-#### Navigation bar barriers& solutions - 
-  
-  - Summary: 
-  *"The navigation....*
-
-#### Read full article here -  
-
- -----
-
-#### Read full article here - 
-
 -----
 
 ## Slack feedback
@@ -667,8 +640,8 @@ Special thanks to the valuable feedback given by slack, I implemented the feedba
 ## Acknowledgements
 
 Very Special Thanks to:
-- My mentor in Code Institute **Rohit** who had all the patience to explain and make me understand certain concepts and peculiarities of the project content.
-- All people, including family, friends, who have tested the platform on their real devices, reporting to me about any usability issues and giving improvement tips to improve the usability.
+- My mentor with Code Institute **Rohit** and the code institute tech support team, who had all the patience to explain and make me understand certain concepts and peculiarities of the project .
+- Family, friends, who have tested the platform on their real devices, reporting to me about any usability issues and giving improvement tips to improve the usability.
   
  #### All code adapted is for educational purposes only and not for commercial gain.
 
