@@ -25,18 +25,6 @@
     align-items: center;
     }
 
-/*site logo*/
-.home-logo {
-    font-size: 4em;
-    border-radius: 1em;
-    }
-
-/*welcome page text*/
-.welcome-image h2 {
-    padding: 1em;
-    color: rgb(255, 255, 255);
-    }
-
 /*welcome page button*/
 .welcome-image .button {
     font-size: 2.5em;
@@ -139,7 +127,7 @@ nav ul div {
 
 /*navigation icon& text size*/
 nav ul a {
-    font-size: 1.3em;
+    font-size: 1.1em;
     }
 
 /*nav item size and positioning*/

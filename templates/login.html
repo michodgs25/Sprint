@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--font-awesome library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" type="text/css" />
+        <!-- materilize minified CSS library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+        <!--custom css file-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+        <!--site name-->
+        <title>Sprint</title>
+        <!--Favicon, site icon-->
+        <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+    </head>
+    <!--The Welcome image, main body of page-->
+    <body class="welcome-image">
+        <h3 class="center-align">Login</h3>
+        <div class="row">
+        <form class="col s12 m8 offset-m2">
+            <div class="card-panel">
+            <!--Insert username-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-user-plus prefix light-blue-text text-darken-4"></i>
+                        <input id="username" name="username" type="text" class="validate">
+                        <label for="username">Username</label>
+                    </div>
+                    <!--Insert password-->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-user-lock prefix light-blue-text text-darken-4"></i>
+                            <input id="password" name="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <!--Login to the site-->
+                    <div class="row">
+                        <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
+                        Login <i class="fas fa-sign-in-alt"></i>
+                        </button>
+                    </div>
+                </div>
+        </form>
+        </div>
+        <!-- Compiled materialize Js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

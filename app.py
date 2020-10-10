@@ -3,6 +3,7 @@ from flask import (
     Flask, render_template, redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from werkzeug.security import generate_password_hash,check_password_hash
 if os.path.exists("env.py"):
     import env
 
@@ -15,16 +16,16 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/index")
-def get_index():
+@app.route("/login", methods=["GET", "POST"])
+def get_login():
     """Define domain pathway to welcome page.
 
     Args:
-    get index: define opening page of the platform.
+    get login: define opening page of the platform.
     Returns:
-    the index.html document.
+    the login.html document.
     """
-    return render_template("index.html")
+    return render_template("login.html")
 
 
 @app.route("/tasks")
@@ -38,6 +39,11 @@ def tasks():
     """
     tasks = list(mongo.db.tasks.find())
     return render_template("explore.html", tasks=tasks)
+
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
 
 
 @app.route("/search", methods=["GET", "POST"])
