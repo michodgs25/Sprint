@@ -250,7 +250,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
  ## Crud
    CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off. 
    
-   The CRUD method is integral to this site, with this in mind, below is the sprint platform CRUD method:
+   The CRUD method is integral to this sites functionality, with this in mind, below is the sprint platform CRUD method:
    
 **CREATE** -
 *The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
@@ -267,6 +267,8 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 ------
 
 ## Features
+
+## Existing Features 
 
 ### Welcome page
 
@@ -428,9 +430,15 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
     
    
 ## Features left to be implemented
-   - Summary *"This site starts as a personal tool and as improvements are made and features added to eventually become a public tool."*
-   
-   * __See full article here: https://github.com/michodgs24/Sprint/issues/1#issue-675980810__ 
+
+Login and Register pages
+* *Create both a login and register pages, to add other users to the platform.*
+
+User profile
+* *Add a user profile page, allow new users to create their own personal page on the site.*
+
+Summary: Adding a login page was seriously considered after receiving feedback from Slack [here.](https://github.com/michodgs25/Sprint/blob/master/static/docs/Sprint_peer%20group%20feedback%20review_09102020.pdf) but decided against this as much of the site structure had already been built and not enough time to implement properly before the project deadline. So has been moved to future feature implementations
+  
 
 ## Libraries
 
@@ -626,10 +634,17 @@ To deploy this app to Heroku you need to follow the steps below:
 
 ## Slack feedback
 
-Special thanks to the valuable feedback given by slack users: 
+Special thanks to the valuable feedback given by slack, I implemented the feedback on navigation font-size and seriously looked into adding a login page. 
+
+<details>
+  <summary>Slack Feedback</summary>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/docs/Sprint_peer%20group%20feedback%20review_09102020.pdf" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
 
 
-  
 #### Read full article here - 
 
 -----
@@ -652,7 +667,7 @@ Special thanks to the valuable feedback given by slack users:
 ## Acknowledgements
 
 Very Special Thanks to:
-- My mentor in Code Institute **Rohit ** who had all the patience to explain and make me understand certain concepts and peculiarities of the project content.
+- My mentor in Code Institute **Rohit** who had all the patience to explain and make me understand certain concepts and peculiarities of the project content.
 - All people, including family, friends, who have tested the platform on their real devices, reporting to me about any usability issues and giving improvement tips to improve the usability.
   
  #### All code adapted is for educational purposes only and not for commercial gain.
