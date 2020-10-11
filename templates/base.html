@@ -29,7 +29,7 @@
                         <!--when in mobile& tablet the sidenav is hidden and slides out right-->
                         <ul class="right hide-on-med-and-down">
                             <li><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
-                            <li><a href="{{ url_for('tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
+                            <li><a href="{{ url_for('sprints') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
                             <li><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
                             <!--search bar on explore page only, user can search all sprints-->
                             <form class="search-form" action="{{ url_for('search') }}" method="post">
@@ -46,7 +46,7 @@
                                     </div>
                                     <!--user can reset search results-->
                                     <div>
-                                        <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset</a>
+                                        <a href="{{ url_for('sprints') }}" class="red btn text-shadow">Reset</a>
                                     </div>
                                 </div>
                             </form>
@@ -65,7 +65,7 @@
                 </div>
                 <!--User can choose to either create or explore sprints or back to homepage-->
                 <li class="tab row s3"><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
-                <li class="tab row s3"><a href="{{ url_for('tasks') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
+                <li class="tab row s3"><a href="{{ url_for('sprints') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
                 <li class="tab row s3"><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
                 <!--on explore page, user can search specific sprints-->
                 <form class="side-form" action="{{ url_for('search') }}" method="post">
@@ -78,7 +78,7 @@
                         </div>
                         <!--User can reset results, and display all logs-->
                         <div class="side-reset">
-                            <a href="{{ url_for('tasks') }}" class="red btn text-shadow">Reset Search</a>
+                            <a href="{{ url_for('sprints') }}" class="red btn text-shadow">Reset Search</a>
                         </div>
                     </div>
                 </form>

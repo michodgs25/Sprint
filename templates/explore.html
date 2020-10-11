@@ -3,21 +3,21 @@
 <br>
 <!--collapsible accordian with for task loop-->
 <ul class="collapsible">
-    {% for task in tasks %}
+    {% for sprint in sprints %}
     <li>
         <!--accordian header, task date& title-->
         <div class="collapsible-header light-blue darken-4 white-text text-shadow">
             <i class="fas fa-caret-down arrow"></i>
             <!--Call date and title-->
-            <h6>{{ task.task_date }}
+            <h6>{{ sprint.sprint_date }}
                 <br>
-                {{ task.task_title }}
+                {{ sprint.sprint_title }}
             </h6>
-            <a href="{{ url_for('edit_activity', task_id=task._id) }}" class="btn-small orange darken-2">
+            <a href="{{ url_for('edit_activity', sprint_id=sprint._id) }}" class="btn-small orange darken-2">
             Edit 
             </a>
             <br>
-            <a href="{{ url_for('delete_activity', task_id=task._id) }}" class="btn-small red accent-4">
+            <a href="{{ url_for('delete_activity', sprint_id=sprint._id) }}" class="btn-small red accent-4">
             Delete
             </a>
         </div>
@@ -25,10 +25,10 @@
         <div class="collapsible-body row card-panel light-grey darken-1">
             <div class="log-description">
                 <h5>Activity description:</h5>
-                <strong>{{ task.task_description }}</strong>
+                <strong>{{ sprint.sprint_description }}</strong>
                 <br>
                 <h5>Activity difficulty:</h5>
-                <strong>{{ task.task_difficulty }}</strong>
+                <strong>{{ sprint.sprint_difficulty }}</strong>
                 <br>
             </div>
         </div>

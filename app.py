@@ -26,7 +26,7 @@ def get_index():
     return render_template("index.html")
 
 
-@app.route("/tasks")
+@app.route("/sprints")
 def tasks():
     """Add user pathway to explore page.
 
@@ -35,8 +35,8 @@ def tasks():
     Returns:
     previous saved tasks from collection, renders explore page template.
     """
-    tasks = list(mongo.db.tasks.find())
-    return render_template("explore.html", tasks=tasks)
+    sprints = list(mongo.db.sprints.find())
+    return render_template("explore.html", sprints=sprints)
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -46,11 +46,11 @@ def search():
     Args:
     Define search& query variables, GET& POST.
     Returns:
-    render explore page template& abilty to search tasks.
+    render explore page template& abilty to search sprints.
     """
     query = request.form.get("query")
-    tasks = list(mongo.db.tasks.find({"$text": {"$search": query}}))
-    return render_template("explore.html", tasks=tasks)
+    sprints = list(mongo.db.sprints.find({"$text": {"$search": query}}))
+    return render_template("explore.html", sprints=sprints)
 
 
 @app.route("/home")
@@ -61,42 +61,42 @@ def get_home():
 @app.route("/activity/add", methods=["GET", "POST"])
 def add_activity():
     if request.method == "POST":
-        """Add new task to database.
+        """Add new sprint to database.
 
         Args:
-        request key value pairs from tasks collection.
-        POST method to send task to the database.
-        Call mongo function mongo.db.tasks.insert_one,
-        Call mongo.db.tasks.find().sort("task_name", 1).
+        request key value pairs from sprints collection.
+        POST method to send sprint to the database.
+        Call mongo function mongo.db.sprint.insert_one,
+        Call mongo.db.sprints.find().sort("sprint_name", 1).
         Returns:
-        Insert new task to the database.
-        Insert new task into the database collection.
-        Sort new task in database.
-        Redirect user to explore swprints page.
+        Insert new sprint into database.
+        Insert new sprint into the database collection.
+        Sort new sprint in database.
+        Redirect user to explore sprints page.
         """
-        task = {
-               "task_name": request.form.get("task_name"),
-               "task_surname": request.form.get("task_surname"),
-               "task_gender": request.form.get("task_gender"),
-               "task_age": request.form.get("task_age"),
-               "task_activity": request.form.get("task_activity"),
-               "task_title": request.form.get("task_title"),
-               "task_description": request.form.get("task_description"),
-               "task_difficulty": request.form.get("task_difficulty"),
-               "task_date": request.form.get("task_date")
+        sprint = {
+               "sprint_name": request.form.get("sprint_name"),
+               "sprint_surname": request.form.get("sprint_surname"),
+               "sprint_gender": request.form.get("sprint_gender"),
+               "sprint_age": request.form.get("sprint_age"),
+               "sprint_activity": request.form.get("sprint_activity"),
+               "sprint_title": request.form.get("sprint_title"),
+               "sprint_description": request.form.get("sprint_description"),
+               "sprint_difficulty": request.form.get("sprint_difficulty"),
+               "sprint_date": request.form.get("sprint_date")
         }
-        mongo.db.tasks.insert_one(task)
-        return redirect(url_for("tasks"))
-    task = mongo.db.tasks.find().sort("task_name", 1)
-    return render_template("add_activity.html", task=task)
+        mongo.db.sprints.insert_one(sprint)
+        return redirect(url_for("sprints"))
+    sprint = mongo.db.sprints.find().sort("sprint_name", 1)
+    return render_template("add_activity.html", sprint=sprint)
 
 
-@app.route("/activity/edit/<task_id>", methods=["POST", "GET"])
-def edit_activity(task_id):
+@app.route("/activity/edit/<sprint_id>", methods=["POST", "GET"])
+def edit_activity(sprint_id):
     """Create app route to edit page.
 
     Copy:
-    task_id variable from mongoDb.
+    sprint_id variable from mongoDb.
     Add:
     methods GET and POST
     Define:
@@ -104,8 +104,8 @@ def edit_activity(task_id):
     Attach:
     task_id to edit_activity variable
 """
-    task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-    if not task:
+    sprint = mongo.db.sprints.find_one({"_id": ObjectId(sprint_id)})
+    if not sprint:
         """Return error page if log does not exist.
 
         Args:
@@ -116,37 +116,37 @@ def edit_activity(task_id):
         return render_template("error.html")
     if request.method == "POST":
         submit = {
-            "task_name": request.form.get("task_name"),
-            "task_surname": request.form.get("task_surname"),
-            "task_gender": request.form.get("task_gender"),
-            "task_age": request.form.get("task_age"),
-            "task_activity": request.form.get("task_activity"),
-            "task_title": request.form.get("task_title"),
-            "task_description": request.form.get("task_description"),
-            "task_difficulty": request.form.get("task_difficulty"),
-            "task_date": request.form.get("task_date")
+            "sprint_name": request.form.get("sprint_name"),
+            "sprint_surname": request.form.get("sprint_surname"),
+            "sprint_gender": request.form.get("sprint_gender"),
+            "sprint_age": request.form.get("sprint_age"),
+            "sprint_activity": request.form.get("sprint_activity"),
+            "sprint_title": request.form.get("sprint_title"),
+            "sprint_description": request.form.get("sprint_description"),
+            "sprint_difficulty": request.form.get("sprint_difficulty"),
+            "sprint_date": request.form.get("sprint_date")
         }
-        mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
-        return redirect(url_for("tasks"))
-        """Update task in the database collection.
+        mongo.db.sprints.update({"_id": ObjectId(sprint_id)}, submit)
+        return redirect(url_for("sprints"))
+        """Update sprint in the database collection.
 
         Args:
-        database collection task object id.
-        Create task variable and attach mongo function,
-        to find one task in the collection.
+        database collection sprint object id.
+        Create sprint variable and attach mongo function,
+        to find one sprint in the collection.
         Return:
-        updated task in the collection.
+        updated sprint in the collection.
         Updated sprint log and redirect to explore page.
         """
-        mongo.db.tasks.update_one({"_id": ObjectId(task_id)}, submit)
-    task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-    return render_template("edit_activity.html", task=task)
+        mongo.db.sprints.update_one({"_id": ObjectId(sprint_id)}, submit)
+    sprint = mongo.db.sprints.find_one({"_id": ObjectId(sprint_id)})
+    return render_template("edit_activity.html", sprint=sprint)
 
 
 @app.route("/activity/delete/<task_id>")
-def delete_activity(task_id):
-    mongo.db.tasks.remove({"_id": ObjectId(task_id)})
-    return redirect(url_for("tasks"))
+def delete_activity(sprint_id):
+    mongo.db.sprints.remove({"_id": ObjectId(sprint_id)})
+    return redirect(url_for("sprints"))
 
 
 if __name__ == "__main__":
