@@ -144,13 +144,6 @@ nav ul .search-icon input {
     margin-right: 0.5em;
     }
 
-/*search icon position*/
-.input-field .prefix {
-    position: absolute;
-    text-align: right;
-    margin-left: 6em;
-    }
-
 /*reset btn position*/
 nav ul a.btn {
     margin-top: 0.625em;
@@ -221,6 +214,11 @@ h2 {
 /*create form label styling*/
 label {
     color: rgb(245, 182, 66);
+    }
+
+/*save button*/
+.save-button {
+    text-align: center;
     }
 
 /*edit& delete buttons*/
@@ -311,12 +309,12 @@ strong {
 
 /*footer icon mobsile size*/
 @media screen and (max-width: 37.5em) {
-	.social  {
-		font-size: 0.9em;
-		padding: 0.001em;
-		padding-top: 1em;
+    .social  {
+        font-size: 0.9em;
+        padding: 0.001em;
+        padding-top: 1em;
         text-align: left;
-	}
+        }
 }
 
 /*breakpoint for screen widths 360px*/
