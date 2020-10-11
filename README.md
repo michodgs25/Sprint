@@ -177,7 +177,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 ### Homepage for desktop and tablet& mobile wire-frame
   
   <details>
-  <summary>Tablet& Homepage</summary>
+  <summary>Homepage</summary>
   <br>
 <div align="center">
 <img src="https://github.com/michodgs24/Sprint/blob/master/static/wire-frame/mobile/mobile-create-compare.png" target="_blank" rel=""/>
@@ -299,6 +299,8 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   </div>
   </details>
   
+*The button is moved to the center of the card, as it looked better in that position.*
+  
   #### Home page Summary:
    - *This feature was inspired by user stories, a local runner and Lucy who wanted to compare lastest run to previous activities and the site to be appealing.*
    
@@ -372,6 +374,8 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
      target="_blank" rel=""/>
   </div>
   </details>
+  
+  *Orange background added to sidenav search bar to increase visibility/accessibilty.*
   
 ----
 
@@ -477,7 +481,7 @@ But decided against this as much of the site structure had already been built an
 ----------
 
 
-### issues and bugs
+### Issues and bugs
 *This section looks into what existing issues that are still present in the project& what future iterations could do to resolve these issues:*
 
 *Welcome page, on the ipad pro screen the cards push to the top of screen leaving significant space below. When attempting to change this via breakpoints, this impacted other screens such as desktop. Future investigations to look at the card dimensions.*
@@ -505,7 +509,7 @@ At this point of the project there are no other errors that I can see that are t
 
 ## Technologies
 
-These technoligies helped create, shape and test my code
+These technologies helped create, shape and test my code
 
 * MongoDB - https://www.mongodb.com/: provided the database to store my Sprint logs.
 
