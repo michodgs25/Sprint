@@ -40,10 +40,8 @@
                                                 minlength="1" maxlength="25" required>
                                             <label class="label-icon" for="query"></label>
                                         </div>
-                                        <div>
-                                            <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-                                        </div>
                                     </div>
+                                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
                                     <!--user can reset search results-->
                                     <div>
                                         <a href="{{ url_for('sprints') }}" class="red btn text-shadow">Reset</a>
@@ -70,7 +68,6 @@
                 <!--on explore page, user can search specific sprints-->
                 <form class="side-form" action="{{ url_for('search') }}" method="post">
                     <div class="side-search">
-                        <i class="fas fa-search prefix"></i>
                         <div class="input-field">
                             <input type="text" name="query" id="mobilequery" required>
                             <label class="label-icon" for="query"><i class=""></i></label>

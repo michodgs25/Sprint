@@ -144,6 +144,13 @@ nav ul .search-icon input {
     margin-right: 0.5em;
     }
 
+/*search icon position*/
+.input-field .prefix {
+    position: absolute;
+    text-align: right;
+    margin-left: 6em;
+    }
+
 /*reset btn position*/
 nav ul a.btn {
     margin-top: 0.625em;

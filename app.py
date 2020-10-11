@@ -27,11 +27,11 @@ def get_index():
 
 
 @app.route("/sprints")
-def tasks():
+def sprints():
     """Add user pathway to explore page.
 
     Args:
-    Tasks variable: define explore page, call tasks collection list.
+    Tasks variable: define explore page, call sprints collection list.
     Returns:
     previous saved tasks from collection, renders explore page template.
     """
@@ -143,7 +143,7 @@ def edit_activity(sprint_id):
     return render_template("edit_activity.html", sprint=sprint)
 
 
-@app.route("/activity/delete/<task_id>")
+@app.route("/activity/delete/<sprint_id>")
 def delete_activity(sprint_id):
     mongo.db.sprints.remove({"_id": ObjectId(sprint_id)})
     return redirect(url_for("sprints"))
