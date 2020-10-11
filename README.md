@@ -497,6 +497,7 @@ At this point of the project there are no other errors that I can see that are t
 
 * https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
 
+- Python 3.7: https://www.python.org/
 
 - Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
 
@@ -567,56 +568,21 @@ An IDE such as Visual Studio, gitpod, Code, or like this project gitpod
 An account at MongoDB Atlas - https:https://github.com/michodgs25/Sprint//www.mongodb.com/
 Git - https://gist.github.com/derhuerst/1b15ff4652a867391f03
 
-## Local Deployment
-The following instructions are based on use on a Windows 10 OS and IDE git Code. If your OS is different, the commands may be different, but the process, in general, remains the same.
 
-#### Instructions
+I personally used github on my local machine to develop the site using Python 3.7.3 and deployed to Heroku via Github.
 
-- Save a copy of the Github repository located at https://github.com/michodgs25/Sprint.
-  - Unzip the repo into the chosen folder.
-- If you have Git installed on your system, you can clone the repository with the following command.
-```
-git clone https://github.com/michodgs25/Sprint
-```
+1. To download or clone the site to your local machine you will need to go to my repo see steps in https://help.github.com/en/articles/cloning-a-repository .
 
-- Within the chosen directory, create a virtual environment with the command:
-```
-python -m venv venv
-```  
+2. Before you download or clone the site you will need to ensure you have Python 3.7 installed.
 
-- Activate the virtual environment with the command:
-```
-.\venv\bin\activate 
-```
+3. Once you have Python installed, created a virtual environment as appropriate to you chosen IDE and os.
 
-- Install all required modules with the command: 
-```
-pip install -r requirements.txt
-```
+4. Run the requirements.txt file as appropriate to your IDE to install the relevant required packages dependencies for the project into your virtual environment.
 
-- Create a file called `.flaskenv` if not exists.
+5. Run the app.py file as appropriate to your chosen environment and os.
 
-- Inside the `.flaskenv` file check for the following entries:
-```
-FLASK_ENV=development
-FLASK_APP=app.py
-```
+6. You should now be able to view the site on your localhost on port 5000.
 
-- Create a `.env` file with your credentials:
-e.g
-```
-MONGO_URI="insert your mongo URI details here"
-SECRET_KEY="insert your secret key here"
-```
-
-- Create a database in MongoDB Atlas called **third_milestone_project** with a collection called **tasks**
-(of course you can choose your own database& collection name)
-
-- Run the application with the command
-```
-flask run
-```
-- Open the website at `http://127.0.0.1:5000`
 
 ## Remote Deployment
 
@@ -647,7 +613,6 @@ To deploy this app to Heroku you need to follow the steps below:
      target="_blank" rel=""/>
   </div>
   </details>
-
 
 ------
 
