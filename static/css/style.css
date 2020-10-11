@@ -12,13 +12,6 @@
     color: rgb(255, 255, 255);	
     }
 
-/*page structure*/
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    }
-
 /*welcome page, image& positioning*/
 .welcome-image {
     background-image: url("../images/website/welcome-page-image.jpg");
@@ -92,13 +85,6 @@
     }
 }
 
-/*homepage back in ipad*/
-@media screen and (min-height: 64em) {
-.home .card-image {
-    text-align: center;
-    }
-}
-
 /*site navigation section*/
 
 /*navigation color& border*/
@@ -115,7 +101,7 @@ nav .brand-logo {
     padding-left: 0.5em;
     }
 
-/*Navigation items positioning*/
+/*Explore page Nav-items positioning*/
 nav ul {
     display: flex;
     list-style: none;
@@ -123,7 +109,7 @@ nav ul {
     align-items: center;
     }
 
-/*nav items positioning*/
+/*nav items spacing*/
 nav ul div {
     padding: 0 0.9em;
     display: inline-flex;
@@ -133,26 +119,6 @@ nav ul div {
 nav ul a {
     font-size: 1.1em;
     }
-
-/*nav item size and positioning*/
-nav ul div.items a {
-    text-decoration: none;
-    font-size: 1.125em;
-    padding: 0 0.75em;
-    }
-
-/*nav item hover shadow*/
-nav ul div.items a:hover {
-    color: rgb(52, 198, 235);
-    }
-
-/*search icon positioning& proportions*/
-nav ul .search-icon {
-     height: 2.5em;
-     width: 15em;
-     display: flex;
-     border-radius: 0.3125em;
-     }
 
 /*search bar input area*/
 nav ul .search-icon input {
@@ -166,24 +132,6 @@ nav ul .search-icon input {
     border-radius: 0.3125em 0 0 0.3125em;
     }
 
-/*search icon proportions*/
-nav ul .search-icon .icon {
-    height: 100%;
-    width: 2.5em;
-    line-height: 2.5em;
-    text-align: center;
-    border: 0.0625em solid rgb(0, 0, 0);
-    border-radius: 0  0.3125em  0.3125em 0;
-    cursor: pointer;
-    }
-
-/*nav search icon color*/
-nav ul .search-icon .icon span {
-    color: rgb(30, 70, 179);
-    font-size: 1.125em;
-    padding: 1.5em;
-    }
-
 /*nav page icons*/
 .navbar-fixed li a i {
     color: rgb(30, 70, 179);
@@ -193,13 +141,7 @@ nav ul .search-icon .icon span {
 /*nav form icon margin*/
 .input-field .prefix {
     top: .0em;
-    margin-right: 1em;
-    }
-
-/*nav form margin-top*/
-nav form {
-    height: 100%;
-    margin-top: 0em;
+    margin-right: 0.5em;
     }
 
 /*reset btn position*/
@@ -213,14 +155,6 @@ nav ul a.btn {
         padding-right: 0.19em;
 	}
 }
-
-/*side-nav mobile section*/
-
-/*sidenav mobile bars*/
-#nav-bars .sidenav-trigger .fas fa-bars {
-    font-size: 2em;
-    text-align: left;
-    }
 
 /*side-nav title*/
 .side-title {
@@ -307,7 +241,7 @@ h5 {
 
 /*accordian body position*/
 .collapsible-body {
-text-align: -webkit-auto;
+text-align: left;
     }
 
 /*logged sprint description& difficulty*/
