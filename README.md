@@ -156,7 +156,7 @@ Also a major change was to not include the site logo icon and the social media s
 
 Another two differences between desktop and tablet(below 768px)& mobile, which are breakpoints, which adapts features to fit various screen sizes and the implementation of a side-nav for mobile and tablet 780px& under only.
 
-### Welcome page Desktop And Tablet& Mobile
+### Welcome page Desktop And Tablet& Mobile wire-frame
 
 <details>
   <summary>Welcome page</summary>
@@ -174,7 +174,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   
 *Site logo and social media excluded from final product*
   
-### Homepage for desktop and tablet& mobile 
+### Homepage for desktop and tablet& mobile wire-frame
   
   <details>
   <summary>Tablet& Homepage</summary>
@@ -189,7 +189,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   
   -------------------------------------
   
-  ### Create activity page
+  ### Create activity wire-frame
   
   <details>
   <summary>Create page</summary>
@@ -206,7 +206,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   
    -------------------------------------
   
-  ### Explore page
+  ### Explore page wire-frame
   
   <details>
   <summary>Explore page</summary>
@@ -224,7 +224,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   
    -------------------------------------
    
-   ### Edit page
+   ### Edit page wire-frame
    
    <details>
   <summary>Edit Sprint page</summary>
@@ -241,7 +241,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 -------------------------
 
-   ### Error page all screen sizes
+   ### Error page all screen sizes wire-frame
    
    <details>
   <summary>Error page, breakpoints again used like the homepage</summary>
