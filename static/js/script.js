@@ -36,7 +36,7 @@ $(document).ready(function(){
     });
 });
 
-//Hide search bar when on create page	
+//Hide search bar when on create page
 document.addEventListener('DOMContentLoaded', (event) => {
     if (window.location.pathname == '/activity/add') {
     document.querySelector('.search-form').style.display = "none";
