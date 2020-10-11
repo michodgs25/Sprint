@@ -34,7 +34,6 @@
 * [Testing](#Testing)
      * [Version-control](#Version-control)
      * [Deployment](#Deployment)
-     * [Local Deployment](#Local-Deployment)
      * [Remote Deployment](#Remote-Deployment)
 * [Acknowledgements](#Acknowledgements)
      * [External-Media](#External-Media)
