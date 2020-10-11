@@ -23,7 +23,7 @@
      * [Typography](#Typography)
      * [Colours](#Colours)
      * [Icons](#Icons)
-     * [CRUD](#CRUD)
+     * [CRUD and MongoDB](#CRUD-and-MongoDB)
 * [Wire-Frames](#Wire-Frames)
      * [Features](#Features)
      * [Features left to be implemented](#Features-left-to-be-implemented)
@@ -36,17 +36,16 @@
      * [Deployment](#Deployment)
      * [Local Deployment](#Local-Deployment)
      * [Remote Deployment](#Remote-Deployment)
-* [Slack feedback](#Slack-feedback) 
-     * [Acknowledgements](#Acknowledgements)
+* [Acknowledgements](#Acknowledgements)
      * [External-Media](#External-Media)
 
 
-## Project purpose
+# Project purpose
 
 The purpose of this project is to be used as a personal activity log for my runs; because I am passionate about running and want to keep a daily log of set activities to track my times, distance& activity difficulty. 
 
 
-# UX
+## UX
 
 
 ### User Stories
@@ -103,18 +102,18 @@ A major aim of this project was to have a fun and exciting appearance, with dark
 
 ### Colours
 
-- The welcome page is one big image of two runner on icy surface, the image color tone is a dull blue so I ensured the title& button stand-out, using white text& icons and the button background lights up orange and the white text turns dark blue.
+- The welcome page is one big image of two runners on an icy surface, the image color tone is a dull blue so I ensured the title& button stand-out, using white text& icons and the button background lights up orange and the white text turns dark blue.
 
 - Main site the colour scheme, I used highly contrasting but equally compatible fonts alongside white texts& icons.
 
-- The homepage cards have a orange card-panel background, both cards have an image each with a blue/teel button at the foot of button against the white background of the cards.
+- The homepage cards have an orange background, both cards have an image each with a blue/teel button at the foot of each card against the white background.
 
 - The navigation bar(create, explore and edit pages) on desktop and screen sizes above 768px the background is orange with dark blue icons, white Sprint title and a search bar which the typed text is black.
 
 - Devices on mobile and tablet below 750px I applied a sidenav which bars are white, background color is dark blue, icons are orange and texts white plus an image at the top of 
 the sidenav with dark blue sprint title. 
 
-Read full summary of site colorway here: *https://github.com/michodgs25/Sprint/issues/3#issue-716076941*
+Read full summary of site style colorways here: *https://github.com/michodgs25/Sprint/issues/3#issue-716076941*
 
 ------
 
@@ -123,8 +122,13 @@ Read full summary of site colorway here: *https://github.com/michodgs25/Sprint/i
 The icons used in this project are provided by [Font Awesome 5.14.0](https://fontawesome.com/).
 
 
- ## Crud
+ ## Crud and MongoDB
    CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off. 
+   
+   For this project the mongoDb platform retains/stores the data when the user departs Sprint. 
+   MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time. 
+   
+   The document model maps to the objects in the application code, making data easy to work with - https://www.mongodb.com/
    
    The CRUD method is integral to this sites functionality, with this in mind, below is the sprint platform CRUD method:
    
@@ -144,7 +148,8 @@ The icons used in this project are provided by [Font Awesome 5.14.0](https://fon
 
   
 # Wire-Frames
-These wireframes were designed with Balsamiq Mockups 3. The first version of scope and some minor things have changed during the development for the final version. 
+These wireframes were designed with Balsamiq Mockups. Since the first version of scope, some things have changed during the development of the final version. 
+
 A major change being the homepage cards which instead of the cards being side by, they are stacked with create sprint on top and explore sprints directly below. 
 
 Also a major change was to not include the site logo icon and the social media symbols on the welcome page as this clashed with full page image.
@@ -254,9 +259,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 # Features
 
-## Existing Features 
-
-### Welcome page
+### Welcome page feature
 
 * *Welcome page, has a full sized background-image.*
 
@@ -303,9 +306,9 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 
 ### Create activity feature
 
-* *The create activity page primary purpose is for user to log their latest activity.*
+* *The create activity page primary purpose is for user to create and save their latest activity.*
 
-* *The user will input personal details such as name& last for every activity log.*
+* *The user will input personal details such as name& last name for every activity log.*
 
 * *The title of the activity is very important as this helps locate the particular activity in database when user types in search bar on explore card or explore page.*
 
@@ -371,6 +374,50 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   </details>
   
 ----
+
+
+### Search bar
+
+* *Used on the explore page nav& sidenav to search through my saved sprint logs.*
+
+* *This feature helps the user search through all previously logged sprints without having to labor by scrolling through them all.*
+
+* *If for example the user would type a completely random text, that has nothing to do with any sprint logs, the platform return the nav& footer only.*
+
+* *A reset search button is placed next to the input area, when pressed, refreshes and returns all logged sprints.*
+
+* *Only applied to the explore page exclusively, and is hidden on the create sprint page using this piece of code below:*
+
+`document.addEventListener('DOMContentLoaded', (event) => {
+    if (window.location.pathname == '/activity/add') {
+    document.querySelector('.search-form').style.display = "none";
+  } else {
+    document.querySelector('.search-form').style.display = "block";
+  }
+});`
+
+
+`document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname == '/activity/add') {
+    document.querySelector('.side-form').style.display = "none";
+  } else {
+    document.querySelector('.side-form').style.display = "block";
+}
+});`
+
+The above function is really help in hiding certain elements when extending base.html to multiple pages and was used to streamline the platform ensuring user stays on point, either __logging a sprint__ or __exploring previous logs.__
+
+
+<details>
+  <summary>Search bar</summary>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/search.jpg" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
+
+
+-------
    
    ### Edit activity feature
 
@@ -395,7 +442,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
  
  ### Error page feature
  
- * *If the log has been deleted, and if the log page still exists on another page, once refreshed will return this error page.
+ * *If the log has been deleted, and if the log page still exists on another page, once refreshed will return this error page.*
  
  * *The page has a green button which transports the user back to the homepage.*
  
@@ -410,7 +457,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   
   #### Error page Summary:
   
-  * *Using a defensive programmer approach, the addition of the error page guards against any unforseen circumstances.*
+  * *Using a defensive programmer approach, the addition of the error page guards against any unforseen circumstance of a log still existing on a different tab after being deleted.*
  
  ------
     
@@ -433,12 +480,12 @@ But decided against this as much of the site structure had already been built an
 ### issues and bugs
 *This section looks into what existing issues that are still present in the project& what future iterations could do to resolve these issues:*
 
-* __Feature__ - 
+*Welcome page, on the ipad pro screen the cards push to the top of screen leaving significant space below. When attempting to change this via breakpoints, this impacted other screens such as desktop. Future investigations to look at the card dimensions.*
 
-  - Summary 
-  *""*
-  
+At this point of the project there are no other errors that I can see that are to the detriment on the platform via manual testing and using google dev console.
 
+-------
+ 
 ## Libraries
 
 - Materialize CSS and JS Libraries: 
@@ -446,20 +493,14 @@ But decided against this as much of the site structure had already been built an
 
 * https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
 
-  
+
 - Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
 
 - JQuery library: https://jquery.com/ 
 
-
-------
-
 ## Languages
 
   - In this project I used *HTML5*, *CSS*, *JAVASCRIPT* and *PYTHON* as programming languages.
-  
-  
--------
    
 
 ## Technologies
@@ -603,37 +644,6 @@ To deploy this app to Heroku you need to follow the steps below:
   </div>
   </details>
 
------
-
-## Slack feedback
-
-Special thanks to the valuable feedback given by slack, I implemented the feedback on navigation font-size and seriously looked into adding a login page. 
-
-<details>
-  <summary>Slack Feedback</summary>
-<div align="center">
-<img src="https://github.com/michodgs25/Sprint/blob/master/static/docs/Sprint_peer%20group%20feedback%20review_09102020.pdf" 
-     target="_blank" rel=""/>
-  </div>
-  </details>
-
-
-#### Read full article here - 
-
------
-
-## Libraries
-
-- Materialize CSS and JS Libraries: 
-* https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css 
-
-* https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
-
-  
-- Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
-
-- JQuery library: https://jquery.com/ 
-
 
 ------
 
@@ -642,6 +652,16 @@ Special thanks to the valuable feedback given by slack, I implemented the feedba
 Very Special Thanks to:
 - My mentor with Code Institute **Rohit** and the code institute tech support team, who had all the patience to explain and make me understand certain concepts and peculiarities of the project .
 - Family, friends, who have tested the platform on their real devices, reporting to me about any usability issues and giving improvement tips to improve the usability.
+
+## Slack feedback
+
+Special thanks to the valuable feedback given by slack, I implemented the feedback on navigation font-size and seriously looked into adding a login page. 
+__See feedback here:
+
+
+#### Read full article here - https://github.com/michodgs25/Sprint/blob/master/static/docs/Sprint_peer%20group%20feedback%20review_09102020.pdf
+
+-----
   
  #### All code adapted is for educational purposes only and not for commercial gain.
 
