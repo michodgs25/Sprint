@@ -122,93 +122,6 @@ Read full summary of site style colorways here: *https://github.com/michodgs25/S
 The icons used in this project are provided by [Font Awesome 5.14.0](https://fontawesome.com/).
 
 
- ## Crud and MongoDB
-   CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off. 
-   
-   For this project the mongoDb platform retains/stores the data when the user departs Sprint. 
-   MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time. 
-   
-   The document model maps to the objects in the application code, making data easy to work with - https://www.mongodb.com/
-   
-   The CRUD method is integral to this sites functionality, with this in mind, below is the sprint platform CRUD method:
-   
-**CREATE** -
-*The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
- 
-**READ** - 
-*User can read every single one of their saved sprint logs on the explore sprints page.*
-
-**UPDATE** -
-*User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.*
-
-**DELETE** -
-*User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.*
-
-------
-
-The MongoDb database has one collection aptly named sprints to reflect the project name, collection schema values below:
-
-```
-_id: "uniqueIdentifier"
-
-sprint_name: ""
-
-sprint_surname: ""
-
-sprint_gender: ""
-
-sprint_age: ""
-
-sprint_activity: ""
-
-sprint_title: ""
-
-sprint_description: ""
-
-sprint_difficulty: ""
-
-sprint_date: ""
-```
-Below is the method used via app.py to get the above collection values using "request.form.get" method and when a new log is saved, inserts new log into the collection and redirects to explore sprints page:
-
-```
-@app.route("/activity/add", methods=["GET", "POST"])
-def add_activity():
-    if request.method == "POST":
-        sprint = {
-               "sprint_name": request.form.get("sprint_name"),
-               "sprint_surname": request.form.get("sprint_surname"),
-               "sprint_gender": request.form.get("sprint_gender"),
-               "sprint_age": request.form.get("sprint_age"),
-               "sprint_activity": request.form.get("sprint_activity"),
-               "sprint_title": request.form.get("sprint_title"),
-               "sprint_description": request.form.get("sprint_description"),
-               "sprint_difficulty": request.form.get("sprint_difficulty"),
-               "sprint_date": request.form.get("sprint_date")
-        }
-        mongo.db.sprints.insert_one(sprint)
-        return redirect(url_for("sprints"))
-    sprint = mongo.db.sprints.find().sort("sprint_name", 1)
-    return render_template("add_activity.html", sprint=sprint)
-```
-
-An excerpt from the create page form, the "id", "name", and "for" elements which shares the value created in mongoDb, called in app.py, "sprint_name":
-```
-    <form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
-        <!--provide user first name input-->
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="sprint_name" name="sprint_name" type="text" class="validate"  
-                    minlength="1" maxlength="25" required>
-                <label for="sprint_name">First Name</label>
-            </div>
-        </div>
-```
-
-Visit __https://github.com/michodgs25/Sprint/blob/master/templates/add_activity.html__ to see full create sprint page code.
-
--------
-
 # Wire-Frames
 These wireframes were designed with Balsamiq Mockups. Since the first version of scope, some things have changed during the development of the final version. 
 
@@ -317,6 +230,94 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
   *Breakpoints adapt the page to each screen size.* 
     
   ------------
+
+
+ ## Crud and MongoDB
+   CRUD refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete. Persistent storage refers to any data storage device that retains power after the device is powered off. 
+   
+   For this project the mongoDb platform retains/stores the data when the user departs Sprint. 
+   MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time. 
+   
+   The document model maps to the objects in the application code, making data easy to work with - https://www.mongodb.com/
+   
+   The CRUD method is integral to this sites functionality, with this in mind, below is the sprint platform CRUD method:
+   
+**CREATE** -
+*The User can create a sprint log on the create sprint page and save the log to the explore sprints page.*
+ 
+**READ** - 
+*User can read every single one of their saved sprint logs on the explore sprints page.*
+
+**UPDATE** -
+*User can update a sprint log by clicking the edit button on a sprint log via explore sprints page and change the details of the log.*
+
+**DELETE** -
+*User can delete a sprint log via delete button on a sprint log via the explore sprints page, once this is clicked the log is permanently deleted.*
+
+------
+
+The MongoDb database has one collection aptly named sprints to reflect the project name, collection schema values below:
+
+```
+_id: "uniqueIdentifier"
+
+sprint_name: ""
+
+sprint_surname: ""
+
+sprint_gender: ""
+
+sprint_age: ""
+
+sprint_activity: ""
+
+sprint_title: ""
+
+sprint_description: ""
+
+sprint_difficulty: ""
+
+sprint_date: ""
+```
+Below is the method used via app.py to get the above collection values using "request.form.get" method and when a new log is saved, inserts new log into the collection and redirects to explore sprints page:
+
+```
+@app.route("/activity/add", methods=["GET", "POST"])
+def add_activity():
+    if request.method == "POST":
+        sprint = {
+               "sprint_name": request.form.get("sprint_name"),
+               "sprint_surname": request.form.get("sprint_surname"),
+               "sprint_gender": request.form.get("sprint_gender"),
+               "sprint_age": request.form.get("sprint_age"),
+               "sprint_activity": request.form.get("sprint_activity"),
+               "sprint_title": request.form.get("sprint_title"),
+               "sprint_description": request.form.get("sprint_description"),
+               "sprint_difficulty": request.form.get("sprint_difficulty"),
+               "sprint_date": request.form.get("sprint_date")
+        }
+        mongo.db.sprints.insert_one(sprint)
+        return redirect(url_for("sprints"))
+    sprint = mongo.db.sprints.find().sort("sprint_name", 1)
+    return render_template("add_activity.html", sprint=sprint)
+```
+
+An excerpt from the create page form, the "id", "name", and "for" elements which shares the value created in mongoDb, called in app.py, "sprint_name":
+```
+    <form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
+        <!--provide user first name input-->
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="sprint_name" name="sprint_name" type="text" class="validate"  
+                    minlength="1" maxlength="25" required>
+                <label for="sprint_name">First Name</label>
+            </div>
+        </div>
+```
+
+Visit __https://github.com/michodgs25/Sprint/blob/master/templates/add_activity.html__ to see full create sprint page code.
+
+-------
     
 
 # Features
