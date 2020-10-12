@@ -632,7 +632,7 @@ At this point of the project there are no other errors that I can see that are t
 
 ## Languages
 
-  - In this project I used *HTML5*, *CSS*, *JAVASCRIPT* and *PYTHON* as programming languages.
+  - In this project I used *HTML5*, *CSS*, *JAVASCRIPT*, *PYTHON* and TEMPLATE as programming languages.
    
 
 ## Technologies
