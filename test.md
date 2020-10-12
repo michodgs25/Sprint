@@ -112,11 +112,11 @@ Tested html and css code formatting with https://validator.w3.org/ - done by cop
 
 Tested the JavaScript code with https://jshint.com/ - done by copying& pasting the code via direct imput into the site text-area. 
 
-#### - Summary:
-*No errors were found in either tests, ensuring code is error free.*
+Tested the Python code with http://pep8online.com/ - done by copying& pasting the code via direct imput into the site text-area.
 
-#### Validators
-- HTML
+### Validators Summary
+
+#### HTML
 
   - [The W3C Markup Validation Service](https://validator.w3.org/)
   
