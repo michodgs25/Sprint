@@ -13,8 +13,6 @@
 
 #### You can visit the Sprint platform [here.](https://flask-sprint-project.herokuapp.com/)
 
-  - Site mobile demo: *https://www.youtube.com/watch?v=j5vqz2_EDUA*
-
 ## Contents
 * [Project purpose](#Project-purpose)
      * [UX](#UX)
@@ -44,6 +42,8 @@
 The purpose of this project is to be used as a personal activity log for my runs; because I am passionate about running and want to keep a daily log of set activities to track my times, distance& activity difficulty. 
 
 I decided to create the sprint brand from experience of using other activity logging sites such as Strava or Garmin, I wanted Sprint to be a back to basics tool without any of the social media elements found in those applications.
+
+ - Site mobile demo: *https://www.youtube.com/watch?v=j5vqz2_EDUA*
 
 
 ## UX
