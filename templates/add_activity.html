@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<!--create activity form-->
+<!--create sprint form-->
 <h2>Create Your Sprint</h2>
 <div class="row card-panel light-grey darken-4">
     <form class="col s12" method="POST" action="{{ url_for('add_activity') }}">
@@ -83,7 +83,7 @@
             <label for="sprint_difficulty">Select difficulty</label>
         </div>
         <br>
-        <!--Date of activity calendar-->
+        <!--Date of activity calendar, select activity date-->
         <div class="row" id="matfix">
             <div class="input-field col s12">
                 <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
@@ -91,7 +91,7 @@
                 <label for="sprint_date">Date</label>
             </div>
         </div>
-        <!--save activity button-->
+        <!--save button, save activity to database-->
         <br>
         <div class="row">
             <div class="col s12">

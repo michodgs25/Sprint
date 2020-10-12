@@ -8,20 +8,22 @@
         <!--accordian header, sprint date& title-->
         <div class="collapsible-header light-blue darken-4 white-text text-shadow">
             <i class="fas fa-caret-down arrow"></i>
-            <!--Call date and title-->
+            <!--Call date and title from collection-->
             <h6>{{ sprint.sprint_date }}
                 <br>
                 {{ sprint.sprint_title }}
             </h6>
+            <!--edit button, user can edit the log-->
             <a href="{{ url_for('edit_activity', sprint_id=sprint._id) }}" class="btn-small orange darken-2">
             Edit 
             </a>
             <br>
+            <!--delete button, user can remove log from site-->
             <a href="{{ url_for('delete_activity', sprint_id=sprint._id) }}" class="btn-small red accent-4">
             Delete
             </a>
         </div>
-        <!--Collapsible body, sprint description& difficulty-->
+        <!--Collapsible body, with sprint description& difficulty inside-->
         <div class="collapsible-body row card-panel light-grey darken-1">
             <div>
                 <h5>Activity description:</h5>
