@@ -633,7 +633,7 @@ Git - https://gist.github.com/derhuerst/1b15ff4652a867391f03
 
 I personally used github on my local machine to develop the site using Python 3.7.3 and deployed to Heroku via Github.
 
-1. To download or clone the site to your local machine you will need to go to my repo see steps in https://help.github.com/en/articles/cloning-a-repository .
+1. To download or clone the site to your local machine you will need to go to my repo [here.](https://github.com/michodgs25/Sprint) and see deployment steps in https://help.github.com/en/articles/cloning-a-repository
 
 2. Before you download or clone the site you will need to ensure you have Python 3.7 installed.
 
