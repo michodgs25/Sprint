@@ -34,7 +34,7 @@
                             <!--search bar on explore page only, user can search all sprints-->
                             <form class="search-form" action="{{ url_for('search') }}" method="post">
                                 <div class="input-field">
-                                <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <input name="query" id="query" type="text" class="validate"  
@@ -92,13 +92,13 @@
                 <!--social media icons, encourage user to share sprint-->
                 <div class="social">
                     <ul>
-                        <li><a href="https://www.facebook.com/login" rel="noopener" target="_blank">
+                        <li><a href="https://www.facebook.com/login" rel="noopener" aria-label="Facebook home" target="_blank">
                             <i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="https://twitter.com/login" rel="noopener" target="_blank">
+                        <li><a href="https://twitter.com/login" rel="noopener" aria-label="Twitter home" target="_blank">
                             <i class="fab fa-twitter-square" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="https://www.instagram.com/accounts/login/" rel="noopener" target="_blank">
+                        <li><a href="https://www.instagram.com/accounts/login/" rel="noopener" aria-label="Instagram home" target="_blank">
                             <i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </li>
                     </ul>
