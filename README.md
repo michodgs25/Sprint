@@ -665,7 +665,7 @@ Summary: *During the development of this project, I had the experience of facing
 
 *I received help from some family and friends to do the tests on the platform resources and all the problems presented were solved without problems for example my brother found that on his mobile device there was x-scroll on the create sprint page."*
 
-__See testing documentation here: https://github.com/michodgs25/Sprint/issues/4#issue-716890135__
+__See testing documentation here: https://github.com/michodgs25/Sprint/blob/master/test.md__
 
 ## Version Control
 This sites version control is through github linked to the heroku app, using gitpod IDE, once completed a piece of work, I would type into the terminal:
