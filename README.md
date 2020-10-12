@@ -632,6 +632,8 @@ At this point of the project there are no other errors that I can see that are t
 
 - JQuery library: https://jquery.com/ 
 
+- Google fonts: https://fonts.google.com/
+
 ## Languages
 
   - In this project I used *HTML5*, *CSS*, *JAVASCRIPT*, *PYTHON* and TEMPLATE as programming languages.
@@ -658,6 +660,8 @@ These technologies helped create, shape and test my code
 * mobiReady - https://ready.mobi/: Online app that that test whether the app is mobile ready.
 
 * Google dev tools: found top right corner of the chrome browser, more tool then bottom option. Provided a virtual testing environment.
+
+* Google fonts - https://fonts.google.com/: Help provide the text style of the site.
 
 -------
   
