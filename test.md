@@ -69,7 +69,7 @@ Results below:
 #### mobiReady mobile test:
   - Enter website link as indicated into enter bar on homepage, press enter and the site automates the website to whether it will be mobile ready.
   
-    <details>
+  <details>
   <summary>MobiReady</summary>
   <br>
   <div align="center">
@@ -124,10 +124,11 @@ Tested the JavaScript code with https://jshint.com/ - done by copying& pasting t
 
 the {{url_for('') }} jinja method used frequently throughout the project as this provided easy access to each page of the platform for the user calling each page from the app.py file. This was not changed as the benefits outweighed the negatives plus both my mentor course institute informed me that I can ignore those errors.
 
-The other errors that I was unable to resolve were using form& div tags as a descendant of a ul tag. 
+The other errors that I was unable to resolve were using form& div tags as a descendant of a ul tag which can only have li tags as descendants of the ul tag:
 
-* div tag
-`<ul id="mobile-demo" class="sidenav light-blue darken-4">
+* div tag error 
+```
+<ul id="mobile-demo" class="sidenav light-blue darken-4">
                 <div class="user-view">
                     <div class="background">
                         <!--Sprint title& image, increase user interaction-->
@@ -135,16 +136,18 @@ The other errors that I was unable to resolve were using form& div tags as a des
                     </div>
                     <h6 class="side-title">Sprint</h6>
                 </div>`
+                
+```
 
 These minor errors do not adhere to software development standards but the design and functionality of the sidenav fit the vision of the site whereas replacing the tags made the image, tabs, and search bar untidy.
 
-- CSS
+- CSS Code Test
 
   - [The W3C Markup Validation Service](https://jigsaw.w3.org/css-validator)
 
 * No errors found.
 
-- JavaScript
+- JavaScript Code Test
 
   - [JS Hint](https://jshint.com/)
 
