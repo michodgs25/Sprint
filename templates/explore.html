@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 <br>
-<!--collapsible accordian with for task loop-->
+<!--collapsible accordian with for sprint loop-->
 <ul class="collapsible">
     {% for sprint in sprints %}
     <li>
-        <!--accordian header, task date& title-->
+        <!--accordian header, sprint date& title-->
         <div class="collapsible-header light-blue darken-4 white-text text-shadow">
             <i class="fas fa-caret-down arrow"></i>
             <!--Call date and title-->
@@ -21,7 +21,7 @@
             Delete
             </a>
         </div>
-        <!--Collapsible body, task description& difficulty-->
+        <!--Collapsible body, sprint description& difficulty-->
         <div class="collapsible-body row card-panel light-grey darken-1">
             <div>
                 <h5>Activity description:</h5>
