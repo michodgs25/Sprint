@@ -119,8 +119,10 @@ Tested the JavaScript code with https://jshint.com/ - done by copying& pasting t
 - HTML
 
   - [The W3C Markup Validation Service](https://validator.w3.org/)
+  
+  * Goal - to achieve error free html.
 
-* A handful of errors found:
+* A handful of errors found via base.html(bulk of html code):
 
 the {{url_for('') }} jinja method used frequently throughout the project as this provided easy access to each page of the platform for the user calling each page from the app.py file. This was not changed as the benefits outweighed the negatives plus both my mentor course institute informed me that I can ignore those errors.
 
@@ -141,22 +143,55 @@ The other errors that I was unable to resolve were using form& div tags as a des
 
 These minor errors do not adhere to software development standards but the design and functionality of the sidenav fit the vision of the site whereas replacing the tags made the image, tabs, and search bar untidy.
 
-- CSS Code Test
+For the other Html templates: index.html, home.html, add_activity.html error.html, edit_activity.html and explore.html. Barring the jinja template code, all came back error free. Goal partially achieved.
+
+#### CSS Code Test
+
+* *Goal - to ensure CSS is error free*
 
   - [The W3C Markup Validation Service](https://jigsaw.w3.org/css-validator)
+  
+<details>
+  <summary>CSS test</summary>
+  <br>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/test-results/css-test.jpg" target="_blank" rel=""/>
+</div>
+  </details>
 
-* No errors found.
+* No errors found, goal achieved.
 
-- JavaScript Code Test
+------
+
+#### JavaScript Code Test
 
   - [JS Hint](https://jshint.com/)
+  
+ <details>
+  <summary>JS-hint test</summary>
+  <br>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/test-results/js-test.jpg" target="_blank" rel=""/>
+</div>
+  </details>
 
-* No errors found.
+*  Two undefined variable which is the dollar sign, this js code was adapted from materialize js, future iterations to explore this. 
+However No errors found, goal achieved.
 
-- Python Code Test
+#### Python Code Test
 
- - [PEP8](http://pep8online.com/)
+* *Goal to ensure python code has no errors*
+
+ - PEP8 (http://pep8online.com/)
  
- * No errors found.
+ <details>
+  <summary>Pep8 test</summary>
+  <br>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/test-results/pep-test.png" target="_blank" rel=""/>
+</div>
+  </details>
+ 
+ * No errors found, goal achieved.
 
 ---- 
