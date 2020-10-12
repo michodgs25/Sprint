@@ -422,6 +422,70 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
    
    ----
    
+   #### Explore page accordian feature:
+   
+   * *The accordian feature is a crucial feature to displaying sprint logs to the user.*
+   
+   * *The feature is made up of a header and body sections*
+   
+   * *The header has the date and title of the sprint log plus an edit& delete button.*
+   
+   * *The edit button opens up the edit page.*
+   
+   * *The delete button permanently removes the sprint log to the database.*
+   
+   * *The user accesses the body by tapping the header and the body drops down to reveal the sprint description and difficulty which the user chose when creating the sprint.*
+   
+   *A for loop is integrated within the accordian calling the key values from MongoDb and app.py, see edit example from explore.html template below:*
+   
+   ```
+   <ul class="collapsible">
+    {% for sprint in sprints %}
+    <li>
+        <div>
+            <i class="fas fa-caret-down arrow"></i>
+            <h6>{{ sprint.sprint_date }}
+                <br>
+                {{ sprint.sprint_title }}
+            </h6>
+            <a href="{{ url_for('edit_activity', sprint_id=sprint._id) }}" class="btn-small orange darken-2">
+            Edit 
+            </a>
+            <br>
+            <a href="{{ url_for('delete_activity', sprint_id=sprint._id) }}" class="btn-small red accent-4">
+            Delete
+            </a>
+        </div>
+        <div>
+            <div>
+                <h5>Activity description:</h5>
+                <strong>{{ sprint.sprint_description }}</strong>
+                <br>
+                <h5>Activity difficulty:</h5>
+                <strong>{{ sprint.sprint_difficulty }}</strong>
+                <br>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+   ```
+   
+   
+   <details>
+  <summary>Accordian</summary>
+<div align="center">
+<img src="https://github.com/michodgs25/Sprint/blob/master/static/images/readme/accordian-feature.jpg" 
+     target="_blank" rel=""/>
+  </div>
+  </details>
+  
+  
+   #### Accordian feature Summary:
+   - *The accordian is a simple and effective method to display the saved logs; this fulfills user stories request "View all Sprints on one page logged on the platform and all its details, such as description, difficulty, name, and others".*
+   
+   -------
+   
    ### Navigation bar and sidenav features
    
  * *The platform navigation bar is only used for the create sprint, explore and edit pages as the welcome& home page and error page have their own specific navigation.
