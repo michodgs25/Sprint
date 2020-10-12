@@ -62,9 +62,10 @@ Here are some outside user opinions on what the site should offer:
 *"Hey, my name is Lebron, a professional basketball player, I think that the site should allow me to input my running activity distance and activity difficulty as this keeps a record of what I have done."*
 
   
-  <br>
-  
-  As this application will be purposely designed for me as the user, this platform will:
+ 
+ As this application will be purposely designed for me as the user, this platform will:
+
+- Track of all run and walking activities.
   
 - Access the platform from all my favourite devices, such as smartphones, tablets, laptops or PCs, without loss of content.
 
@@ -204,7 +205,7 @@ An excerpt from the create page form, the "id", "name", and "for" elements which
         </div>
 ```
 
-Visit __https://github.com/michodgs25/Sprint/blob/master/templates/add_activity.html__ to see full create sprint page
+Visit __https://github.com/michodgs25/Sprint/blob/master/templates/add_activity.html__ to see full create sprint page code.
 
 -------
 
@@ -470,7 +471,7 @@ Another two differences between desktop and tablet(below 768px)& mobile, which a
 }
 });`
 
-The above function is really help in hiding certain elements when extending base.html to multiple pages and was used to streamline the platform ensuring user stays on point, either __logging a sprint__ or __exploring previous logs.__
+The above function is really helpful for hiding certain elements when extending base.html to multiple pages and was used to streamline the platform ensuring user stays on point, either __logging a sprint__ or __exploring previous logs.__
 
 
 <details>
@@ -522,7 +523,7 @@ The above function is really help in hiding certain elements when extending base
   
   #### Error page Summary:
   
-  * *Using a defensive programmer approach, the addition of the error page guards against any unforseen circumstance of a log still existing on a different tab after being deleted.*
+  * *Using a defensive programmer approach, the addition of the error page guards against any unforseen circumstance of a log still existing on a different tab after being deleted on the explore page.*
  
  ------
     
@@ -530,7 +531,7 @@ The above function is really help in hiding certain elements when extending base
 ## Features left to be implemented
 
 Login and Register pages
-* *Create both a login and register pages, to add other users to the platform.*
+* *Create both a login and register pages, to add other users to the platform and provide security to the platform.*
 
 User profile
 * *Add a user profile page, allow new users to create their own personal page on the site.*
