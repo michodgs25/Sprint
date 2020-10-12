@@ -751,7 +751,7 @@ Very Special Thanks to:
 ## Slack feedback
 
 Special thanks to the valuable feedback given by slack, I implemented the feedback on navigation font-size and seriously looked into adding a login page. 
-__See feedback here:
+__See feedback below__:
 
 
 #### Read full article here - https://github.com/michodgs25/Sprint/blob/master/static/docs/Sprint_peer%20group%20feedback%20review_09102020.pdf
