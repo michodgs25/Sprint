@@ -1,8 +1,8 @@
+<h2 align="center">Sprint</h2>
 <div align="center">
 <img src="https://github.com/michodgs24/Sprint/blob/master/static/images/readme/banner.jpg" 
      target="_blank" rel="noopener" alt="Sprint">
 </div>
-<h2 align="center">Sprint</h2>
 
 ### Track your workouts one sprint at a time!
 
