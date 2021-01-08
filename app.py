@@ -75,15 +75,15 @@ def add_activity():
         Redirect user to explore sprints page.
         """
         sprint = {
-               "sprint_name": request.form.get("sprint_name"),
-               "sprint_surname": request.form.get("sprint_surname"),
-               "sprint_gender": request.form.get("sprint_gender"),
-               "sprint_age": request.form.get("sprint_age"),
-               "sprint_activity": request.form.get("sprint_activity"),
-               "sprint_title": request.form.get("sprint_title"),
-               "sprint_description": request.form.get("sprint_description"),
-               "sprint_difficulty": request.form.get("sprint_difficulty"),
-               "sprint_date": request.form.get("sprint_date")
+            "sprint_name": request.form.get("sprint_name"),
+            "sprint_surname": request.form.get("sprint_surname"),
+            "sprint_gender": request.form.get("sprint_gender"),
+            "sprint_age": request.form.get("sprint_age"),
+            "sprint_activity": request.form.get("sprint_activity"),
+            "sprint_title": request.form.get("sprint_title"),
+            "sprint_description": request.form.get("sprint_description"),
+            "sprint_difficulty": request.form.get("sprint_difficulty"),
+            "sprint_date": request.form.get("sprint_date")
         }
         mongo.db.sprints.insert_one(sprint)
         return redirect(url_for("sprints"))
