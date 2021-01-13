@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Oswald&display=swap');
 
+/*platform h3& p element position*/
+
+h3, p {
+    text-align: center;
+}
+
 /*welcome page body structure*/
 
 .welcome-image body {
@@ -310,7 +316,7 @@ strong {
 }
 
 
-/*footer section*/
+/*-------------------------footer section*/
 
 
 /*social media icon color*/
@@ -377,7 +383,7 @@ strong {
 }
 
 
-/*media queries*/
+/*----------------------------media queries*/
 
 
 /*mobile welcome page breakpoint*/
