@@ -1,123 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--font-awesome library, provide site icons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
-            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" type="text/css" />
-        <!-- materilize minified CSS library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
-        <!--custom css file-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-        <!--site name-->
-        <title>Sprint</title>
-        <!--Favicon, site icon-->
-        <link id="favicon" rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon/favicon-16x16.png') }}">
-    </head>
-    <body>
-        {% block styles %}
-        {% endblock %}
-        <header>
-            <!--Navigation follows user scroll, encourage user to explore-->
-            <div class="navbar-fixed">
-                <nav class="nav-extended">
-                    <div class="nav-wrapper">
-                        <!--Site name, personalises the site-->
-                        <a href="{{ url_for('get_home') }}" class="brand-logo">Sprint</a>
-                        <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars" id="nav-bars"></i></a>
-                        <!--when in mobile& tablet the sidenav is hidden and slides out right-->
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
-                            <li><a href="{{ url_for('sprints') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
-                            <li><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
-                            <!--search bar on explore page only, user can search all sprints-->
-                            <form class="search-form" action="{{ url_for('search') }}" method="post">
-                                <div class="input-field">
-                                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input name="query" id="query" type="text" class="validate"  
-                                                minlength="1" maxlength="25" required>
-                                            <label class="label-icon" for="query"></label>
-                                        </div>
-                                    </div>
-                                    <!--user can reset search results-->
-                                    <div>
-                                        <a href="{{ url_for('sprints') }}" class="red btn text-shadow">Reset</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font-awesome library, provide site icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" type="text/css" />
+    <!-- materilize minified CSS library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        type="text/css">
+    <!--custom css file-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <!--site name-->
+    <title>Sprint</title>
+    <!--Favicon, site icon-->
+    <link id="favicon" rel="icon" type="image/png" sizes="16x16"
+        href="{{url_for('static', filename='images/favicon/favicon-16x16.png') }}">
+</head>
+
+<body>
+    {% block styles %}
+    {% endblock %}
+    <header>
+        <!--Navigation follows user scroll, encourage user to explore-->
+        <div class="navbar-fixed">
+            <nav class="nav-extended">
+                <div class="nav-wrapper">
+                    <!--Site name, personalises the site-->
+                    <a href="{{ url_for('get_home') }}" class="brand-logo">Sprint</a>
+                    <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"
+                            id="nav-bars"></i></a>
+                    <!--when in mobile& tablet the sidenav is hidden and slides out right-->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="{{ url_for('sprints') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a>
+                        </li>
+                        {% elseif %}
+                        <li><a href="{{ url_for('login') }}"><i class="fas fa-plus-circle"></i>Login</a></li>
+                        {% else %}
+                        <li><a href="{{ url_for('register') }}"><i class="fas fa-plus-circle"></i>Register</a></li>
+                        {% endif %}
+                        <!--search bar on explore page only, user can search all sprints-->
+                        <form class="search-form" action="{{ url_for('search') }}" method="post">
+                            <div class="input-field">
+                                <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input name="query" id="query" type="text" class="validate" minlength="1"
+                                            maxlength="25" required>
+                                        <label class="label-icon" for="query"></label>
                                     </div>
                                 </div>
-                            </form>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <!--mobile sidenav section-->
-            <ul id="mobile-demo" class="sidenav light-blue darken-4">
-                <div class="user-view">
-                    <div class="background">
-                        <!--Sprint title& image, increase user interaction-->
-                        <img src="{{url_for('static', filename='images/website/sidenav-image.jpg')}}" alt="Male athlete in running motion">
-                    </div>
-                    <h5 class="side-title">Sprint</h5>
-                </div>
-                <!--User can choose to either create or explore sprints or back to homepage-->
-                <li class="tab row s3"><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
-                <li class="tab row s3"><a href="{{ url_for('sprints') }}"><i class="fas fa-archive"></i>Explore Sprints</a></li>
-                <li class="tab row s3"><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create Sprint</a></li>
-                <!--on explore page, user can search specific sprints-->
-                <form class="side-form" action="{{ url_for('search') }}" method="post">
-                    <div class="side-search">
-                        <div class="input-field">
-                            <input type="text" name="query" id="mobilequery" required>
-                            <label class="label-icon" for="query"><i class=""></i></label>
-                            <label for="#!">Search:</label>
-                        </div>
-                        <!--User can reset results, and display all logs-->
-                        <div class="side-reset">
-                            <a href="{{ url_for('sprints') }}" class="red btn text-shadow">Reset Search</a>
-                        </div>
-                    </div>
-                </form>
-            </ul>
-        </header>
-        {% block content %}
-        {% endblock %}
-        <!--footer section-->
-        <footer class="page-footer">
-            <div class="row">
-                <div class="container">
-                    <h5>Share Sprint</h5>
-                </div>
-                <!--social media icons, encourage user to share sprint-->
-                <div class="social">
-                    <ul>
-                        <li><a href="https://www.facebook.com/login" rel="noopener" aria-label="Facebook home" target="_blank">
-                            <i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="https://twitter.com/login" rel="noopener" aria-label="Twitter home" target="_blank">
-                            <i class="fab fa-twitter-square" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/accounts/login/" rel="noopener" aria-label="Instagram home" target="_blank">
-                            <i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        </li>
+                                <!--user can reset search results-->
+                                <div>
+                                    <a href="{{ url_for('sprints') }}" class="red btn text-shadow">Reset</a>
+                                </div>
+                            </div>
+                        </form>
                     </ul>
                 </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2020 Copyright michodgs25
+            </nav>
+        </div>
+        <!--mobile sidenav section-->
+        <ul id="mobile-demo" class="sidenav light-blue darken-4">
+            <div class="user-view">
+                <div class="background">
+                    <!--Sprint title& image, increase user interaction-->
+                    <img src="{{url_for('static', filename='images/website/sidenav-image.jpg')}}"
+                        alt="Male athlete in running motion">
                 </div>
+                <h5 class="side-title">Sprint</h5>
             </div>
-        </footer>
-        <!--jQuery library-->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <!-- Compiled materialize Js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!--custom js-->
-        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-        {% block scripts %}
-        {% endblock %}
-    </body>
+            <!--User can choose to either create or explore sprints or back to homepage-->
+            <li class="tab row s3"><a href="{{ url_for('get_home') }}"><i class="fas fa-home"></i>Home</a></li>
+            {% if user.is_authenticated %}
+            <li class="tab row s3"><a href="{{ url_for('sprints') }}"><i class="fas fa-archive"></i>Explore Sprints</a>
+            </li>
+            <li class="tab row s3"><a href="{{ url_for('add_activity') }}"><i class="fas fa-plus-circle"></i>Create
+                    Sprint</a></li>
+            {% elseif %}
+            <li class="tab row s3"><a href="{{ url_for('login') }}"><i class="fas fa-plus-circle"></i>Create
+                    Login</a></li>
+            {% elseif %}
+            <li class="tab row s3"><a href="{{ url_for('register') }}"><i class="fas fa-plus-circle"></i>Create
+                    Register</a></li>
+            {% endif %}
+            <!--on explore page, user can search specific sprints-->
+            <form class="side-form" action="{{ url_for('search') }}" method="post">
+                <div class="side-search">
+                    <div class="input-field">
+                        <input type="text" name="query" id="mobilequery" required>
+                        <label class="label-icon" for="query"><i class=""></i></label>
+                        <label for="#!">Search:</label>
+                    </div>
+                    <!--User can reset results, and display all logs-->
+                    <div class="side-reset">
+                        <a href="{{ url_for('sprints') }}" class="red btn text-shadow">Reset Search</a>
+                    </div>
+                </div>
+            </form>
+        </ul>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <!--footer section-->
+    <footer class="page-footer">
+        <div class="row">
+            <div class="container">
+                <h5>Share Sprint</h5>
+            </div>
+            <!--social media icons, encourage user to share sprint-->
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/login" rel="noopener" aria-label="Facebook home"
+                            target="_blank">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/login" rel="noopener" aria-label="Twitter home" target="_blank">
+                            <i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/accounts/login/" rel="noopener" aria-label="Instagram home"
+                            target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright michodgs25
+            </div>
+        </div>
+    </footer>
+    <!--jQuery library-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Compiled materialize Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--custom js-->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block scripts %}
+    {% endblock %}
+</body>
+
 </html>
