@@ -1,446 +1,401 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Oswald&display=swap");
 
 /*welcome page body structure*/
 
 .welcome-image body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-
 
 /*welcome page text color*/
 
 .welcome-image h2 {
-    padding: 1em;
-    color: rgb(255, 255, 255);
+  padding: 1em;
+  color: rgb(255, 255, 255);
 }
-
 
 /*welcome page, image& positioning*/
 
 .welcome-image {
-    background-image: url("../images/website/welcome-page-image.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-image: url("../images/website/welcome-page-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 
 /*welcome page button*/
 
 .welcome-image .button {
-    font-size: 2.5em;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border: rgb(245, 182, 66) 0.07em solid;
-    padding: 0.625em 1.25em;
-    border-radius: 0.625em;
-    margin-top: 1em;
+  font-size: 2.5em;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: rgb(245, 182, 66) 0.07em solid;
+  padding: 0.625em 1.25em;
+  border-radius: 0.625em;
+  margin-top: 1em;
 }
-
 
 /*welcome button colors*/
 
 .welcome-image .button:hover {
-    background: rgb(245, 182, 66);
-    color: rgb(30, 70, 179);
+  background: rgb(245, 182, 66);
+  color: rgb(30, 70, 179);
 }
 
-
 /*homepage section*/
-
 
 /*page background color*/
 
 .home {
-    background-color: rgb(245, 182, 66);
+  background-color: rgb(245, 182, 66);
 }
-
 
 /*card button position*/
 
 .card .card-action {
-    text-align: center;
+  text-align: center;
 }
-
 
 /*card shadow*/
 
 .card {
-    box-shadow: 0 4px 8px 0 rgb(30, 70, 179);
-    transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgb(30, 70, 179);
+  transition: 0.3s;
 }
-
 
 /*homepage card image position*/
 
 .card-image {
-    background-position: center;
-    background-size: cover;
+  background-position: center;
+  background-size: cover;
 }
 
-
 /*site navigation section*/
-
 
 /*navigation color& border*/
 
 nav {
-    background: rgb(245, 182, 66);
-    border: 0.0625em solid rgb(245, 182, 66);
-    border-left: none;
-    border-right: none;
+  background: rgb(245, 182, 66);
+  border: 0.0625em solid rgb(245, 182, 66);
+  border-left: none;
+  border-right: none;
 }
-
 
 /*navigation bar logo position*/
 
 nav .brand-logo {
-    margin-top: 0.2em;
-    padding-left: 0.5em;
+  margin-top: 0.2em;
+  padding-left: 0.5em;
 }
-
 
 /*Explore page Nav-items positioning*/
 
 nav ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
 
 /*nav items spacing*/
 
 nav ul div {
-    padding: 0 0.9em;
-    display: inline-flex;
+  padding: 0 0.9em;
+  display: inline-flex;
 }
-
 
 /*navigation icon& text size*/
 
 nav ul a {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
-
 
 /*search bar input area*/
 
 nav ul .search-icon input {
-    height: 100%;
-    width: 12.5em;
-    border: none;
-    outline: none;
-    padding: 0 0.625em;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    border-radius: 0.3125em 0 0 0.3125em;
+  height: 100%;
+  width: 12.5em;
+  border: none;
+  outline: none;
+  padding: 0 0.625em;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  border-radius: 0.3125em 0 0 0.3125em;
 }
-
 
 /*nav page icons*/
 
 .navbar-fixed li a i {
-    color: rgb(30, 70, 179);
-    padding-right: 1em;
+  color: rgb(30, 70, 179);
+  padding-right: 1em;
 }
-
 
 /*nav form icon margin*/
 
 .input-field .prefix {
-    top: .0em;
-    margin-right: 0.5em;
+  top: 0em;
+  margin-right: 0.5em;
 }
-
 
 /*reset btn position*/
 
 nav ul a.btn {
-    margin-top: 0.625em;
+  margin-top: 0.625em;
 }
-
 
 /*add break-point to ipad pro width*/
 
 @media screen and (max-width: 64em) {
-    .navbar-fixed li a i {
-        padding-right: 0.19em;
-    }
+  .navbar-fixed li a i {
+    padding-right: 0.19em;
+  }
 }
-
 
 /*side-nav title*/
 
 .side-title {
-    align-items: center;
-    color: rgb(30, 70, 179);
-    font-weight: 800;
-    padding: 2em;
+  align-items: center;
+  color: rgb(30, 70, 179);
+  font-weight: 800;
+  padding: 2em;
 }
-
 
 /*side-nav tabs*/
 
 .sidenav li a {
-    align-items: center;
-    color: rgb(255, 255, 255);
-    border: 0.0625em solid rgb(52, 198, 235);
-    border-top: none;
-    border-right: none;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  border: 0.0625em solid rgb(52, 198, 235);
+  border-top: none;
+  border-right: none;
 }
-
 
 /*side nav tab size*/
 
-.sidenav li>a {
-    font-size: 1.5em;
+.sidenav li > a {
+  font-size: 1.5em;
 }
-
 
 /*side nav icons*/
 
 .sidenav li a i {
-    color: rgb(245, 182, 66);
+  color: rgb(245, 182, 66);
 }
-
 
 /*sidenav search input area*/
 
 .side-search {
-    color: rgb(255, 255, 255);
-    padding: 1em;
-    background-color: rgb(245, 182, 66);
+  color: rgb(255, 255, 255);
+  padding: 1em;
+  background-color: rgb(245, 182, 66);
 }
-
 
 /*sidenav reset button position*/
 
 .side-reset {
-    text-align: right;
-    margin: 1em;
+  text-align: right;
+  margin: 1em;
 }
 
-
 /*Create & edit sprint section*/
-
 
 /*create page title*/
 
 .create-title h2 {
-    color: rgb(245, 182, 66);
-    text-align: center;
-    justify-content: center;
+  color: rgb(245, 182, 66);
+  text-align: center;
+  justify-content: center;
 }
-
 
 /*create& edit page heading*/
 
 h2 {
-    text-align: center;
-    color: rgb(245, 182, 66);
+  text-align: center;
+  color: rgb(245, 182, 66);
 }
-
 
 /*create form label styling*/
 
 label {
-    color: rgb(245, 182, 66);
+  color: rgb(245, 182, 66);
 }
-
 
 /*save button*/
 
 .save-button {
-    text-align: center;
+  text-align: center;
 }
-
 
 /*edit& delete buttons*/
 
 .edit-buttons {
-    text-align: center;
+  text-align: center;
 }
 
-
 /*explore sprints page*/
-
 
 /*accordian title*/
 
 h6 {
-    margin-right: 0.5em;
+  margin-right: 0.5em;
 }
-
 
 /*edit and delete buttons*/
 
 .btn-small {
-    margin: 0.8em;
-    padding-left: 0.8em;
+  margin: 0.8em;
+  padding-left: 0.8em;
 }
-
 
 /*accordian body title*/
 
 h5 {
-    color: rgb(30, 70, 179);
+  color: rgb(30, 70, 179);
 }
-
 
 /*accordian body position*/
 
 .collapsible-body {
-    text-align: left;
+  text-align: left;
 }
-
 
 /*logged sprint description& difficulty*/
 
 strong {
-    color: rgb(245, 182, 66);
+  color: rgb(245, 182, 66);
 }
 
-
 /*footer section*/
-
 
 /*social media icon color*/
 
 .social i {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-
 
 /*footer height*/
 
 .page-footer .footer-copyright {
-    line-height: 1em;
-    min-height: 0.625em;
-    padding-top: 0.0625em;
+  line-height: 1em;
+  min-height: 0.625em;
+  padding-top: 0.0625em;
 }
-
 
 /*footer title*/
 
 .page-footer h5 {
-    color: rgb(255, 255, 255);
-    text-align: left;
-    line-height: 10%;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  line-height: 10%;
 }
-
 
 /*social media icons size*/
 
 .social {
-    text-align: center;
-    font-size: 2em;
+  text-align: center;
+  font-size: 2em;
 }
-
 
 /*icon positioning*/
 
 .social li {
-    padding: 0.5em 4em;
-    padding-top: 0.5em;
-    display: inline-block;
+  padding: 0.5em 4em;
+  padding-top: 0.5em;
+  display: inline-block;
 }
 
 .social a i:hover {
-    color: rgb(30, 70, 179);
+  color: rgb(30, 70, 179);
 }
-
 
 /*footer copyright*/
 
 .footer-copyright {
-    font-style: italic;
-    color: rgb(255, 255, 255);
+  font-style: italic;
+  color: rgb(255, 255, 255);
 }
 
 /*error page section*/
 
-
 /* error page title and color*/
 
 .error {
-    text-align: center;
-    color: rgb(245, 182, 66);
+  text-align: center;
+  color: rgb(245, 182, 66);
 }
 
-
 /*media queries*/
-
 
 /*mobile welcome page breakpoint*/
 
 @media screen and (max-width: 25.6875em) {
-    .home-logo img {
-        width: 2em;
-        border-radius: inherit;
-        margin-bottom: 1em;
-    }
-    h2 {
-        text-align: center;
-    }
+  .home-logo img {
+    width: 2em;
+    border-radius: inherit;
+    margin-bottom: 1em;
+  }
+  h2 {
+    text-align: center;
+  }
 }
 
+/*Welcome page button*/
+@media screen and (max-width: 25.6875em) {
+  .welcome-image .button {
+    font-size: 1.4em;
+  }
+}
 
 /*add break-point to ipad pro width*/
 
 @media screen and (max-width: 64em) {
-    .navbar-fixed li a i {
-        padding-right: 0.19em;
-    }
+  .navbar-fixed li a i {
+    padding-right: 0.19em;
+  }
 }
 
 /*footer icon mobsile size*/
 
 @media screen and (max-width: 37.5em) {
-    .social {
-        font-size: 0.9em;
-        padding: 0.001em;
-        padding-top: 1em;
-        text-align: left;
-    }
+  .social {
+    font-size: 0.9em;
+    padding: 0.001em;
+    padding-top: 1em;
+    text-align: left;
+  }
 }
-
 
 /*breakpoint for screen widths 360px*/
 
 @media screen and (max-width: 22.5em) {
-    .social {
-        text-align: left;
-        padding: 0.1em;
-        font-size: 0.9em;
-    }
+  .social {
+    text-align: left;
+    padding: 0.1em;
+    font-size: 0.9em;
+  }
 }
-
 
 /*footer breakpoint for screen widths 320px*/
 
 @media screen and (max-width: 20em) {
-    .social {
-        text-align: left;
-        padding: 0.1em;
-        font-size: 0.8em;
-    }
+  .social {
+    text-align: left;
+    padding: 0.1em;
+    font-size: 0.8em;
+  }
 }
-
 
 /*footer breakpoint widths of 280px */
 
 @media screen and (max-width: 17.5em) {
-    .social {
-        text-align: left;
-        font-size: 0.7em;
-    }
+  .social {
+    text-align: left;
+    font-size: 0.7em;
+  }
 }
